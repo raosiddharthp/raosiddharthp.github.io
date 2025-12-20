@@ -7,7 +7,7 @@ body {
 
 .sidebar {
     width: 220px;
-    background-color: #a0d8ef; /* Light blue */
+    background-color: #a0d8ef;
     position: fixed;
     left: 0;
     top: 0;
@@ -16,6 +16,11 @@ body {
     text-align: center;
     box-shadow: 5px 0 15px rgba(0,0,0,0.15);
     z-index: 100;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: inherit;
 }
 
 .sidebar h1 {
@@ -35,10 +40,10 @@ body {
 }
 
 .header-ribbon {
-    background-color: #007bff; /* Dark blue */
+    background-color: #007bff;
     padding: 20px 0;
     text-align: center;
-    margin-left: 220px; /* Push right of sidebar */
+    margin-left: 220px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.2);
     position: relative;
     z-index: 90;
@@ -59,7 +64,7 @@ body {
     background-color: rgba(255,255,255,0.15);
     padding: 12px 20px;
     border: 2px solid white;
-    border-radius: 30px; /* Pill-shaped like screenshot */
+    border-radius: 30px;
     font-weight: 600;
     transition: all 0.3s;
     white-space: nowrap;
@@ -76,19 +81,29 @@ body {
 }
 
 .main-content {
-    margin-left: 220px; /* Clear sidebar */
+    margin-left: 220px;
     padding: 40px 60px;
     min-height: 100vh;
 }
 
 .main-content h1 {
     color: #00008b;
-    font-size: 3em;
+    font-size: 2.8em;
     border-bottom: 5px solid #ff0000;
     padding-bottom: 10px;
     display: inline-block;
 }
 
+/* New: Project description paragraph styling */
+.project-description {
+    font-size: 1.2em;
+    line-height: 1.7;
+    margin: 40px auto 60px auto;
+    max-width: 1000px;
+    color: #333;
+}
+
+/* Keep existing section styling */
 .section {
     background: white;
     border-radius: 12px;
@@ -104,12 +119,10 @@ body {
     padding-left: 20px;
 }
 
-/* Crucial: Hide ribbon entirely on project pages */
 body.project-page .header-ribbon {
     display: none;
 }
 
-/* Ensure content starts below ribbon on home */
 body.home-page .main-content {
     padding-top: 20px;
 }
