@@ -353,10 +353,85 @@
                 </tbody>
             </table>        </div>
         <div class="section">
-            <h3>04. Model Lifecycle</h3>
-            <p>Placeholder: Training, evaluation, MLOps pipelines, Vertex AI Model Registry...</p>
-        </div>
+        <div class="section">
+            <h3>04. Model Lifecycle & MLOps: Engineering Predictive Sustainability</h3>
+            <p>
+                In the GreenOps platform, the "intelligence" is a living system. We manage the lifecycle of our carbon-forecasting and cost-optimization models using Vertex AI, ensuring that our autonomous agents always act on the most accurate, low-latency predictions available.
+            </p>
 
+            <h4>1. Model Development & Experimentation</h4>
+            <p>
+                We bridge the gap between open-source flexibility and enterprise-grade scalability.
+            </p>
+            <ul style="font-size: 1.05em; line-height: 1.7;">
+                <li><strong>Time-Series Forecasting:</strong> We use the Prophet algorithm for multi-region carbon intensity forecasting, training on historical grid data stored in BigQuery.</li>
+                <li><strong>Prototyping:</strong> Development occurs in Vertex AI Workbench, allowing for seamless transition from Python-based exploration to scalable training pipelines.</li>
+                <li><strong>Hyperparameter Tuning:</strong> We utilize Vertex AI Vizier to optimize model parameters, ensuring high forecast accuracy (90%+) across diverse global energy markets.</li>
+            </ul>
+
+            <h4>2. The Training Pipeline (CI/CD for ML)</h4>
+            <p>
+                To ensure reliability, we treat model training as a code-driven, automated process.
+            </p>
+            <ul style="font-size: 1.05em; line-height: 1.7;">
+                <li><strong>Vertex AI Pipelines:</strong> We use KFP (Kubeflow Pipelines) to orchestrate the end-to-end workflow—from data extraction in BigQuery to model evaluation.</li>
+                <li><strong>Automated Retraining:</strong> Pipelines are triggered by Cloud Scheduler or whenever Cloud Logging detects a drop in prediction accuracy, preventing "Model Decay" as energy grid patterns shift.</li>
+                <li><strong>Model Registry:</strong> Once validated, every model is versioned in the Vertex AI Model Registry, providing a single source of truth for our Agentic Swarm.</li>
+            </ul>
+
+            <h4>3. Deployment & Inference (The Intelligence at Work)</h4>
+            <p>
+                Our agents require sub-second inference to make real-time workload-shifting decisions.
+            </p>
+            <ul style="font-size: 1.05em; line-height: 1.7;">
+                <li><strong>Scalable Endpoints:</strong> Models are deployed to Vertex AI Prediction Endpoints, providing an auto-scaling API that our LangChain/CrewAI agents query during the "Reasoning" phase.</li>
+                <li><strong>Agent Integration:</strong> The Gemini-powered Agents use these predictions as high-context inputs to determine if a workload migration is strategically sound.</li>
+                <li><strong>Pre-computed Inference:</strong> For high-volume batch jobs, we use BigQuery ML to generate bulk carbon-forecasts directly within the data layer, reducing egress costs and latency.</li>
+            </ul>
+
+            <h4>4. Continuous Monitoring & Governance</h4>
+            <p>
+                At Google, a model is only as good as its last audit.
+            </p>
+            <ul style="font-size: 1.05em; line-height: 1.7;">
+                <li><strong>Model Monitoring:</strong> We track Feature Drift and Prediction Drift in real-time. If the input data (e.g., energy prices) deviates significantly from the training set, the system alerts the Operations Team via Cloud Monitoring.</li>
+                <li><strong>Explainable AI (XAI):</strong> We use Vertex Explainable AI to provide feature attributions. This allows us to explain why an agent recommended a specific region shift (e.g., "70% weighting on solar availability in europe-west1").</li>
+                <li><strong>Lineage Tracking:</strong> Using Vertex AI Metadata, we track the full lineage of every decision—from the raw dataset to the specific model version used by the agent—ensuring full ESG auditability.</li>
+            </ul>
+
+            <h4>Technical Summary: The MLOps Stack</h4>
+            <table style="width:100%; border-collapse: collapse; margin: 20px 0;">
+                <thead>
+                    <tr style="background-color: #007bff; color: white;">
+                        <th style="padding: 12px; text-align: left;">Phase</th>
+                        <th style="padding: 12px; text-align: left;">Google Cloud Technology</th>
+                        <th style="padding: 12px; text-align: left;">Key Outcome</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr style="background-color: #f8f9fa;">
+                        <td style="padding: 10px;">Orchestration</td>
+                        <td style="padding: 10px;">Vertex AI Pipelines (KFP)</td>
+                        <td style="padding: 10px;">100% Reproducible training cycles</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px;">Registry</td>
+                        <td style="padding: 10px;">Vertex AI Model Registry</td>
+                        <td style="padding: 10px;">Version control for AI "Brains"</td>
+                    </tr>
+                    <tr style="background-color: #f8f9fa;">
+                        <td style="padding: 10px;">Inference</td>
+                        <td style="padding: 10px;">Vertex AI Prediction</td>
+                        <td style="padding: 10px;">Low-latency API for Agentic Swarms</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px;">Evaluation</td>
+                        <td style="padding: 10px;">Vertex AI Model Evaluation</td>
+                        <td style="padding: 10px;">Automated "Go/No-Go" deployment gates</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
         <div class="section">
             <h3>05. Cloud Infrastructure</h3>
             <p>Placeholder: Terraform, GKE, networking, carbon-aware regions, multi-region resilience...</p>
