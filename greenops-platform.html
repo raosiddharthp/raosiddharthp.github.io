@@ -387,7 +387,32 @@
             </ul>
 
             <h4>5. Technical Highlights</h4>
-            <table style="width:100%; border-collapse: collapse; margin: 20px 0;">
+
+        <h4 style="margin-top: 50px;">Data & ML Backbone Visualizations</h4>
+        <details style="margin: 30px 0; padding: 20px; background: #f8f9fa; border-radius: 12px; border: 1px solid #ddd;">
+            <summary style="font-size: 1.2em; font-weight: bold; cursor: pointer; color: #00008b;">Click to expand diagrams</summary>
+            <div style="margin-top: 20px;">
+                <p><strong>Figure 1: Event-Driven Data Engineering Pipeline (Truth Layer)</strong></p>
+                <div style="text-align: center; margin: 30px 0;">
+                    <img src="docs/data-engineering-pipeline.png" alt="Pub/Sub → Dataflow → BigQuery Pipeline" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px;">
+                    <p><em>Real-time ingestion and processing for carbon telemetry</em></p>
+                </div>
+
+                <p><strong>Figure 2: Vertex AI MLOps Pipeline</strong></p>
+                <div style="text-align: center; margin: 30px 0;">
+                    <img src="docs/vertex-mlops-pipeline.png" alt="Vertex AI Pipelines, Registry, and Prediction" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px;">
+                    <p><em>Automated training, registry, and inference for forecasting models</em></p>
+                </div>
+
+                <p><strong>Figure 3: Observability Dashboard & Feedback Loops</strong></p>
+                <div style="text-align: center; margin: 30px 0;">
+                    <img src="docs/observability-dashboard.png" alt="Cloud Monitoring Sustainability Metrics" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px;">
+                    <p><em>Real-time "Actual vs. Predicted" carbon savings visualization</em></p>
+                </div>
+
+                <p>These diagrams illustrate the scalable, automated data and ML backbone that enables low-latency, high-fidelity intelligence for the agentic swarm.</p>
+            </div>
+        </details>            <table style="width:100%; border-collapse: collapse; margin: 20px 0;">
                 <thead>
                     <tr style="background-color: #007bff; color: white;">
                         <th style="padding: 12px; text-align: left;">Component</th>
