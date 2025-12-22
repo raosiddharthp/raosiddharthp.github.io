@@ -582,7 +582,32 @@
             </ul>
 
             <h4>4. Security & Governance (VPC Service Controls)</h4>
-            <ul style="font-size: 1.05em; line-height: 1.7;">                <li><strong>Identity & Access Management:</strong> Agents operate using Google Service Accounts (GSA) with strictly scoped permissions, following the principle of least privilege.</li>
+
+        <h4 style="margin-top: 50px;">Carbon-Aware Infrastructure Diagrams</h4>
+        <details style="margin: 30px 0; padding: 20px; background: #f8f9fa; border-radius: 12px; border: 1px solid #ddd;">
+            <summary style="font-size: 1.2em; font-weight: bold; cursor: pointer; color: #00008b;">Click to expand diagrams</summary>
+            <div style="margin-top: 20px;">
+                <p><strong>Figure 1: Multi-Region Carbon-Aware Architecture</strong></p>
+                <div style="text-align: center; margin: 30px 0;">
+                    <img src="docs/multi-region-architecture.png" alt="Multi-Region Carbon-Aware Landing Zone" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px;">
+                    <p><em>Workload tiering and green region deployment with global load balancing</em></p>
+                </div>
+
+                <p><strong>Figure 2: Event-Driven Infrastructure Mesh</strong></p>
+                <div style="text-align: center; margin: 30px 0;">
+                    <img src="docs/event-driven-mesh.png" alt="Pub/Sub → Cloud Functions → GKE Flow" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px;">
+                    <p><em>Core components enabling carbon-aware shifts</em></p>
+                </div>
+
+                <p><strong>Figure 3: Security & Governance Perimeter</strong></p>
+                <div style="text-align: center; margin: 30px 0;">
+                    <img src="docs/security-perimeter.png" alt="VPC-SC and IAM for Agents" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px;">
+                    <p><em>Data perimeter and audit trail visualization</em></p>
+                </div>
+
+                <p>These diagrams illustrate the multi-region, carbon-aware infrastructure that enables dynamic optimization while maintaining security and governance.</p>
+            </div>
+        </details>            <ul style="font-size: 1.05em; line-height: 1.7;">                <li><strong>Identity & Access Management:</strong> Agents operate using Google Service Accounts (GSA) with strictly scoped permissions, following the principle of least privilege.</li>
                 <li><strong>Data Perimeter:</strong> VPC Service Controls (VPC-SC) protect the BigQuery and Vertex AI environments, ensuring that sensitive sustainability and financial telemetry remain within a secure perimeter.</li>
                 <li><strong>Auditability:</strong> Every infrastructure change triggered by an AI agent is logged, providing a transparent audit trail for corporate ESG reporting.</li>
             </ul>
