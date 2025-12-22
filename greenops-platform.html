@@ -486,7 +486,32 @@
             </ul>
 
             <h4>Technical Summary: The MLOps Stack</h4>
-            <table style="width:100%; border-collapse: collapse; margin: 20px 0;">
+
+        <h4 style="margin-top: 50px;">Model Lifecycle Visualizations</h4>
+        <details style="margin: 30px 0; padding: 20px; background: #f8f9fa; border-radius: 12px; border: 1px solid #ddd;">
+            <summary style="font-size: 1.2em; font-weight: bold; cursor: pointer; color: #00008b;">Click to expand diagrams</summary>
+            <div style="margin-top: 20px;">
+                <p><strong>Figure 1: Vertex AI MLOps End-to-End Pipeline</strong></p>
+                <div style="text-align: center; margin: 30px 0;">
+                    <img src="docs/mlops-pipeline.png" alt="Vertex AI Pipelines, Registry, and Prediction Flow" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px;">
+                    <p><em>Automated training, versioning, deployment, and retraining for forecasting models</em></p>
+                </div>
+
+                <p><strong>Figure 2: Model Registry & Prediction Endpoint Integration</strong></p>
+                <div style="text-align: center; margin: 30px 0;">
+                    <img src="docs/model-registry-endpoint.png" alt="Model Registry to Prediction Endpoint" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px;">
+                    <p><em>Versioned models serving low-latency inference to agents</em></p>
+                </div>
+
+                <p><strong>Figure 3: Monitoring, Drift Detection & Explainability</strong></p>
+                <div style="text-align: center; margin: 30px 0;">
+                    <img src="docs/drift-monitoring-xai.png" alt="Drift Detection and XAI in Vertex AI" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px;">
+                    <p><em>Real-time drift alerts and feature attributions for governance</em></p>
+                </div>
+
+                <p>These diagrams illustrate the production-grade MLOps lifecycle that ensures predictive sustainability models remain accurate and auditable.</p>
+            </div>
+        </details>            <table style="width:100%; border-collapse: collapse; margin: 20px 0;">
                 <thead>
                     <tr style="background-color: #007bff; color: white;">
                         <th style="padding: 12px; text-align: left;">Phase</th>
