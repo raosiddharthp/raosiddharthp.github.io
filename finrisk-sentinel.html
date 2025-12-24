@@ -304,35 +304,204 @@
         </div>
 
         <div class="section">
-            <h3>02. Multi-Agent Design</h3>
-            <h4>Distributed Cognition Model</h4>
-            <p>Specialized agents collaborate via LangGraph workflow, ensuring accuracy, reduced hallucinations, and full audit trail.</p>
+            <h3>Agentic Design Patterns & Technical Moats</h3>
+            <h4>1. Collaborative Reasoning (Hierarchical Handoff)</h4>
+            <p>Unlike a linear pipeline, Sentinel uses Dynamic Task Delegation. If the Anomaly Detective finds a high-risk score, it doesn't just pass a flag; it triggers a "Sub-Crew" task. The KYC Researcher is summoned to perform a deep-dive into the beneficiary’s history using Vertex AI Extensions to query external AML watchlists in real-time.</p>
+            
+            <h4>The "Human-in-the-Loop" (HITL) Guardrail</h4>
+            <p>In banking, 100% autonomy is a regulatory risk. We implement a Self-Correction Loop where .</p>
+            <ul>
+                <li><strong>Agent Critique:</strong> Before a SAR is finalized, a "Compliance Auditor Agent" (using a stricter, zero-temperature Gemini model) reviews the narrative against a "Policy-as-Code" vector database.</li>
+                <li><strong>Escalation Trigger:</strong> If the confidence score of the swarm falls below 85%, the system automatically generates a "Case Brief" for a human investigator, rather than making an autonomous decision.</li>
+            </ul>
 
-            <h4>Agent Swarm Roles</h4>
-            <table style="width:100%; border-collapse: collapse; margin: 20px 0;">
-                <thead>
-                    <tr style="background-color: #007bff; color: white;"><th>Agent</th><th>Model</th><th>Responsibility</th><th>Key Tools</th></tr>
-                </thead>
-                <tbody>
-                    <tr><td>Intake Agent</td><td>Gemini 1.5 Flash</td><td>Triage & entity extraction</td><td>Pub/Sub, Dataflow</td></tr>
-                    <tr><td>Investigator</td><td>Gemini 1.5 Pro</td><td>Deep history correlation</td><td>BigQuery, Vertex Search</td></tr>
-                    <tr><td>Screener</td><td>Mixtral 8x7B</td><td>Watchlist/PEP screening</td><td>Dow Jones/Refinitiv APIs</td></tr>
-                    <tr><td>Auditor</td><td>Llama 3</td><td>Policy-as-Code validation</td><td>Internal Wiki</td></tr>
-                    <tr><td>Reporter</td><td>Mixtral 8x7B</td><td>SAR narrative drafting</td><td>GCS storage</td></tr>
-                </tbody>
-            </table>
+            <h4>3. Deterministic Backbone with Agentic Flexibility</h4>
+            <p>To satisfy the EA (Enterprise Architecture) requirement for auditability, the swarm operates within a LangGraph-based State Machine.</p>
+            <ul>
+                   <li><strong>Stateful Memory:</strong> Every "thought" and "tool call" is logged as a JSON artifact in BigQuery, providing a 100% transparent audit trail of why an agent made a specific recommendation.</li>
+                 <li><strong>Event-Driven Execution:</strong> Agents are hosted on Cloud Run, scaling to zero when idle and bursting to handle spikes during high-volume periods (e.g., global market volatility).</li>
+            </ul>
 
-            <h4>Workflow & Safety</h4>
-            <p>Hybrid sequential-parallel execution | Conditional escalation | Evaluator-optimizer loop | Model Armor PII/jailbreak protection | HITL final approval with confidence scoring.</p>
+            <h4>Key Performance Indicators (KPI) Realized</h4>
+            <ul>
+                 <li><strong>Reduced Cognitive Load:</strong> By delegating data gathering to agents, human analysts spend 0% of their time on data retrieval and 100% on high-value risk judgment.</li>
+                 <li><strong>SAR Quality Consistency:</strong> Using Gemini's long-context window (2M tokens), the Narrative Architect can ingest months of transaction history to find patterns that a human investigator might miss, leading to the 85% faster generation mentioned in our strategy.</li>
+            </ul>
+           
+            <h4>Agent Swarm Capability & Governance Matrix</h4>
+            <p>This matrix defines the specific "Persona" of each agent, their underlying GCP-powered toolkit, and the "Success Guardrails" that keep them within regulatory bounds.</p>
 
-            <details>
-                <summary>Agent System Architecture Diagrams</summary>
-                <ul>
-                    <li>Agent Interaction Sequence Diagram (TOGAF-style)</li>
-                    <li>State Machine Diagram (LangGraph loop-back logic)</li>
-                    <li>Security Boundary Diagram (VPC-SC perimeter)</li>
-                </ul>
-            </details>
+            <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
+            <thead>
+            <tr style="
+            background-color: #4169E1;
+            color: white;
+            font-weight: bold; ">
+            <th style="
+                padding: 12px;
+                text-align: left;
+                border: 1px solid #ddd;
+            ">Agent Persona</th>
+            <th style="
+                padding: 12px;
+                text-align: left;
+                border: 1px solid #ddd;
+            ">Cognitive Engine</th>
+            <th style="
+                padding: 12px;
+                text-align: left;
+                border: 1px solid #ddd;
+            ">Tooling / GCP Integration</th>
+            <th style="
+                padding: 12px;
+                text-align: left;
+                border: 1px solid #ddd;
+            ">Governance Guardrail</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr style="background-color: #f9f9f9;">
+            <td style="
+                padding: 12px;
+                border: 1px solid #ddd;
+                vertical-align: top;
+            "><strong>The Triage Supervisor</strong></td>
+            <td style="
+                padding: 12px;
+                border: 1px solid #ddd;
+                vertical-align: top;
+            ">Gemini 1.5 Pro</td>
+            <td style="
+                padding: 12px;
+                border: 1px solid #ddd;
+                vertical-align: top;
+            ">Vertex AI Orchestration, Pub/Sub Trigger</td>
+            <td style="
+                padding: 12px;
+                border: 1px solid #ddd;
+                vertical-align: top;
+            ">Zero-Draft Policy: Cannot finalize reports; only routes and delegates.</td>
+        </tr>
+        <tr style="background-color: #ffffff;">
+            <td style="
+                padding: 12px;
+                border: 1px solid #ddd;
+                vertical-align: top;
+            "><strong>The Anomaly Detective</strong></td>
+            <td style="
+                padding: 12px;
+                border: 1px solid #ddd;
+                vertical-align: top;
+            ">BigQuery ML (XGBoost)</td>
+            <td style="
+                padding: 12px;
+                border: 1px solid #ddd;
+                vertical-align: top;
+            ">BQML Anomaly Detection, Cloud Dataflow</td>
+            <td style="
+                padding: 12px;
+                border: 1px solid #ddd;
+                vertical-align: top;
+            ">Precision Threshold: Must provide a confidence score > 0.7 to trigger the swarm.</td>
+        </tr>
+        <tr style="background-color: #f9f9f9;">
+            <td style="
+                padding: 12px;
+                border: 1px solid #ddd;
+                vertical-align: top;
+            "><strong>The Entity Investigator</strong></td>
+            <td style="
+                padding: 12px;
+                border: 1px solid #ddd;
+                vertical-align: top;
+            ">Gemini 1.5 Flash</td>
+            <td style="
+                padding: 12px;
+                border: 1px solid #ddd;
+                vertical-align: top;
+            ">Vertex AI Search, Google Search API, Spanner (Graph)</td>
+            <td style="
+                padding: 12px;
+                border: 1px solid #ddd;
+                vertical-align: top;
+            ">PII Masking: Mandatory call to Sensitive Data Protection (DLP) before processing data.</td>
+        </tr>
+        <tr style="background-color: #ffffff;">
+            <td style="
+                padding: 12px;
+                border: 1px solid #ddd;
+                vertical-align: top;
+            "><strong>The SAR Narrative Architect</strong></td>
+            <td style="
+                padding: 12px;
+                border: 1px solid #ddd;
+                vertical-align: top;
+            ">Gemini 1.5 Pro (Long Context)</td>
+            <td style="
+                padding: 12px;
+                border: 1px solid #ddd;
+                vertical-align: top;
+            ">Cloud Storage (Historical SARs), Vertex RAG</td>
+            <td style="
+                padding: 12px;
+                border: 1px solid #ddd;
+                vertical-align: top;
+            ">Format Lock: Restricted to FinCEN-compliant XML/PDF schemas.</td>
+        </tr>
+        <tr style="background-color: #f9f9f9;">
+            <td style="
+                padding: 12px;
+                border: 1px solid #ddd;
+                vertical-align: top;
+            "><strong>The Compliance Auditor</strong></td>
+            <td style="
+                padding: 12px;
+                border: 1px solid #ddd;
+                vertical-align: top;
+            ">Gemma 2 (Fine-tuned)</td>
+            <td style="
+                padding: 12px;
+                border: 1px solid #ddd;
+                vertical-align: top;
+            ">Policy-as-Code (YAML) in Secret Manager</td>
+            <td style="
+                padding: 12px;
+                border: 1px solid #ddd;
+                vertical-align: top;
+            ">Adversarial Check: Must find at least one "Critical Weakness" or confirm "No Conflicts."</td>
+        </tr>
+    </tbody>
+</table>
+<details class="collapsible-section">
+    <summary>
+        <h4 class="collapsible-title">Technical Diagrams</h4>
+    </summary>
+    <div class="collapsible-content">
+        <h5>1. The Agentic Workflow (State Machine) Diagram</h5>
+        <p>In an enterprise setting, "Agent Swarms" can become chaotic. You need a diagram that shows the Control Flow. This proves you aren't just "letting the AI run wild," but are using a structured framework like LangGraph or CrewAI to manage states.</p>
+        <p><strong>What it shows:</strong> Nodes representing agents (Triage, Researcher, Auditor) and edges representing the "if/then" logic of the handoffs.</p>
+        <p><strong>Why it's for EA:</strong> It demonstrates Auditability and Governance—proving you can visualize exactly where a decision might go wrong.</p>
+
+        <h5>2. The Hierarchical "Supervisor" Pattern</h5>
+        <p>This is a high-level conceptual diagram. Instead of a "mesh" where every agent talks to everyone (which is expensive and noisy), you show a Supervisor Agent at the top.</p>
+        <p><strong>What it shows:</strong> The Gemini 1.5 Pro Supervisor receiving the task and delegating sub-tasks to "Worker" agents (running on Gemini Flash or Open Source LLMs).</p>
+        <p><strong>Why it's for Leaders:</strong> It demonstrates Cost Optimization (Inference-to-Value) and architectural hierarchy.</p>
+
+        <h5>3. The Tool-Use (Reasoning) Sequence Diagram</h5>
+        <p>As an MLE Leader, you need to show how an agent thinks. This is a sequence diagram that tracks the "ReAct" (Reasoning + Acting) loop.</p>
+        <p><strong>What it shows:</strong> 1. Agent receives a prompt. 2. Agent decides to call a tool (e.g., get_transaction_history). 3. Tool returns data from BigQuery. 4. Agent synthesizes a response.</p>
+        <p><strong>Why it's for GCP Architects:</strong> It highlights the integration with GCP-native tools like Vertex AI Tool Use (Function Calling).</p>
+
+        <h5>4. The Human-in-the-Loop (HITL) & Feedback Loop</h5>
+        <p>Banks will never approve a 100% autonomous system for SAR (Suspicious Activity Report) filing. You need a diagram showing the "Human-in-the-Loop" checkpoint.</p>
+        <p><strong>What it shows:</strong> The "Confidence Score" gateway. If Score > 0.9, auto-draft; if Score < 0.9, route to a Cloud Run hosted UI for human review.</p>
+        <p><strong>Why it's for SAFe/EA:</strong> It addresses Risk Management and shows how the AI system integrates with existing human operations.</p>
+
+        <p style="text-align: center; color: #666; font-style: italic; margin-top: 40px;">
+            Diagrams coming soon — built with C4 Model notation and Mermaid.js for developer + architect clarity.
+        </p>
+    </div>
+</details>
         </div>
 
         <div class="section">
