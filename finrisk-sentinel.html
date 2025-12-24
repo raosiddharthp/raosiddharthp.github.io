@@ -247,19 +247,51 @@
             <p><strong>Phase D (Technology):</strong> Selected a GCP Event-Driven Architecture. Use of Cloud Run for agent execution ensures horizontal scalability during transaction peaks (e.g., Black Friday).</p>
             <p><strong>Phase G (Implementation Governance):</strong> Integrated GCP Sensitive Data Protection (formerly DLP API) to redact PII (Personally Identifiable Information) before data reaches the LLM, ensuring GDPR/CCPA compliance.</p>
         
-            <h4 class="collapsible-header">
-                Business Alignment Diagram
-            </h4>
-            <div class="collapsible-body">
-                <ul>
-                    <li><strong>Strategy Map (Value Stream)</strong> – Transaction to SAR flow with AI acceleration points</li>
-                    <li><strong>Business Capability Map (L1/L2)</strong> – Filling real-time pattern recognition gap</li>
-                    <li><strong>Target State Conceptual Architecture</strong> – Gen AI App → Agent → Platform → GCP hierarchy</li>
-                </ul>
-                <p style="text-align: center; color: #666; font-style: italic; margin-top: 30px;">
-                    Diagrams coming soon.
-                </p>
-            </div>
+            <details style="margin: 40px 0; padding: 20px; background: #f8f9fa; border-radius: 12px; border: 1px solid #ddd;">
+                <summary style="font-size: 1.3em; font-weight: bold; cursor: pointer; color: #00008b;">Business Alignment Diagrams</summary>
+                <div style="margin-top: 20px;">
+                    <p>
+                        The FinRisk Sentinel solution is developed using the TOGAF Architecture Development Method to ensure strategic alignment, complianceg-term coherence across business, data, application, and technology domains.
+                    </p>
+    
+                    <ul style="font-size: 1.05em; line-height: 1.7;">
+                        <li><strong>The Value Stream Map (Operational & Development)</strong> — The steps, lead time, and "Value-Add" time of an investigation. It identifies bottlenecks that GenAI is specifically designed to solve.</li>
+                        <li><strong>TOGAF TRM (Technical Reference Model) & GCP Mapping</strong> — A layered view: Data Layer (BigQuery), Compute Layer (Cloud Run), Intelligence Layer (Vertex AI/Gemini), and Orchestration Layer (CrewAI/LangGraph).</li>
+                        <li><strong>The C4 Model (Level 1 & Level 2)</strong> — Shows FinRisk Sentinel interacting with external banking cores, human investigators, and regulatory bodies. Breaks down the "Swarm" into specific containers—the Agent Orchestrator, the Vector Database, and the Pub/Sub event bus..</li>
+                        <li><strong>"Big Picture" Portfolio Integration</strong> — Selected GCP as the target platform, justifying Vertex AI, Pub/Sub, and Cloud Run over alternatives using formal Architectural Decision Records (ADRs).</li>
+                        <li><strong>Sequence Diagram: The Agentic Reasoning Chain</strong> — The exact handshake between the Triage Agent, the Data Retrieval Agent, and the Compliance Auditor Agent. It explains the "Black Box" of AI by showing the deterministic logic/guardrails surrounding the probabilistic LLM..</li>
+                        <l
+                    
+    
+                    <div style="text-align: center; margin: 40px 0;">
+                        <img src="docs/greenops-adm-cycle.png" alt="GreenOps TOGAF ADM Cycle" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px;">
+                        <p><em>Figure: Value Stream Map</em></p>
+                    </div>
+    
+                    <div style="text-align: center; margin: 40px 0;">
+                        <img src="docs/greenops-capability-map.png" alt="Business Capability Map" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px;">
+                        <p><em>Figure: Technical Reference Model</em></p>
+                    </div>
+    
+                    <div style="text-align: center; margin: 40px 0;">
+                        <img src="docs/greenops-c4-model.png" alt="GreenOps C4 Context & Container Diagram" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px;">
+                        <p><em>Figure: C4 Model - Context and Container Views</em></p>
+                    </div>
+
+                    <div style="text-align: center; margin: 40px 0;">
+                        <img src="docs/greenops-c4-model.png" alt="GreenOps C4 Context & Container Diagram" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px;">
+                        <p><em>Figure: Portfolio Integration</em></p>
+                    </div>
+
+                    <div style="text-align: center; margin: 40px 0;">
+                        <img src="docs/greenops-c4-model.png" alt="GreenOps C4 Context & Container Diagram" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px;">
+                        <p><em>Figure: Agentic Reasoning Chain</em></p>
+                    </div>
+    
+                    <p>
+                        These artefacts were used to secure executive sponsorship and ensure the technical implementation remained aligned with enterprise strategy throughout the project lifecycle.
+                    </p>
+                </div>
             </details>
         
             <h4>6. Competitive Advantage: The "GCP + GenAI" Moat</h4>
