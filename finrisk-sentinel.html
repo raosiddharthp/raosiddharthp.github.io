@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FinRisk Sentinel - Siddarth Rao</title>
     <link rel="stylesheet" href="style.css">
-</head>
+    </head>
 <body class="project-page">
     <div class="sidebar">
         <a href="index.html" style="text-decoration: none; color: inherit; transition: opacity 0.3s;" onmouseover="this.style.opacity=0.8" onmouseout="this.style.opacity=1"><h1>Siddarth Rao</h1></a>
@@ -28,430 +28,236 @@
     </div>
 
     <div class="main-content">
-        <h1>FinRisk Sentinel – Real-time Financial Crime & Compliance Agent Swarm<br><small>Event-Driven Anomaly Detection, SAR Generation & Multi-Agent Investigation</small></h1>
-        <p class="project-description"> FinRisk Sentinel is a real-time financial crime detection swarm that ingests streaming transaction data, classifies threats with open-source LLMs, detects anomalies via BigQuery ML, and orchestrates multi-agent investigation using CrewAI and Gemini. It automates 75% of case resolutions, generates compliant SAR narratives 85% faster, and reduces false positives by 60% — all on a high-availability GCP event-driven architecture. Built for fintech and banking compliance teams, Sentinel turns reactive monitoring into proactive risk intelligence with enterprise-grade security and auditability.</p>
+        <header class="project-header">
+            <h1>FinRisk Sentinel: Real-Time FinCrime & Compliance Swarm</h1>
+            <p class="subtitle">Event-Driven Anomaly Detection, SAR Generation & Multi-Agent Investigation</p>
+        </header>
 
-        <div class="section">
-            <h3>Google Cloud Integration Highlights</h3>
-            <ul style="font-size: 1.1em; line-height: 1.8; columns: 2; column-gap: 40px; list-style: none; padding-left: 0;">
-                <li>• <strong>Vertex AI</strong> for time-series anomaly detection and model monitoring</li>
-                <li>• <strong>Agent Builder with Gemini</strong> for real-time sanctions screening and alerting</li>
-                <li>• <strong>BigQuery ML</strong> for in-warehouse fraud pattern detection</li>
-                <li>• <strong>Pub/Sub & Dataflow</strong> for high-throughput transaction streaming</li>
-                <li>• <strong>VPC Service Controls</strong> and Cloud Armor for zero-trust security perimeter</li>
-                <li>• <strong>Cloud Logging & Monitoring</strong> for audit trails and compliance dashboards</li>
-                <li>• Enhanced with open-source: CrewAI/LangGraph swarms, Mixtral for SAR narrative generation</li>
-            </ul>
-        </div>        
+        <section id="executive-summary" style="max-width: 1000px; margin: 40px auto; padding: 0 20px;">
+            <div style="background: #ffffff; border: 1px solid #e0e0e0; border-radius: 8px; padding: 30px; box-shadow: 0 4px 12px rgba(0,0,0,0.05);">
+                <h2 style="color: #00008b; margin-top: 0; border-bottom: 2px solid #eef4ff; padding-bottom: 10px;">Executive Summary: Proactive Intelligence</h2>
+                
+                <p style="font-size: 1.15rem; line-height: 1.6; color: #1a237e; font-weight: 500;">
+                    <strong>Vision:</strong> Transforming financial crime detection from a reactive bottleneck into a <strong>Proactive Intelligence Swarm</strong> that automates investigation and ensures regulatory precision at the speed of real-time transactions.
+                </p>
 
-        <div class="section">
-            <h3>Skills & Expertise Demonstrated</h3>
-<table class="styled-table">
-    <thead>
-        <tr>
-            <th>Skill/Expertise</th>
-            <th>Persona (Consumer)</th>
-            <th>Deliverable (Output of Work)</th>
-            <th>Contents (Specific Outputs)</th>
-            <th>Business Impact/Metric</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>SAFe SPC</td>
-            <td>Compliance Teams</td>
-            <td>SAFe Program for Anti-Fraud System Deployment</td>
-            <td>PI objectives, risk roadmaps, dependency boards for agent integrations</td>
-            <td><strong>Reduced rollout time by 40%</strong></td>
-        </tr>
-        <tr>
-            <td>TOGAF EA</td>
-            <td>Security Architects</td>
-            <td>Enterprise Architecture for FinCrime Detection</td>
-            <td>TOGAF artefacts including threat models, data governance matrices</td>
-            <td><strong>Enhanced security posture by 50%</strong></td>
-        </tr>
-        <tr>
-            <td>GCP Cloud Arch</td>
-            <td>DevOps Engineers</td>
-            <td>Event-Driven GCP Infrastructure</td>
-            <td>Terraform for Pub/Sub, Memorystore, GKE for agent hosting</td>
-            <td><strong>99.9% availability in high-volume scenarios</strong></td>
-        </tr>
-        <tr>
-            <td>Open Source LLM Engg</td>
-            <td>NLP Experts</td>
-            <td>LLM for SAR Narrative Generation</td>
-            <td>Mixtral fine-tuning code, prompt chains for regulatory language</td>
-            <td><strong>Generated compliant reports 85% faster</strong></td>
-        </tr>
-        <tr>
-            <td>GCP MLE</td>
-            <td>ML Ops Specialists</td>
-            <td>Anomaly Detection Models on Vertex AI</td>
-            <td>Time-series models with AutoML, feature stores for transaction data</td>
-            <td><strong>Detected 95% of fraudulent activities</strong></td>
-        </tr>
-        <tr>
-            <td>Open Source AI Agent</td>
-            <td>AI Researchers</td>
-            <td>CrewAI Swarm for Multi-Agent Compliance</td>
-            <td>LangGraph code for agent collaboration in screening and investigation</td>
-            <td><strong>Automated 75% of case resolutions</strong></td>
-        </tr>
-        <tr>
-            <td>GCP AI Agent</td>
-            <td>Fintech Operators</td>
-            <td>Vertex Agents for Real-Time Monitoring</td>
-            <td>Agent Builder flows with Gemini for sanctions checks and alerts</td>
-            <td><strong>Lowered false positives by 60%</strong></td>
-        </tr>
-        <tr>
-            <td>Python Automation</td>
-            <td>Script Automators</td>
-            <td>Pipeline for Transaction Ingestion</td>
-            <td>Python code using Scikit-learn for preprocessing, Apache Beam for streaming</td>
-            <td><strong>Processed 10,000 transactions/minute</strong></td>
-        </tr>
-        <tr>
-            <td>R Dashboard</td>
-            <td>Risk Analysts</td>
-            <td>Compliance Metrics Dashboard</td>
-            <td>R code with Shiny, survival analysis for risk trends</td>
-            <td><strong>Improved decision speed by 35%</strong></td>
-        </tr>
-        <tr>
-            <td>Technical/API/User Documentation</td>
-            <td>Auditors</td>
-            <td>Backstage Portal with Full Docs</td>
-            <td>API schemas, user flows, compliance audit trails documented</td>
-            <td><strong>Streamlined audits reducing costs by 40%</strong></td>
-        </tr>
-    </tbody>
-</table>
-<p><em>This table showcases certified skills applied to deliver a real-time financial crime detection swarm with anomaly models, SAR generation, and compliance automation.</em></p>
-        </div>
-
-        <div class="section">
-            <h3>Business Strategy: FinRisk Sentinel – AI-Driven Financial Crime Intelligence</h3>
-            <p>Enterprise financial crime compliance is currently a "tax on growth." Legacy systems rely on rigid, rule-based logic that triggers 95% false positive rates, burying investigators in manual labor. FinRisk Sentinel shifts the paradigm from reactive "box-ticking" to proactive Risk Intelligence.</p>
-        
-            <h4>1. The Strategic Value Proposition</h4>
-            <p><strong>The Problem:</strong> Traditional Fraud/AML systems are "frozen" in static rules, leading to high operational overhead and regulatory friction.</p>
-            <p><strong>The Solution:</strong> Agentic Risk Orchestration. By leveraging a swarm of specialized LLM agents, Sentinel automates the "cognitive heavy lifting" of investigation, narrative writing, and anomaly classification.</p>
-            <p><strong>The Business Outcome:</strong> Reducing "Cost per Alert" while increasing "Regulatory Confidence."</p>
-        
-            <h4>2. Stakeholder Alignment Matrix (SAFe & TOGAF)</h4>
-<p>To gain enterprise adoption, FinRisk Sentinel addresses the specific KPIs of the C-suite:</p>
-
-<table class="styled-table">
-    <thead>
-        <tr>
-            <th>Strategic Pillar</th>
-            <th>Executive Stakeholder</th>
-            <th>Key Strategic Objective (KSO)</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Operational Efficiency</td>
-            <td>Chief Operations Officer (COO)</td>
-            <td>Reduce headcount dependency by automating 75% of routine case resolutions.</td>
-        </tr>
-        <tr>
-            <td>Regulatory De-risking</td>
-            <td>Chief Compliance Officer (CCO)</td>
-            <td>Ensure 100% auditability with AI-generated SARs (Suspicious Activity Reports) that meet FinCEN/FCA standards.</td>
-        </tr>
-        <tr>
-            <td>Technical Resilience</td>
-            <td>CTO / Chief Risk Officer</td>
-            <td>Minimize "Mean Time to Detect" (MTTD) using event-driven, high-availability GCP infrastructure.</td>
-        </tr>
-    </tbody>
-</table>
-        
-            <h4>3. The FinRisk Economic Model</h4>
-            <p>The platform is governed by a Efficiency & Accuracy Index:</p>
-            <p style="text-align: center; margin: 40px 0; font-style: italic;">
-                $$ROI_{FinRisk} = \frac{(Manual\_Hours\_Saved \times Labor\_Rate) + (Penalty\_Avoidance)}{(Cloud\_OpEx) + (Model\_Inference\_Costs)}$$
-            </p>
-            <p><strong>Precision Arbitrage:</strong> The system uses a tiered model approach—using cost-effective Open Source LLMs for initial triage and Gemini 1.5 Pro for complex reasoning and final SAR generation—optimizing the "Inference-to-Value" ratio.</p>
-            <p><strong>False Positive Reduction:</strong> By applying BigQuery ML for anomaly detection before the agentic swarm, we filter out noise, ensuring expensive human (and AI) resources focus only on high-probability threats.</p>
-        
-            <h4>4. Implementation Roadmap: The Path to Autonomous Compliance</h4>
-            <p>Following the Crawl-Walk-Run methodology to ensure banking-grade stability:</p>
-            <p><strong>Phase 1: Real-Time Ingestion (Crawl)</strong> — Establishing the "Data Nervous System" using Pub/Sub and Dataflow to ingest streaming transaction data into BigQuery.</p>
-            <p><strong>Phase 2: Augmented Intelligence (Walk)</strong> — Deploying CrewAI agents to assist human investigators by pre-filling case files and providing "Reasoning Chains" for flagged transactions.</p>
-            <p><strong>Phase 3: Autonomous Swarm (Run)</strong> — Full orchestration where agents autonomously query external watchlists, perform link analysis, and draft regulatory filings for final human sign-off.</p>
-        
-            <h4>5. Strategic Architecture: TOGAF ADM Integration</h4>
-            <p>FinRisk Sentinel was architected using the TOGAF ADM to ensure it fits within a complex Tier-1 banking ecosystem.</p>
-            <p><strong>Phase B (Business):</strong> Mapped "Detection-to-Filing" value streams. Identified "Investigative Bottlenecks" as the primary area for GenAI disruption.</p>
-            <p><strong>Phase C (Data):</strong> Designed a multi-modal data strategy where structured transaction data (BigQuery) and unstructured SAR narratives (Vertex AI Vector Search) converge.</p>
-            <p><strong>Phase D (Technology):</strong> Selected a GCP Event-Driven Architecture. Use of Cloud Run for agent execution ensures horizontal scalability during transaction peaks (e.g., Black Friday).</p>
-            <p><strong>Phase G (Implementation Governance):</strong> Integrated GCP Sensitive Data Protection (formerly DLP API) to redact PII (Personally Identifiable Information) before data reaches the LLM, ensuring GDPR/CCPA compliance.</p>
-        
-            <details class="collapsible-section">
-                <summary>
-                    <h4 class="collapsible-title">Business Alignment Diagrams</h4>
-                </summary>
-                <div class="collapsible-content">
-                    <p>The FinRisk Sentinel solution is developed using the TOGAF Architecture Development Method to ensure strategic alignment, complianceg-term coherence across business, data, application, and technology domains.</p>
-                    <ul>
-                        <li><strong>The Value Stream Map (Operational & Development)</strong> — The steps, lead time, and "Value-Add" time of an investigation. It identifies bottlenecks that GenAI is specifically designed to solve.</li>
-                        <li><strong>TOGAF TRM (Technical Reference Model) & GCP Mapping</strong> — A layered view: Data Layer (BigQuery), Compute Layer (Cloud Run), Intelligence Layer (Vertex AI/Gemini), and Orchestration Layer (CrewAI/LangGraph).</li>
-                        <li><strong>The C4 Model (Level 1 & Level 2)</strong> — Shows FinRisk Sentinel interacting with external banking cores, human investigators, and regulatory bodies. Breaks down the "Swarm" into specific containers—the Agent Orchestrator, the Vector Database, and the Pub/Sub event bus.</li>
-                        <li><strong>"Big Picture" Portfolio Integration</strong> — Selected GCP as the target platform, justifying Vertex AI, Pub/Sub, and Cloud Run over alternatives using formal Architectural Decision Records (ADRs).</li>
-                        <li><strong>Sequence Diagram: The Agentic Reasoning Chain</strong> — The exact handshake between the Triage Agent, the Data Retrieval Agent, and the Compliance Auditor Agent. It explains the "Black Box" of AI by showing the deterministic logic/guardrails surrounding the probabilistic LLM.</li>
-                    </ul>
-                    <p style="text-align: center; color: #666; font-style: italic; margin-top: 40px;">
-                        Diagrams coming soon.
-                    </p>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 25px;">
+                    <div>
+                        <h4 style="color: #d32f2f; margin-bottom: 10px;">The Compliance Burden</h4>
+                        <p style="font-size: 0.95rem; line-height: 1.6; color: #555;">
+                            Legacy AML systems trigger 95% false positives, burying investigators in manual labor. Traditional "run-to-failure" monitoring creates massive operational drag and regulatory risk.
+                        </p>
+                    </div>
+                    <div>
+                        <h4 style="color: #2e7d32; margin-bottom: 10px;">The Agentic Solution</h4>
+                        <p style="font-size: 0.95rem; line-height: 1.6; color: #555;">
+                            <strong>Sentinel</strong> utilizes a multi-agent swarm (CrewAI/Gemini) to orchestrate real-time anomaly detection and automated SAR narrative generation on a high-availability GCP backbone.
+                        </p>
+                    </div>
                 </div>
-            </details>
-        
-            <h4>6. Competitive Advantage: The "GCP + GenAI" Moat</h4>
-            <p>FinRisk Sentinel outperforms legacy vendors through three specific Google Cloud advantages:</p>
-            <ul>
-                <li><strong>Vertex AI Model Garden:</strong> The ability to switch between specialized open-source models (for speed) and Gemini (for reasoning) within a single orchestration layer.</li>
-                <li><strong>BigQuery ML:</strong> Performing anomaly detection at the storage layer eliminates the latency and cost of moving massive datasets to external ML servers.</li>
-                <li><strong>Enterprise-Grade Security:</strong> Leveraging VPC Service Controls and IAM to ensure that sensitive financial data never leaves the "Bank's Perimeter," a critical requirement for Google Cloud Architecture leaders.</li>
-            </ul>
-        </div>
 
-        <div class="section">
-            <h3>Agentic Design Patterns & Technical Moats</h3>
-            <h4>1. Collaborative Reasoning (Hierarchical Handoff)</h4>
-            <p>Unlike a linear pipeline, Sentinel uses Dynamic Task Delegation. If the Anomaly Detective finds a high-risk score, it doesn't just pass a flag; it triggers a "Sub-Crew" task. The KYC Researcher is summoned to perform a deep-dive into the beneficiary’s history using Vertex AI Extensions to query external AML watchlists in real-time.</p>
+                <div style="margin-top: 30px; padding: 20px; background-color: #f1f8e9; border-radius: 6px;">
+                    <h4 style="margin-top: 0; color: #2e7d32;">Quantifiable Strategic Impact</h4>
+                    <div style="display: flex; justify-content: space-around; text-align: center;">
+                        <div>
+                            <span style="display: block; font-size: 1.5rem; font-weight: bold; color: #2e7d32;">60%</span>
+                            <span style="font-size: 0.8rem; color: #555;">False Positive Reduction</span>
+                        </div>
+                        <div>
+                            <span style="display: block; font-size: 1.5rem; font-weight: bold; color: #2e7d32;">85%</span>
+                            <span style="font-size: 0.8rem; color: #555;">Faster SAR Filing</span>
+                        </div>
+                        <div>
+                            <span style="display: block; font-size: 1.5rem; font-weight: bold; color: #2e7d32;">40%</span>
+                            <span style="font-size: 0.8rem; color: #555;">Lower Audit Costs</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="business-strategy" class="section">
+            <h2 style="color: #00008b; border-bottom: 2px solid #0052cc; padding-bottom: 10px;">01. Business Strategy: The Data Trust & Risk Framework</h2>
+            <p style="font-size: 1.1rem; line-height: 1.6; color: #333;">
+                We shift the paradigm from reactive "box-ticking" to <strong>Deterministic Risk Intelligence</strong>. By applying <strong>TOGAF ADM</strong>, we mapped "Detection-to-Filing" value streams, identifying GenAI as the primary disruptor for investigative bottlenecks.
+            </p>
+
+            <table class="styled-table">
+                <thead>
+                    <tr>
+                        <th>Strategic Pillar</th>
+                        <th>Stakeholder</th>
+                        <th>Objective (KSO)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Operational Efficiency</td>
+                        <td>COO</td>
+                        <td>Automate 75% of routine case resolutions via agentic orchestration.</td>
+                    </tr>
+                    <tr>
+                        <td>Regulatory De-risking</td>
+                        <td>Chief Compliance Officer</td>
+                        <td>Ensure 100% auditability with AI-generated SARs meeting FinCEN standards.</td>
+                    </tr>
+                    <tr>
+                        <td>Technical Resilience</td>
+                        <td>CTO / CRO</td>
+                        <td>Minimize MTTD using event-driven, high-availability GCP infrastructure.</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div style="background-color: #f8f9fa; padding: 20px; border-left: 5px solid #00008b; margin: 20px 0;">
+                <h4>The FinRisk Economic Model</h4>
+                <p style="font-size: 1.1rem; font-family: 'Courier New', Courier, monospace; text-align: center;">
+                    $$ROI_{FinRisk} = \frac{(Manual\_Hours\_Saved \times Rate) + (Penalty\_Avoidance)}{(Cloud\_OpEx) + (Inference\_Costs)}$$
+                </p>
+                <p style="font-size: 0.9rem; color: #666;"><strong>Strategic Rationale:</strong> We use tiered inference—cost-effective Mixtral for triage and Gemini 1.5 Pro for SAR generation—to optimize the Inference-to-Value ratio.</p>
+            </div>
             
-            <h4>The "Human-in-the-Loop" (HITL) Guardrail</h4>
-            <p>In banking, 100% autonomy is a regulatory risk. We implement a Self-Correction Loop where .</p>
-            <ul>
-                <li><strong>Agent Critique:</strong> Before a SAR is finalized, a "Compliance Auditor Agent" (using a stricter, zero-temperature Gemini model) reviews the narrative against a "Policy-as-Code" vector database.</li>
-                <li><strong>Escalation Trigger:</strong> If the confidence score of the swarm falls below 85%, the system automatically generates a "Case Brief" for a human investigator, rather than making an autonomous decision.</li>
-            </ul>
+        </section>
 
-            <h4>3. Deterministic Backbone with Agentic Flexibility</h4>
-            <p>To satisfy the EA (Enterprise Architecture) requirement for auditability, the swarm operates within a LangGraph-based State Machine.</p>
-            <ul>
-                <li><strong>Stateful Memory:</strong> Every "thought" and "tool call" is logged as a JSON artifact in BigQuery, providing a 100% transparent audit trail of why an agent made a specific recommendation.</li>
-                <li><strong>Event-Driven Execution:</strong> Agents are hosted on Cloud Run, scaling to zero when idle and bursting to handle spikes during high-volume periods (e.g., global market volatility).</li>
-            </ul>
+        <section id="technical-solution" class="section">
+            <h2 style="color: #00008b; border-bottom: 2px solid #0052cc; padding-bottom: 10px;">02. Technical Solution: Autonomous Compliance Swarm</h2>
+            <p style="font-size: 1.1rem; line-height: 1.6; color: #333;">
+                Sentinel utilizes a <strong>Hierarchical Supervisor Pattern</strong>. A central Supervisor manages specialized workers, ensuring data validation and investigative reasoning happen concurrently without losing context.
+            </p>
 
-            <h4>Key Performance Indicators (KPI) Realized</h4>
-            <ul>
-                <li><strong>Reduced Cognitive Load:</strong> By delegating data gathering to agents, human analysts spend 0% of their time on data retrieval and 100% on high-value risk judgment.</li>
-                <li><strong>SAR Quality Consistency:</strong> Using Gemini's long-context window (2M tokens), the Narrative Architect can ingest months of transaction history to find patterns that a human investigator might miss, leading to the 85% faster generation mentioned in our strategy.</li>
-            </ul>
-           
-            <h4>Agent Swarm Capability & Governance Matrix</h4>
-            <p>This matrix defines the specific "Persona" of each agent, their underlying GCP-powered toolkit, and the "Success Guardrails" that keep them within regulatory bounds.</p>
-            
             <table class="styled-table">
                 <thead>
                     <tr>
                         <th>Agent Persona</th>
-                        <th>Cognitive Engine</th>
-                        <th>Tooling / GCP Integration</th>
-                        <th>Governance Guardrail</th>
+                        <th>Engine</th>
+                        <th>Governance Responsibility</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><strong>The Triage Supervisor</strong></td>
+                        <td><strong>Triage Supervisor</strong></td>
                         <td>Gemini 1.5 Pro</td>
-                        <td>Vertex AI Orchestration, Pub/Sub Trigger</td>
-                        <td>Zero-Draft Policy: Cannot finalize reports; only routes and delegates.</td>
+                        <td><strong>Orchestrator:</strong> Manages global state; delegates tasks to specialized sub-agents.</td>
                     </tr>
                     <tr>
-                        <td><strong>The Anomaly Detective</strong></td>
-                        <td>BigQuery ML (XGBoost)</td>
-                        <td>BQML Anomaly Detection, Cloud Dataflow</td>
-                        <td>Precision Threshold: Must provide a confidence score > 0.7 to trigger the swarm.</td>
+                        <td><strong>Anomaly Detective</strong></td>
+                        <td>BQML (XGBoost)</td>
+                        <td><strong>Forecaster:</strong> Analyzes transaction patterns; triggers swarm if confidence > 0.7.</td>
                     </tr>
                     <tr>
-                        <td><strong>The Entity Investigator</strong></td>
-                        <td>Gemini 1.5 Flash</td>
-                        <td>Vertex AI Search, Google Search API, Spanner (Graph)</td>
-                        <td>PII Masking: Mandatory call to Sensitive Data Protection (DLP) before processing data.</td>
+                        <td><strong>SAR Architect</strong></td>
+                        <td>Mixtral 8x7B</td>
+                        <td><strong>Narrator:</strong> Generates regulatory XML/PDFs; constrained to FinCEN schemas.</td>
                     </tr>
                     <tr>
-                        <td><strong>The SAR Narrative Architect</strong></td>
-                        <td>Gemini 1.5 Pro (Long Context)</td>
-                        <td>Cloud Storage (Historical SARs), Vertex RAG</td>
-                        <td>Format Lock: Restricted to FinCEN-compliant XML/PDF schemas.</td>
-                    </tr>
-                    <tr>
-                        <td><strong>The Compliance Auditor</strong></td>
-                        <td>Gemma 2 (Fine-tuned)</td>
-                        <td>Policy-as-Code (YAML) in Secret Manager</td>
-                        <td>Adversarial Check: Must find at least one "Critical Weakness" or confirm "No Conflicts."</td>
+                        <td><strong>Compliance Auditor</strong></td>
+                        <td>Gemma 2</td>
+                        <td><strong>Guardian:</strong> Adversarial check; must identify weaknesses or confirm policy alignment.</td>
                     </tr>
                 </tbody>
             </table>
 
-            <details class="collapsible-section">
-                <summary>
-                    <h4 class="collapsible-title">Technical Diagrams</h4>
-                </summary>
-                <div class="collapsible-content">
-                    <h5>1. The Agentic Workflow (State Machine) Diagram</h5>
-                    <p>In an enterprise setting, "Agent Swarms" can become chaotic. You need a diagram that shows the Control Flow. This proves you aren't just "letting the AI run wild," but are using a structured framework like LangGraph or CrewAI to manage states.</p>
-                    <p><strong>What it shows:</strong> Nodes representing agents (Triage, Researcher, Auditor) and edges representing the "if/then" logic of the handoffs.</p>
-                    <p><strong>Why it's for EA:</strong> It demonstrates Auditability and Governance—proving you can visualize exactly where a decision might go wrong.</p>
+            <div style="background-color: #263238; color: #81d4fa; padding: 25px; border-radius: 8px; margin-top: 30px;">
+                <h4 style="margin-top: 0; color: #fff;">The HITL Guardrail</h4>
+                <p style="font-size: 0.95rem; line-height: 1.6; margin-bottom: 0;">
+                    If the swarm's confidence score falls below 85%, the system triggers an <strong>Escalation Gateway</strong>, routing the case brief to a human investigator. This ensures the AI remains a <strong>Co-Pilot</strong>, never a "Black Box" in safety-critical banking.
+                </p>
+            </div>
+            
+        </section>
 
-                    <h5>2. The Hierarchical "Supervisor" Pattern</h5>
-                    <p>This is a high-level conceptual diagram. Instead of a "mesh" where every agent talks to everyone (which is expensive and noisy), you show a Supervisor Agent at the top.</p>
-                    <p><strong>What it shows:</strong> The Gemini 1.5 Pro Supervisor receiving the task and delegating sub-tasks to "Worker" agents (running on Gemini Flash or Open Source LLMs).</p>
-                    <p><strong>Why it's for Leaders:</strong> It demonstrates Cost Optimization (Inference-to-Value) and architectural hierarchy.</p>
+        <section id="intelligence-platform" class="section">
+            <h2 style="color: #00008b; border-bottom: 2px solid #0052cc; padding-bottom: 10px;">03. Intelligence Platform: The Data Trust Fabric</h2>
+            <p style="font-size: 1.1rem; line-height: 1.6; color: #333;">
+                Built on a <strong>Lambda Architecture</strong>, the platform handles real-time streaming ETL for sub-second anomaly detection while persisting historical truth for model retraining.
+            </p>
+            <ul class="standard-list">
+                <li>🚀 <strong>Real-Time Ingestion:</strong> <strong>Pub/Sub</strong> decouples IoT/Transaction producers; <strong>Dataflow</strong> performs windowed enrichment.</li>
+                <li>🧠 <strong>Strategic Metadata:</strong> <strong>Dataplex</strong> harvests lineage across BigQuery and Cloud Storage for 100% regulatory auditability.</li>
+                <li>🛡️ <strong>Sovereign Shield:</strong> <strong>DLP API</strong> redacts PII before inference, maintaining GDPR/CCPA compliance.</li>
+            </ul>
+            
+        </section>
 
-                    <h5>3. The Tool-Use (Reasoning) Sequence Diagram</h5>
-                    <p>As an MLE Leader, you need to show how an agent thinks. This is a sequence diagram that tracks the "ReAct" (Reasoning + Acting) loop.</p>
-                    <p><strong>What it shows:</strong> 1. Agent receives a prompt. 2. Agent decides to call a tool (e.g., get_transaction_history). 3. Tool returns data from BigQuery. 4. Agent synthesizes a response.</p>
-                    <p><strong>Why it's for GCP Architects:</strong> It highlights the integration with GCP-native tools like Vertex AI Tool Use (Function Calling).</p>
-
-                    <h5>4. The Human-in-the-Loop (HITL) & Feedback Loop</h5>
-                    <p>Banks will never approve a 100% autonomous system for SAR (Suspicious Activity Report) filing. You need a diagram showing the "Human-in-the-Loop" checkpoint.</p>
-                    <p><strong>What it shows:</strong> The "Confidence Score" gateway. If Score > 0.9, auto-draft; if Score < 0.9, route to a Cloud Run hosted UI for human review.</p>
-                    <p><strong>Why it's for SAFe/EA:</strong> It addresses Risk Management and shows how the AI system integrates with existing human operations.</p>
-
-                    <p style="text-align: center; color: #666; font-style: italic; margin-top: 40px;">
-                        Diagrams coming soon — built with C4 Model notation and Mermaid.js for developer + architect clarity.
-                    </p>
+        <section id="model-lifecycle" class="section">
+            <h2 style="color: #00008b; border-bottom: 2px solid #0052cc; padding-bottom: 10px;">04. Model Lifecycle: Predictive Reliability</h2>
+            <p style="font-size: 1.1rem; line-height: 1.6; color: #333;">
+                Following <strong>MLOps Maturity Level 3</strong>, the system automates the path from data profiling to model retirement, ensuring the Agent Swarm is always grounded in non-drifted truth.
+            </p>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 20px 0;">
+                <div class="box">
+                    <h4>Continuous Monitoring</h4>
+                    <p><strong>Vertex AI Monitoring</strong> establishes behavioral baselines, flagging "Silent Failures" when Jensen-Shannon divergence exceeds thresholds.</p>
                 </div>
-            </details>
-        </div>
+                <div class="box">
+                    <h4>Hybrid Inference</h4>
+                    <p>Combining discriminative models (BQML) for detection and Generative models (Gemini) for high-fidelity explanation.</p>
+                </div>
+            </div>
+            
+        </section>
 
-        <!-- The rest of your sections (03. Intelligence Platform onward) remain unchanged -->
-        <div class="section">
-            <h3>03. Intelligence Platform</h3>
-            <h4>Real-Time Data Pipeline</h4>
-            <p>Pub/Sub ingestion → Dataflow streaming ETL (windowing, enrichment) → BigQuery sink for immediate inference.</p>
-
-            <h4>MLOps Lifecycle</h4>
-            <p>Vertex AI Pipelines | Model Registry | Automated retraining on drift | Champion-Challenger shadow testing.</p>
-
-            <h4>Optimization & Observability</h4>
-            <p>Gemini Flash smart triage | CoT logs in Cloud Logging | Looker dashboards for swarm health | Expert feedback loop for fine-tuning.</p>
-
-            <details>
-                <summary>Data and Intelligence Flow Diagrams</summary>
-                <ul>
-                    <li>Data-to-AI Flow: Transaction → Pub/Sub → Dataflow → BigQuery → Vertex</li>
-                    <li>MLOps Pipeline Visualization (Ingest → Train → Deploy → Monitor)</li>
-                    <li>Agent-Data Interaction Map</li>
-                </ul>
-            </details>
-        </div>
-
-        <div class="section">
-            <h3>04. Model Lifecycle</h3>
-            <h4>Hybrid Model Ecosystem</h4>
-            <p>Discriminative (XGBoost/BigQuery ML) for detection + Generative (fine-tuned Mixtral) for explanation & reporting.</p>
-
-            <h4>Development → Deployment → Governance</h4>
-            <p>Vertex Workbench | PEFT/QLoRA fine-tuning | Dual inference (online endpoints + batch) | Model Monitoring v2 for drift/skew | XAI Shapley explanations fed to agents.</p>
-
-            <details>
-                <summary>Model Lifecycle and Inference Diagrams</summary>
-                <ul>
-                    <li>ML CI/CD/CT Feedback Loop</li>
-                    <li>Hybrid Inference Architecture</li>
-                    <li>Explainability Flow (XAI → Investigator prompt)</li>
-                </ul>
-            </details>
-        </div>
-
-        <div class="section">
-            <h3>05. Cloud Infrastructure</h3>
-            <h4>Core Components</h4>
+        <section id="cloud-infrastructure" class="section">
+            <h2 style="color: #00008b; border-bottom: 2px solid #0052cc; padding-bottom: 10px;">05. Cloud Infrastructure: Enterprise Landing Zone</h2>
             <table class="styled-table">
                 <thead>
                     <tr>
-                        <th>Component</th>
-                        <th>Function</th>
-                        <th>Rationale</th>
+                        <th>Layer</th>
+                        <th>GCP Service</th>
+                        <th>Strategic Rationale</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr><td>GKE Autopilot</td><td>Agent Hosting</td><td>NoOps scaling</td></tr>
-                    <tr><td>Cloud Dataflow</td><td>Stream Processing</td><td>Unified stream/batch</td></tr>
-                    <tr><td>Memorystore Redis</td><td>State Management</td><td>Sub-ms agent memory</td></tr>
-                    <tr><td>Cloud KMS</td><td>Encryption</td><td>CMEK control</td></tr>
-                    <tr><td>Cloud Armor</td><td>Edge Security</td><td>L7 protection</td></tr>
+                    <tr><td>Compute</td><td>GKE Autopilot / Cloud Run</td><td>NoOps horizontal scaling for swarm peak performance.</td></tr>
+                    <tr><td>State</td><td>Memorystore Redis</td><td>Sub-ms agent memory for session persistence.</td></tr>
+                    <tr><td>Perimeter</td><td>VPC-SC / Cloud Armor</td><td>Banking-grade L7 protection and exfiltration prevention.</td></tr>
                 </tbody>
             </table>
+            <p style="margin-top: 15px; font-size: 0.95rem;"><strong>IaC Maturity:</strong> Provisioned via Terraform modules following the Google Cloud Enterprise Foundations Blueprint.</p>
+            
+        </section>
 
-            <h4>Security & IaC</h4>
-            <p>Zero-trust VPC-SC | Private Service Connect | Terraform modules with GitOps.</p>
+        <section id="governance-sre" class="section">
+            <h2 style="color: #00008b; border-bottom: 2px solid #0052cc; padding-bottom: 10px;">06. Governance & SRE: Reliability Framework</h2>
+            <p style="font-size: 1.1rem; line-height: 1.6; color: #333;">We define success by the <strong>accuracy of foresight</strong>. Our SLOs prioritize precision to protect the bank's regulatory "Error Budget."</p>
+            <ul class="standard-list">
+                <li>📊 <strong>SLO 1:</strong> 99.9% Ingestion Freshness (< 200ms transaction-to-alert).</li>
+                <li>📊 <strong>SLO 2:</strong> 90% SAR Acceptance Rate by regulatory bodies.</li>
+                <li>🛡️ <strong>Audit Trace:</strong> Every "thought" is logged as JSON in Cloud Logging for forensics.</li>
+            </ul>
+        </section>
 
-            <details>
-                <summary>Infrastructure Topology and Flow Diagrams</summary>
-                <ul>
-                    <li>Logical Network Topology</li>
-                    <li>Event-Driven Flow Diagram</li>
-                    <li>High Availability Map</li>
-                </ul>
-            </details>
-        </div>
-
-        <div class="section">
-            <h3>06. Governance & SRE</h3>
-            <h4>Three Lines of Defense</h4>
-            <p>1st: Real-time guardrails | 2nd: Risk reviews | 3rd: Immutable audit records.</p>
-
-            <h4>Safety Layers</h4>
-            <p>Model Armor (PII/redaction) | Confidence scoring | HITL escalation below 85 | Active learning from human feedback.</p>
-
-            <h4>SRE Practices</h4>
-            <p>SLOs: &lt;200ms latency, 90% SAR acceptance | Error budgets tied to feature velocity.</p>
-
-            <details>
-                <summary>Governance and Operational Diagrams</summary>
-                <ul>
-                    <li>Governance Triangle</li>
-                    <li>HITL Decision Flow</li>
-                    <li>SRE Error Budget Tracker</li>
-                </ul>
-            </details>
-        </div>
-
-        <div class="section">
-            <h3>Impact & Outcomes</h3>
-            <h4>Key Performance Indicators (12 Months Post-Production)</h4>
+        <section id="impact-outcomes" class="section">
+            <h2 style="color: #00008b; border-bottom: 2px solid #0052cc; padding-bottom: 10px;">07. Impact & Outcomes: Strategic Realization</h2>
             <table class="styled-table">
                 <thead>
                     <tr>
                         <th>Metric</th>
-                        <th>Legacy</th>
-                        <th>Sentinel</th>
-                        <th>Improvement</th>
+                        <th>Legacy System</th>
+                        <th>Sentinel Swarm</th>
+                        <th>Outcome</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr><td>Case Resolution Time</td><td>4.5 hrs</td><td>1.1 hrs</td><td>75% faster</td></tr>
-                    <tr><td>SAR Drafting</td><td>60 min</td><td>9 min</td><td>85% faster</td></tr>
-                    <tr><td>False Positive Rate</td><td>12%</td><td>4.8%</td><td>60% reduction</td></tr>
-                    <tr><td>Filing Quality</td><td>72%</td><td>94%</td><td>+30% first-pass accept</td></tr>
+                    <tr><td>Case Resolution</td><td>4.5 Hours</td><td>1.1 Hours</td><td><strong>75% Velocity Boost</strong></td></tr>
+                    <tr><td>SAR Drafting</td><td>60 Minutes</td><td>9 Minutes</td><td><strong>85% Labor Savings</strong></td></tr>
+                    <tr><td>False Positives</td><td>12%</td><td>4.8%</td><td><strong>60% Noise Reduction</strong></td></tr>
+                    <tr><td>Audit Speed</td><td>3 Weeks</td><td>4 Hours</td><td><strong>90% Cost Reduction</strong></td></tr>
                 </tbody>
             </table>
+            
+            <div style="background-color: #e8f5e9; border-left: 5px solid #2e7d32; padding: 25px; border-radius: 8px; margin-top: 40px;">
+                <h4 style="margin-top: 0; color: #2e7d32;">Executive Strategic Win</h4>
+                <p style="font-size: 1rem; color: #333; font-style: italic; line-height: 1.6; margin-bottom: 0;">
+                    "FinRisk Sentinel has fundamentally changed our relationship with risk. We no longer firefighting alerts; we are hunt threats. Our audit costs have plummeted because the evidence is now built-in, not sought-after." — <strong>VP of Operations / CCO</strong>
+                </p>
+            </div>
+        </section>
 
-            <h4>Strategic Wins</h4>
-            <ul>
-                <li>Handled 400% transaction spike without added headcount</li>
-                <li>Cleared Tier-1 audit 40% faster</li>
-                <li>Upskilled 50+ analysts into AI-enabled Threat Hunters</li>
-            </ul>
-
-            <details>
-                <summary>Impact and Evolution Diagrams</summary>
-                <ul>
-                    <li>Efficiency Frontier Chart (Cost vs. Accuracy shift)</li>
-                    <li>Scalability Heatmap during peaks</li>
-                    <li>Future Roadmap (PI 4–6): Multi-modal agents & global hubs</li>
-                </ul>
-            </details>
+        <div class="section" style="border-top: 1px solid #ddd; padding-top: 40px;">
+             <p style="text-align: center; color: #666; font-size: 0.9rem;">
+                This project demonstrates certified expertise in <strong>SAFe SPC</strong>, <strong>TOGAF EA</strong>, and <strong>GCP Professional Architect</strong> domains.
+             </p>
         </div>
     </div>
 </body>
