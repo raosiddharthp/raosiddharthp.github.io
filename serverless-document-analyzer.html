@@ -280,6 +280,158 @@
             </details>
         </section>
 
+        <section id="analyzer-personas" style="max-width: 1000px; margin: 40px auto 40px 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; clear: both; display: block;">
+            <h3 style="color: #303f9f; margin-bottom: 20px; border-left: 5px solid #00acc1; padding-left: 15px; font-size: 1.5rem;">01a. Stakeholder Personas: Eliminating Unstructured Chaos</h3>
+            
+            <p style="font-size: 1.05rem; color: #555; margin-bottom: 25px; line-height: 1.6;">
+                The Serverless Document Analyzer acts as the "Optical Nerve" of the enterprise, converting raw unstructured data into high-fidelity signals for the downstream agentic ecosystem.
+            </p>
+        
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;">
+                <div style="background: white; border: 1px solid #e0e0e0; border-radius: 8px; padding: 25px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); border-top: 4px solid #303f9f;">
+                    <div style="display: flex; align-items: center; margin-bottom: 15px;">
+                        <div style="width: 50px; height: 50px; background: #303f9f; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; margin-right: 15px;">EL</div>
+                        <div>
+                            <h4 style="margin: 0; color: #1a237e;">Emma Larson</h4>
+                            <p style="margin: 0; font-size: 0.85rem; color: #666;">Operations Manager (40)</p>
+                        </div>
+                    </div>
+                    <p style="font-size: 0.9rem; line-height: 1.5; color: #333;">
+                        <strong>Goals:</strong> 90% automation; 95% error reduction; &lt;10s latency.<br><br>
+                        <strong>Pain Points:</strong> Manual PDF data entry; error-prone OCR; data silos.<br><br>
+                        <span style="color: #303f9f; font-weight: bold;">Value:</span> Cloud Run + Document AI extracts entities multimodally with zero operational overhead.
+                    </p>
+                </div>
+        
+                <div style="background: white; border: 1px solid #e0e0e0; border-radius: 8px; padding: 25px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); border-top: 4px solid #303f9f;">
+                    <div style="display: flex; align-items: center; margin-bottom: 15px;">
+                        <div style="width: 50px; height: 50px; background: #3f51b5; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; margin-right: 15px;">CR</div>
+                        <div>
+                            <h4 style="margin: 0; color: #1a237e;">Carlos Rivera</h4>
+                            <p style="margin: 0; font-size: 0.85rem; color: #666;">Integration Engineer (37)</p>
+                        </div>
+                    </div>
+                    <p style="font-size: 0.9rem; line-height: 1.5; color: #333;">
+                        <strong>Goals:</strong> Zero-server management; &lt;$0.01/doc cost; scale to 1k docs/min.<br><br>
+                        <strong>Pain Points:</strong> Provisioning delays; cold starts; high costs during traffic spikes.<br><br>
+                        <span style="color: #303f9f; font-weight: bold;">Value:</span> Concurrency-optimized Cloud Run with Pub/Sub triggers ensures &lt;500ms cold starts.
+                    </p>
+                </div>
+        
+                <div style="background: white; border: 1px solid #e0e0e0; border-radius: 8px; padding: 25px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); border-top: 4px solid #303f9f;">
+                    <div style="display: flex; align-items: center; margin-bottom: 15px;">
+                        <div style="width: 50px; height: 50px; background: #5c6bc0; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; margin-right: 15px;">NW</div>
+                        <div>
+                            <h4 style="margin: 0; color: #1a237e;">Natalie Wong</h4>
+                            <p style="margin: 0; font-size: 0.85rem; color: #666;">CIO (52)</p>
+                        </div>
+                    </div>
+                    <p style="font-size: 0.9rem; line-height: 1.5; color: #333;">
+                        <strong>Goals:</strong> Audit-ready processing; data sovereignty; 70% TCO reduction.<br><br>
+                        <strong>Pain Points:</strong> Shadow AI risks; compliance gaps in document handling.<br><br>
+                        <span style="color: #303f9f; font-weight: bold;">Value:</span> VPC-SC security and Vertex XAI provide white-box governance with serverless economics.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section id="analyzer-user-stories" style="max-width: 1000px; margin: 20px auto 40px 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+            <details style="background: #ffffff; border: 1px solid #303f9f; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
+                <summary style="background-color: #303f9f; color: white; padding: 20px; font-size: 1.25rem; font-weight: bold; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+                    <span>01b. Lightweight Requirements & User Stories (MoSCoW)</span>
+                    <span style="font-size: 0.9rem; border: 1px solid white; padding: 2px 8px; border-radius: 4px;">Click to Expand</span>
+                </summary>
+                
+                <div style="padding: 20px; overflow-x: auto;">
+                    <table style="width: 100%; border-collapse: collapse; font-size: 0.85rem; text-align: left;">
+                        <thead>
+                            <tr style="background-color: #e8eaf6; color: #1a237e; border-bottom: 2px solid #303f9f;">
+                                <th style="padding: 12px; border: 1px solid #ddd;">ID</th>
+                                <th style="padding: 12px; border: 1px solid #ddd;">User Story</th>
+                                <th style="padding: 12px; border: 1px solid #ddd;">Priority</th>
+                                <th style="padding: 12px; border: 1px solid #ddd;">Linked Feature/Agent</th>
+                                <th style="padding: 12px; border: 1px solid #ddd;">Acceptance Criteria</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="padding: 10px; border: 1px solid #ddd; font-weight: bold;">US-01</td>
+                                <td style="padding: 10px; border: 1px solid #ddd;">As an <strong>Ops Mgr</strong>, I want serverless ingestion so processing starts without queues.</td>
+                                <td style="padding: 10px; border: 1px solid #ddd;"><span style="background: #e8f5e9; color: #2e7d32; padding: 2px 6px; border-radius: 4px; font-weight: bold;">Must</span></td>
+                                <td style="padding: 10px; border: 1px solid #ddd;">Pub/Sub + Cloud Run</td>
+                                <td style="padding: 10px; border: 1px solid #ddd;">Triggers &lt;1s; handles bursts instantly.</td>
+                            </tr>
+                            <tr style="background-color: #f5f5f5;">
+                                <td style="padding: 10px; border: 1px solid #ddd; font-weight: bold;">US-02</td>
+                                <td style="padding: 10px; border: 1px solid #ddd;">As an <strong>Ops Mgr</strong>, I want multimodal extraction to reach 95% accuracy.</td>
+                                <td style="padding: 10px; border: 1px solid #ddd;"><span style="background: #e8f5e9; color: #2e7d32; padding: 2px 6px; border-radius: 4px; font-weight: bold;">Must</span></td>
+                                <td style="padding: 10px; border: 1px solid #ddd;">Document AI + Gemini</td>
+                                <td style="padding: 10px; border: 1px solid #ddd;">95% accuracy on unstructured tables/text.</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 10px; border: 1px solid #ddd; font-weight: bold;">US-03</td>
+                                <td style="padding: 10px; border: 1px solid #ddd;">As a <strong>Data Eng</strong>, I want auto-scaling to handle 1,000+ docs/min cost-effectively.</td>
+                                <td style="padding: 10px; border: 1px solid #ddd;"><span style="background: #e8f5e9; color: #2e7d32; padding: 2px 6px; border-radius: 4px; font-weight: bold;">Must</span></td>
+                                <td style="padding: 10px; border: 1px solid #ddd;">Cloud Run Concurrency</td>
+                                <td style="padding: 10px; border: 1px solid #ddd;">&lt;500ms cold starts; &lt;$0.01 per doc.</td>
+                            </tr>
+                            <tr style="background-color: #f5f5f5;">
+                                <td style="padding: 10px; border: 1px solid #ddd; font-weight: bold;">US-04</td>
+                                <td style="padding: 10px; border: 1px solid #ddd;">As a <strong>CIO</strong>, I want transparent XAI explanations for extractions.</td>
+                                <td style="padding: 10px; border: 1px solid #ddd;"><span style="background: #fff3e0; color: #ef6c00; padding: 2px 6px; border-radius: 4px; font-weight: bold;">Should</span></td>
+                                <td style="padding: 10px; border: 1px solid #ddd;">Vertex Explainable AI</td>
+                                <td style="padding: 10px; border: 1px solid #ddd;">Confidence scores & reasoning logs per field.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </details>
+        </section>
+        <section id="analyzer-journey" style="max-width: 1000px; margin: 20px auto 40px 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+            <details style="background: #ffffff; border: 1px solid #303f9f; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
+                <summary style="background-color: #303f9f; color: white; padding: 20px; font-size: 1.25rem; font-weight: bold; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+                    <span>01c. User Journey Map: From Raw Upload to Agentic Feed</span>
+                    <span style="font-size: 0.9rem; border: 1px solid white; padding: 2px 8px; border-radius: 4px;">Click to Expand</span>
+                </summary>
+                
+                <div style="padding: 20px; overflow-x: auto;">
+                    <table style="width: 100%; border-collapse: collapse; font-size: 0.85rem; text-align: left;">
+                        <thead>
+                            <tr style="background-color: #e8eaf6; color: #1a237e; border-bottom: 2px solid #303f9f;">
+                                <th style="padding: 12px; border: 1px solid #ddd; width: 15%;">Stage</th>
+                                <th style="padding: 12px; border: 1px solid #ddd; width: 25%;">System Actions</th>
+                                <th style="padding: 12px; border: 1px solid #ddd; width: 20%;">Legacy Pain Resolved</th>
+                                <th style="padding: 12px; border: 1px solid #ddd; width: 25%;">Autonomous Resolution</th>
+                                <th style="padding: 12px; border: 1px solid #ddd; width: 15%;">Impact</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="padding: 12px; border: 1px solid #ddd; font-weight: bold; background: #e8eaf6; color: #303f9f;">1. Upload</td>
+                                <td style="padding: 12px; border: 1px solid #ddd;">File ingested via API; <strong>Pub/Sub</strong> trigger.</td>
+                                <td style="padding: 12px; border: 1px solid #ddd; color: #b71c1c;">Batch delays; manual sorting.</td>
+                                <td style="padding: 12px; border: 1px solid #ddd;">Zero-queue serverless execution in &lt;1s.</td>
+                                <td style="padding: 12px; border: 1px solid #ddd; font-weight: bold; color: #2e7d32;">&lt;10s Total</td>
+                            </tr>
+                            <tr style="background-color: #f5f5f5;">
+                                <td style="padding: 12px; border: 1px solid #ddd; font-weight: bold; background: #e8eaf6; color: #303f9f;">2. Extraction</td>
+                                <td style="padding: 12px; border: 1px solid #ddd;">Multimodal parsing of text & tables.</td>
+                                <td style="padding: 12px; border: 1px solid #ddd; color: #b71c1c;">OCR errors; manual PDF transcription.</td>
+                                <td style="padding: 12px; border: 1px solid #ddd;"><strong>Document AI</strong> + <strong>Gemini</strong> at 95% accuracy.</td>
+                                <td style="padding: 12px; border: 1px solid #ddd; font-weight: bold; color: #2e7d32;">90% Auto</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 12px; border: 1px solid #ddd; font-weight: bold; background: #e8eaf6; color: #303f9f;">3. Routing</td>
+                                <td style="padding: 12px; border: 1px solid #ddd;">Enriched events published to ecosystem.</td>
+                                <td style="padding: 12px; border: 1px solid #ddd; color: #b71c1c;">Stalled workflows; manual transfers.</td>
+                                <td style="padding: 12px; border: 1px solid #ddd;">Seamless feed to <strong>RevRec</strong> & <strong>ContractGuard</strong>.</td>
+                                <td style="padding: 12px; border: 1px solid #ddd; font-weight: bold; color: #2e7d32;">&lt;$0.01/Doc</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </details>
+        </section>
+
         <section id="technical-solution" style="max-width: 1000px; margin: 40px auto; padding: 0 20px;">
             <h2 style="color: #00008b; border-bottom: 2px solid #0052cc; padding-bottom: 10px;">Technical Solution: The Serverless Reasoning Stack</h2>
             
