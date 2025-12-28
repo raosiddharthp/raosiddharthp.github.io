@@ -3,166 +3,189 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Siddarth Rao | Enterprise Generative AI Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Autonomous Enterprise | System of Systems Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #0f172a;
+            --accent: #3b82f6;
+            --bg: #f8fafc;
+            --card-bg: #ffffff;
+            --text: #1e293b;
+            --border: #e2e8f0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container { max-width: 1100px; margin: 0 auto; padding: 40px 20px; }
+
+        /* Hero Section */
+        header {
+            border-bottom: 4px solid var(--primary);
+            padding-bottom: 40px;
+            margin-bottom: 50px;
+        }
+
+        h1 { font-size: 3rem; margin: 0; color: var(--primary); letter-spacing: -1px; }
+        .subtitle { font-size: 1.25rem; color: var(--accent); font-weight: 600; text-transform: uppercase; margin-top: 10px; }
+
+        /* Overview Card */
+        .overview-box {
+            background: var(--card-bg);
+            padding: 30px;
+            border-radius: 12px;
+            border: 1px solid var(--border);
+            box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);
+            margin-bottom: 40px;
+        }
+
+        /* Grid Layouts */
+        .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; }
+        .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+
+        /* Subsection Headers */
+        h2 { border-left: 5px solid var(--accent); padding-left: 15px; margin-top: 50px; color: var(--primary); }
+
+        /* Table Styles */
+        .table-container { overflow-x: auto; margin: 20px 0; border-radius: 8px; border: 1px solid var(--border); }
+        table { width: 100%; border-collapse: collapse; background: white; font-size: 0.9rem; }
+        th { background: var(--primary); color: white; padding: 12px; text-align: left; }
+        td { padding: 12px; border-bottom: 1px solid var(--border); }
+        tr:hover { background: #f1f5f9; }
+
+        /* Status Badge */
+        .badge {
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: bold;
+            background: #dcfce7;
+            color: #166534;
+        }
+
+        /* Navigation Links */
+        .project-link {
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .project-link:hover { text-decoration: underline; }
+
+        footer { text-align: center; padding: 40px; color: #64748b; font-size: 0.85rem; border-top: 1px solid var(--border); }
+    </style>
 </head>
-<body class="home-page">
-    <div class="sidebar">
-        <a href="index.html" style="text-decoration: none; color: inherit;"><h1>Autonomous Enterprise</h1></a>
-    </div>
+<body>
 
-    <div class="search-icon">🔍</div>
+<div class="container">
+    <header>
+        <h1>Autonomous Enterprise</h1>
+        <div class="subtitle">A System of Systems (SoS) for Agentic RevOps</div>
+    </header>
 
-    <div class="header-ribbon">
-        <nav>
-            <a href="greenops-platform.html">GreenOps Platform</a>
-            <a href="finrisk-sentinel.html">FinRisk Sentinel</a>
-            <a href="data-quality-governance.html">Data Quality & Governance</a>
-            <a href="intelligent-asset-inventory.html">Intelligent Asset Inventory</a>
-            <a href="executive-strategy-dashboard.html">Executive Strategy Dashboard</a>
-            <a href="revrec-ai.html">RevRec-AI</a>
-            <a href="contractguard.html">ContractGuard</a>
-            <a href="continuous-risk-monitoring.html">Continuous Risk Monitoring</a>
-            <a href="serverless-document-analyzer.html">Serverless Document Analyzer</a>
-            <a href="omnimind.html">OmniMind CCAI</a>
-        </nav>
-    </div>
+    <section class="overview-box">
+        <h2>Executive Overview</h2>
+        <p>
+            This portfolio demonstrates an integrated <strong>System of Systems (SoS)</strong> architecture for Revenue Operations (RevOps), engineered as a GCP-native platform leveraging agentic AI for operational autonomy. Drawing from <strong>TOGAF 10</strong> principles, the design treats each project as an autonomous subsystem forming a cohesive ecosystem where AI agents sense, reason, act, and adapt across the revenue lifecycle.
+        </p>
+        <div class="grid-3" style="margin-top:25px;">
+            <div><i class="fas fa-cubes"></i> <strong>Modularity</strong><br><small>Bounded contexts via DDD & Terraform</small></div>
+            <div><i class="fas fa-network-wired"></i> <strong>Interoperability</strong><br><small>Event-driven coupling via Pub/Sub</small></div>
+            <div><i class="fas fa-robot"></i> <strong>Autonomy</strong><br><small>LangGraph/CrewAI with HITL Gates</small></div>
+        </div>
+    </section>
 
-    <div class="main-content">
-        
-        <div id="main-content" style="margin-left: 260px; padding: 40px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f4f7f9; min-height: 100vh;">
+    
 
-            <header id="hero-sos" style="max-width: 1100px; margin-bottom: 50px;">
-                <h1 style="color: #1a237e; font-size: 3.2rem; margin-bottom: 10px; letter-spacing: -1.5px;">Architecting the Autonomous Enterprise: <span style="color: #0d47a1;">A System of Systems</span></h1>
-                <p style="font-size: 1.4rem; color: #424242; font-weight: 300; margin-bottom: 25px; line-height: 1.4;">
-                    Transforming static corporate structures into self-optimizing, agentic ecosystems through GenAI, Sovereign Cloud, and EA Governance.
-                </p>
-                <div style="background: white; border-left: 8px solid #1a237e; padding: 30px; border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.08);">
-                    <p style="font-size: 1.15rem; line-height: 1.8; color: #333; margin: 0;">
-                        The Autonomous Enterprise is not a single application; it is a <strong>System of Systems (SoS)</strong>. It represents the ultimate maturity of the <strong>TOGAF Architecture Development Method (ADM)</strong>, where Business, Data, and Application layers are unified by an <strong>Agentic Orchestration Layer</strong>. By leveraging the <strong>SAFe framework</strong>, we ensure these systems evolve synchronously, delivering non-linear value across every organizational value stream.
-                    </p>
-                </div>
-            </header>
-        
-            <section id="ceo-dashboard" style="max-width: 1100px; margin-bottom: 60px;">
-                <h2 style="color: #1a237e; border-bottom: 2px solid #0d47a1; padding-bottom: 10px; margin-bottom: 30px;">00. Executive Command Center: Real-Time Value Realization</h2>
-                <div style="overflow-x: auto; background: white; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
-                    <table style="width: 100%; border-collapse: collapse; text-align: left; font-size: 1rem;">
-                        <thead>
-                            <tr style="background-color: #1a237e; color: white;">
-                                <th style="padding: 20px; border-bottom: 2px solid #0d47a1;">System Node</th>
-                                <th style="padding: 20px; border-bottom: 2px solid #0d47a1;">Strategic KPI</th>
-                                <th style="padding: 20px; border-bottom: 2px solid #0d47a1;">Current Status</th>
-                                <th style="padding: 20px; border-bottom: 2px solid #0d47a1;">Value Realized</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr style="border-bottom: 1px solid #eee; cursor: pointer;" onclick="window.location.href='omnimind.html'">
-                                <td style="padding: 20px;"><strong>OmniMind (CX)</strong></td>
-                                <td style="padding: 20px;">Autonomous Resolution Rate</td>
-                                <td style="padding: 20px; color: #2e7d32; font-weight: bold;">82% Active</td>
-                                <td style="padding: 20px; font-weight: bold; color: #1a237e;">40% OpEx Reduction</td>
-                            </tr>
-                            <tr style="border-bottom: 1px solid #eee; background-color: #fafafa; cursor: pointer;">
-                                <td style="padding: 20px;"><strong>RevRec-AI (Fin)</strong></td>
-                                <td style="padding: 20px;">Revenue Leakage Prevented</td>
-                                <td style="padding: 20px; color: #2e7d32; font-weight: bold;">$2.4M Recovered</td>
-                                <td style="padding: 20px; font-weight: bold; color: #1a237e;">15% Margin Expansion</td>
-                            </tr>
-                            <tr style="border-bottom: 1px solid #eee; cursor: pointer;">
-                                <td style="padding: 20px;"><strong>GreenOps (Infra)</strong></td>
-                                <td style="padding: 20px;">Carbon Intensity (gCO2/kWh)</td>
-                                <td style="padding: 20px; color: #2e7d32; font-weight: bold;">-25% Reduction</td>
-                                <td style="padding: 20px; font-weight: bold; color: #1a237e;">ESG Compliance Met</td>
-                            </tr>
-                            <tr style="border-bottom: 1px solid #eee; background-color: #fafafa; cursor: pointer;">
-                                <td style="padding: 20px;"><strong>Governance (Risk)</strong></td>
-                                <td style="padding: 20px;">Hallucination/PII Breaches</td>
-                                <td style="padding: 20px; color: #1a237e; font-weight: bold;">0 Incidents</td>
-                                <td style="padding: 20px; font-weight: bold; color: #1a237e;">100% Sovereign Security</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <p style="margin-top: 15px; font-size: 0.9rem; color: #666; font-style: italic;">* Click on any Node to drill down into technical architecture and agentic workflows.</p>
-            </section>
-        
-            <section id="sos-concept" style="max-width: 1100px; margin-bottom: 60px;">
-                <h2 style="color: #1a237e; border-bottom: 2px solid #0d47a1; padding-bottom: 10px; margin-bottom: 30px;">01. Architectural Interconnectivity</h2>
-                <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 25px;">
-                    <div style="background: white; padding: 25px; border-radius: 8px; border: 1px solid #e0e0e0; border-top: 5px solid #4285f4;">
-                        <h4 style="color: #1a237e; margin-top: 0;">Integrated Intelligence</h4>
-                        <p style="font-size: 0.95rem; line-height: 1.6; color: #555;">How <strong>OmniMind CCAI</strong> (Customer Intelligence) feeds real-time feedback loops into <strong>RevRec-AI</strong> (Financial Ops) to optimize dynamic pricing and retention.</p>
-                    </div>
-                    <div style="background: white; padding: 25px; border-radius: 8px; border: 1px solid #e0e0e0; border-top: 5px solid #34a853;">
-                        <h4 style="color: #1a237e; margin-top: 0;">Operational Sustainability</h4>
-                        <p style="font-size: 0.95rem; line-height: 1.6; color: #555;">How <strong>GreenOps</strong> acts as the "Metabolic Regulator," ensuring AI-driven growth remains carbon-neutral and cost-optimized through region-shifting.</p>
-                    </div>
-                    <div style="background: white; padding: 25px; border-radius: 8px; border: 1px solid #e0e0e0; border-top: 5px solid #fbbc05;">
-                        <h4 style="color: #1a237e; margin-top: 0;">Unified Data Fabric</h4>
-                        <p style="font-size: 0.95rem; line-height: 1.6; color: #555;">How <strong>Data Quality & Governance</strong> serves as the gravitational center, grounding LLMs across all nodes in a single source of truth.</p>
-                    </div>
-                </div>
-            </section>
-        
-            <section id="sos-diagrams" style="max-width: 1100px; margin-bottom: 60px;">
-                <h2 style="color: #1a237e; border-bottom: 2px solid #0d47a1; padding-bottom: 10px; margin-bottom: 30px;">02. System of Systems Viewpoints</h2>
-                
-                <details style="background: #fff; border: 1px solid #ddd; border-radius: 8px; padding: 20px; margin-bottom: 20px;">
-                    <summary style="font-weight: bold; cursor: pointer; color: #1a237e;">▶ View Enterprise Interdependency Map (SoS View)</summary>
-                    <div style="padding-top: 20px;">
-                        <p style="font-size: 0.95rem; color: #333; line-height: 1.6; margin-bottom: 15px;">
-                            <strong>C4 Level 0 - System Context:</strong> This blueprint visualizes the <strong>Architectural Reflexivity</strong> of the enterprise. It maps how the 10 core project nodes—from OmniMind’s cognitive edge to RevRec-AI’s fiscal core—are interconnected via a <strong>Unified Intelligence Fabric</strong>. By utilizing GCP Pub/Sub for asynchronous event orchestration, we ensure that a state change in one system (e.g., a customer churn risk) automatically triggers corrective workflows in the others.
-                        </p>
-                        
-                    </div>
-                </details>
-            
-                <details style="background: #fff; border: 1px solid #ddd; border-radius: 8px; padding: 20px; margin-bottom: 20px;">
-                    <summary style="font-weight: bold; cursor: pointer; color: #1a237e;">▶ View Agentic Value Stream Map (SAFe Flow)</summary>
-                    <div style="padding-top: 20px;">
-                        <p style="font-size: 0.95rem; color: #333; line-height: 1.6; margin-bottom: 15px;">
-                            <strong>Lean Portfolio Management (LPM) Visualization:</strong> A multi-layered flow showing the journey from a raw "Customer Intent" to "Autonomous Value Realization." This diagram illustrates the <strong>SAFe Value Stream</strong>, demonstrating how Gemini 1.5 Pro acts as an Orchestrator to bypass legacy bureaucratic silos, reducing the decision-to-delivery latency by 60% through automated guardrail verification and cross-functional tool-calling.
-                        </p>
-                        
-                    </div>
-                </details>
-            
-                <details style="background: #fff; border: 1px solid #ddd; border-radius: 8px; padding: 20px;">
-                    <summary style="font-weight: bold; cursor: pointer; color: #1a237e;">▶ View Sovereign Landing Zone Topology</summary>
-                    <div style="padding-top: 20px;">
-                        <p style="font-size: 0.95rem; color: #333; line-height: 1.6; margin-bottom: 15px;">
-                            <strong>Technology Architecture (TOGAF Phase D):</strong> The foundational security perimeter for a <strong>Zero-Trust Autonomous Enterprise</strong>. This topology maps the <strong>VPC Service Controls (VPC-SC)</strong> and <strong>Customer-Managed Encryption Keys (CMEK)</strong> that form a "Cell Membrane" around the agentic nodes. It highlights how we maintain strict data sovereignty while enabling high-velocity data exchange between Vertex AI and BigQuery clusters.
-                        </p>
-                        
-                    </div>
-                </details>
-            </section>
-        
-            <section id="portfolio-impact" style="max-width: 1100px; margin-bottom: 80px;">
-                <h2 style="color: #1a237e; border-bottom: 2px solid #0d47a1; padding-bottom: 10px; margin-bottom: 30px;">03. The Architecture Achieved: Strategic Impact</h2>
-                <div style="background-color: #e8eaf6; padding: 40px; border-radius: 12px; border: 1px solid #c5cae9;">
-                    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; text-align: center;">
-                        <div>
-                            <h3 style="color: #1a237e; margin-bottom: 10px; font-size: 2rem;">Non-Linear</h3>
-                            <p style="font-weight: bold; margin-bottom: 5px;">Efficiency Frontier Shift</p>
-                            <p style="font-size: 0.85rem; color: #555;">Decoupling cost from growth by moving beyond linear scaling.</p>
-                        </div>
-                        <div>
-                            <h3 style="color: #1a237e; margin-bottom: 10px; font-size: 2rem;">&lt; 500ms</h3>
-                            <p style="font-weight: bold; margin-bottom: 5px;">System-Wide Latency</p>
-                            <p style="font-size: 0.85rem; color: #555;">Time from data ingestion to autonomous agentic action across 10 nodes.</p>
-                        </div>
-                        <div>
-                            <h3 style="color: #1a237e; margin-bottom: 10px; font-size: 2rem;">50% Reduction</h3>
-                            <p style="font-weight: bold; margin-bottom: 5px;">Architectural Debt</p>
-                            <p style="font-size: 0.85rem; color: #555;">Unified TOGAF Phase C/D approach reduced systemic integration costs.</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        
+    <h2>TOGAF ADM Mapping</h2>
+    <div class="grid-2">
+        <div style="font-size: 0.95rem;">
+            <p><strong>Phase A-B (Vision & Business):</strong> Mapping value streams from quote-to-cash with agentic touchpoints.</p>
+            <p><strong>Phase C-D (IS & Tech):</strong> Data architecture via BigQuery lakes; GCP stack blueprints utilizing Vertex AI Pipelines.</p>
+        </div>
+        <div style="font-size: 0.95rem;">
+            <p><strong>Phase G-H (Governance):</strong> Continuous compliance via Cloud Monitoring and automated drift detection.</p>
+            <p><strong>SAFe 6.0:</strong> Roadmap delivery via PI increments (Core RevOps → Risk Layer).</p>
         </div>
     </div>
+
+    <h2>Subsystem Catalog (SoS Nodes)</h2>
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Subsystem</th>
+                    <th>Role in SoS</th>
+                    <th>Core Tech</th>
+                    <th>Link</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>1. GreenOps Platform</td><td>Metabolic Regulator (Sustainability)</td><td>Vertex AI, Dataflow</td><td><a href="greenops-platform.html" class="project-link">View Node</a></td></tr>
+                <tr><td>2. FinRisk Sentinel</td><td>Financial Shield (Compliance)</td><td>BQML, Gemini</td><td><a href="finrisk-sentinel.html" class="project-link">View Node</a></td></tr>
+                <tr><td>3. Rev Rec AI</td><td>Revenue Integrity (Compliance)</td><td>Llama-3 RAG, Doc AI</td><td><a href="revrec-ai.html" class="project-link">View Node</a></td></tr>
+                <tr><td>4. Contract Guard</td><td>Obligation Monitor (Legal)</td><td>Mistral-7B, AutoGen</td><td><a href="contract-guard.html" class="project-link">View Node</a></td></tr>
+                <tr><td>5. Asset Inventory</td><td>Predictive Reliability (Ops)</td><td>TimesFM, Prophet</td><td><a href="asset-inventory.html" class="project-link">View Node</a></td></tr>
+                <tr><td>6. Strategy Dashboard</td><td>Executive Command (Steering)</td><td>R Shiny, Looker</td><td><a href="strategy-dashboard.html" class="project-link">View Node</a></td></tr>
+                <tr><td>7. Real-Time Risk</td><td>Streaming Defense (Mitigation)</td><td>Apache Beam, Gemini</td><td><a href="continuous-risk.html" class="project-link">View Node</a></td></tr>
+                <tr><td>8. DQ & Governance</td><td>The Backbone (Data Quality)</td><td>Great Expectations, DLP</td><td><a href="data-quality-governance.html" class="project-link">View Node</a></td></tr>
+                <tr><td>9. Doc Analyzer</td><td>The Optical Nerve (Ingestion)</td><td>Cloud Run, Gemini Vision</td><td><a href="document-analyzer.html" class="project-link">View Node</a></td></tr>
+                <tr><td>10. Omni CCAI</td><td>Cognitive Edge (Engagement)</td><td>Dialogflow CX, GKE</td><td><a href="omnimind.html" class="project-link">View Node</a></td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    
+
+    <h2>System of Systems Interconnections</h2>
+    <p>Interconnections are orchestrated via a <strong>GCP Event Mesh (Pub/Sub)</strong> and a shared <strong>Data Fabric (BigQuery)</strong>. This enables emergent behaviors, such as a 40% risk reduction through chained detection across FinRisk and Asset subsystems.</p>
+    
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Data Flow</th>
+                    <th>Mechanism</th>
+                    <th>Autonomy Trigger</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>Contract Guard → Doc Analyzer</td><td>API Call</td><td>Extraction agents activate on upload.</td></tr>
+                <tr><td>Doc Analyzer → Rev Rec AI</td><td>Pub/Sub</td><td>Recognition agents process obligations.</td></tr>
+                <tr><td>FinRisk → Risk Analysis</td><td>Pub/Sub</td><td>Streaming agents escalate in real-time.</td></tr>
+                <tr><td>Governance → All Subsystems</td><td>Dataplex</td><td>Governance agents quarantine toxic data.</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="grid-2">
+        <div>
+            <h2>Agentic Autonomy Layer</h2>
+            <p><strong>Tier 1 (Perception):</strong> Sensors detect events via Pub/Sub listeners.</p>
+            <p><strong>Tier 2 (Reasoning):</strong> CoT agents (Gemini/Llama) with critic loops (>98% grounding).</p>
+            <p><strong>Tier 3 (Action):</strong> Executors trigger function calling for scheduling/resolutions.</p>
+        </div>
+        <div>
+            <h2>Outcomes & Metrics</h2>
+            <ul>
+                <li><strong>Risk Reduction:</strong> 30-50% via chained detection.</li>
+                <li><strong>Efficiency:</strong> 40% faster quote-to-cash cycles.</li>
+                <li><strong>Scale:</strong> 10k+ events/sec @ &lt;5s E2E latency.</li>
+                <li><strong>Green:</strong> 20-25% carbon savings via GreenOps.</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2026 Autonomous Enterprise SoS Portfolio. Built on GCP with Vertex AI, BigQuery, and Cloud Run.
+    </footer>
+</div>
+
 </body>
 </html>
