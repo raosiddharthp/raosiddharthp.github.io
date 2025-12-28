@@ -178,7 +178,105 @@
             </table>
         </div>
     </section>
+    <section id="architecture-deep-dives" style="margin-bottom: 60px;">
+        <h2 style="color: #0f172a; border-left: 5px solid #3b82f6; padding-left: 15px; margin-bottom: 30px;">Architecture Deep-Dives</h2>
+        <p style="margin-bottom: 25px; font-size: 1.1rem;">The following blueprints detail the technical orchestration, governance, and operational logic of the Autonomous Enterprise ecosystem.</p>
     
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+            
+            <details style="background: white; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+                <summary style="padding: 15px; font-weight: bold; cursor: pointer; background: #f8fafc; display: flex; align-items: center;">
+                    <i class="fas fa-stream" style="margin-right: 12px; color: #3b82f6; width: 20px;"></i> 
+                    <span>SAFe Value Stream & Agentic Touchpoints</span>
+                </summary>
+                <div style="padding: 20px; text-align: center; border-top: 1px solid #e2e8f0; background: #ffffff;">
+                    <div style="border: 2px dashed #cbd5e1; padding: 30px; color: #64748b; border-radius: 6px;">
+                        <p><strong>[Architectural Overlay]</strong></p>
+                        <p style="font-size: 0.85rem;">Mapping the 10 subsystems across the Operational Value Stream stages: Ingestion &rarr; Processing &rarr; Recognition &rarr; Risk &rarr; Steering.</p>
+                    </div>
+                </div>
+            </details>
+    
+            <details style="background: white; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+                <summary style="padding: 15px; font-weight: bold; cursor: pointer; background: #f8fafc; display: flex; align-items: center;">
+                    <i class="fas fa-layer-group" style="margin-right: 12px; color: #3b82f6; width: 20px;"></i> 
+                    <span>Sovereign Landing Zone Architecture</span>
+                </summary>
+                <div style="padding: 20px; text-align: center; border-top: 1px solid #e2e8f0; background: #ffffff;">
+                    <div style="border: 2px dashed #cbd5e1; padding: 30px; color: #64748b; border-radius: 6px;">
+                        <p><strong>[Infrastructure Schematic]</strong></p>
+                        <p style="font-size: 0.85rem;">Illustrates VPC-SC perimeters, CMEK encryption, and data residency controls for regulated enterprise data.</p>
+                    </div>
+                </div>
+            </details>
+    
+            <details style="background: white; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+                <summary style="padding: 15px; font-weight: bold; cursor: pointer; background: #f8fafc; display: flex; align-items: center;">
+                    <i class="fas fa-project-diagram" style="margin-right: 12px; color: #3b82f6; width: 20px;"></i> 
+                    <span>Pub/Sub Event Mesh Interconnectivity</span>
+                </summary>
+                <div style="padding: 20px; text-align: center; border-top: 1px solid #e2e8f0; background: #ffffff;">
+                    <div style="border: 2px dashed #cbd5e1; padding: 30px; color: #64748b; border-radius: 6px;">
+                        <p><strong>[Decoupling Mechanism]</strong></p>
+                        <p style="font-size: 0.85rem;">Core fan-out patterns showing asynchronous triggers from Contract Guard to downstream subscribers.</p>
+                    </div>
+                </div>
+            </details>
+    
+            <details style="background: white; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+                <summary style="padding: 15px; font-weight: bold; cursor: pointer; background: #f8fafc; display: flex; align-items: center;">
+                    <i class="fas fa-database" style="margin-right: 12px; color: #3b82f6; width: 20px;"></i> 
+                    <span>BigQuery Data Lake / Fabric View</span>
+                </summary>
+                <div style="padding: 20px; text-align: center; border-top: 1px solid #e2e8f0; background: #ffffff;">
+                    <div style="border: 2px dashed #cbd5e1; padding: 30px; color: #64748b; border-radius: 6px;">
+                        <p><strong>[Data Governance Fabric]</strong></p>
+                        <p style="font-size: 0.85rem;">Visualizing federated queries across subsystems with integrated Open-Source Governance gates.</p>
+                    </div>
+                </div>
+            </details>
+    
+            <details style="background: white; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+                <summary style="padding: 15px; font-weight: bold; cursor: pointer; background: #f8fafc; display: flex; align-items: center;">
+                    <i class="fas fa-robot" style="margin-right: 12px; color: #3b82f6; width: 20px;"></i> 
+                    <span>Multi-Agent Orchestration Patterns</span>
+                </summary>
+                <div style="padding: 20px; text-align: center; border-top: 1px solid #e2e8f0; background: #ffffff;">
+                    <div style="border: 2px dashed #cbd5e1; padding: 30px; color: #64748b; border-radius: 6px;">
+                        <p><strong>[Agentic Reasoning Logic]</strong></p>
+                        <p style="font-size: 0.85rem;">Hierarchical and Peer swarms: Orchestrator &rarr; Specialist &rarr; Critic loop using Gemini & LangGraph.</p>
+                    </div>
+                </div>
+            </details>
+    
+            <details style="background: white; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+                <summary style="padding: 15px; font-weight: bold; cursor: pointer; background: #f8fafc; display: flex; align-items: center;">
+                    <i class="fas fa-sync-alt" style="margin-right: 12px; color: #3b82f6; width: 20px;"></i> 
+                    <span>TOGAF ADM Iteration Cycle</span>
+                </summary>
+                <div style="padding: 20px; text-align: center; border-top: 1px solid #e2e8f0; background: #ffffff;">
+                    <div style="border: 2px dashed #cbd5e1; padding: 30px; color: #64748b; border-radius: 6px;">
+                        <p><strong>[Delivery Lifecycle]</strong></p>
+                        <p style="font-size: 0.85rem;">Agile iteration cycle for the phased delivery of agentic autonomous enablers.</p>
+                    </div>
+                </div>
+            </details>
+    
+            <details style="background: white; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.05); grid-column: span 2;">
+                <summary style="padding: 15px; font-weight: bold; cursor: pointer; background: #f8fafc; display: flex; align-items: center;">
+                    <i class="fas fa-history" style="margin-right: 12px; color: #3b82f6; width: 20px;"></i> 
+                    <span>Emergent Closed-Loop: Risk Propagation Sequence</span>
+                </summary>
+                <div style="padding: 20px; text-align: center; border-top: 1px solid #e2e8f0; background: #ffffff;">
+                    <div style="border: 2px dashed #cbd5e1; padding: 30px; color: #64748b; border-radius: 6px;">
+                        <p><strong>[Sequence Diagram]</strong></p>
+                        <p style="font-size: 0.85rem;">Tracing a risk event from FinRisk Sentinel &rarr; Real-Time Risk &rarr; Omni CCAI mitigation.</p>
+                    </div>
+                </div>
+            </details>
+    
+        </div>
+    </section>
     <section id="security-substrate" style="margin-bottom: 60px; background: #0f172a; color: white; padding: 35px; border-radius: 12px; position: relative; overflow: hidden;">
         <div style="position: absolute; right: -20px; top: -20px; opacity: 0.1; font-size: 10rem;">
             <i class="fas fa-shield-alt"></i>
