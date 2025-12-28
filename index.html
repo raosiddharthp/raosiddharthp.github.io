@@ -106,7 +106,7 @@
     <h2>TOGAF ADM Mapping</h2>
     <div class="grid-2">
         <div style="font-size: 0.95rem;">
-            <p><strong>Phase A-B (Vision & Business):</strong> Mapping value streams from quote-to-cash with agentic touchpoints.</p>
+            <p><strong>Phase A-B (Vision & Business):</strong> Mapping the Autonomous RevOps Value Streams with agentic touchpoints.</p>
             <p><strong>Phase C-D (IS & Tech):</strong> Data architecture via BigQuery lakes; GCP stack blueprints utilizing Vertex AI Pipelines.</p>
         </div>
         <div style="font-size: 0.95rem;">
@@ -185,6 +185,41 @@
     <footer>
         &copy; 2026 Autonomous Enterprise SoS Portfolio. Built on GCP with Vertex AI, BigQuery, and Cloud Run.
     </footer>
+    <section id="sos-visual" style="margin-bottom: 60px;">
+        <h2>System of Systems Interconnections</h2>
+        <p style="margin-bottom: 25px; font-size: 1.1rem;">Interconnections are orchestrated via a <strong>GCP Event Mesh (Pub/Sub)</strong> and a shared <strong>Data Fabric (BigQuery)</strong>. This architecture enables emergent behaviors—such as automated risk propagation—through decoupled subsystem synergies.</p>
+    
+        <details style="background: #ffffff; border: 1px solid #0f172a; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); margin-bottom: 30px;">
+            <summary style="background-color: #0f172a; color: white; padding: 15px; font-weight: bold; cursor: pointer; display: flex; justify-content: space-between; align-items: center;">
+                <span><i class="fas fa-sitemap" style="margin-right: 10px;"></i> View Level 0: System Context Diagram (C4 Model)</span>
+                <span style="font-size: 0.8rem; border: 1px solid white; padding: 2px 8px; border-radius: 4px;">Expand Diagram</span>
+            </summary>
+            <div style="padding: 20px; text-align: center; background: #f8fafc;">
+                <div style="border: 2px dashed #cbd5e1; padding: 40px; color: #64748b;">
+                    <i class="fas fa-project-diagram fa-3x" style="margin-bottom: 15px;"></i>
+                    <p><strong>C4 System Context Map Rendering...</strong></p>
+                    <p style="font-size: 0.85rem;">[Visualizing: Contract Guard → Doc Analyzer → RevRec-AI → Strategy Dashboard]</p>
+                </div>
+            </div>
+        </details>
+    
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr style="background: #0f172a; color: white;">
+                        <th style="padding: 12px; border: 1px solid #ddd;">Data Flow Path</th>
+                        <th style="padding: 12px; border: 1px solid #ddd;">Mechanism</th>
+                        <th style="padding: 12px; border: 1px solid #ddd;">Autonomy Trigger</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td style="padding: 12px; border: 1px solid #ddd;"><strong>Contract-to-Revenue:</strong> Guard &rarr; Analyzer &rarr; RevRec</td><td style="padding: 12px; border: 1px solid #ddd;">Avro Schema / PubSub</td><td style="padding: 12px; border: 1px solid #ddd;">Extraction agents activate on document blob upload.</td></tr>
+                    <tr style="background: #f8fafc;"><td style="padding: 12px; border: 1px solid #ddd;"><strong>Risk Propagation:</strong> FinRisk &rarr; Analysis &rarr; OmniMind</td><td style="padding: 12px; border: 1px solid #ddd;">Eventarc Trigger</td><td style="padding: 12px; border: 1px solid #ddd;">Anomaly scores trigger proactive customer engagement.</td></tr>
+                    <tr><td style="padding: 12px; border: 1px solid #ddd;"><strong>Metabolic Loop:</strong> Asset &rarr; GreenOps &rarr; Dashboard</td><td style="padding: 12px; border: 1px solid #ddd;">BigQuery Federated</td><td style="padding: 12px; border: 1px solid #ddd;">Utilization drift triggers resource re-optimization.</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
 </div>
 
 </body>
