@@ -2,26 +2,31 @@ from diagrams import Cluster, Diagram, Edge
 from diagrams.gcp.analytics import BigQuery
 from diagrams.gcp.compute import Run
 from diagrams.gcp.ml import VertexAI
-from diagrams.gcp.devtools import GCR # Using GCR as a visual proxy for a registry/API if Billing is missing
+from diagrams.gcp.operations import Monitoring
 
-# Filename: carbon_aware_arch.png
-with Diagram("Carbon-Aware Architecture (Phase D)", show=False, filename="carbon_aware_arch", direction="TB"):
+graph_attr = {
+    "pad": "0.1",
+    "nodesep": "1.5",
+    "ranksep": "2.0",
+    "bgcolor": "transparent",
+    "margin": "0"
+}
 
-    with Cluster("Data Ingestion Layer"):
-        # We use VertexAI icons for both to represent the "Agentic" nature of the APIs
-        billing = VertexAI("Google Billing API")
-        carbon_api = VertexAI("Carbon Footprint API") 
-        
-    with Cluster("Intelligence & Orchestration Layer"):
-        agent_builder = VertexAI("Agent Builder\n(Decision Engine)")
-        data_warehouse = BigQuery("Sustainability\nData Warehouse")
+with Diagram("Carbon-Aware Architecture", show=False, filename="carbon_aware_arch", direction="LR", graph_attr=graph_attr):
 
-    with Cluster("Actionable Output"):
-        optimization_agent = Run("Optimization Agent")
+    with Cluster("Data Inputs"):
+        billing = Monitoring("Cloud Billing API\n(Cost Data)")
+        carbon = VertexAI("Carbon API\n(Emissions Data)")
 
-    # Layered Integration Flow
-    billing >> Edge(label="Cost Data", color="darkblue") >> data_warehouse
-    carbon_api >> Edge(label="Emissions Data", color="darkgreen") >> data_warehouse
+    # The central brain
+    agent_builder = VertexAI("Vertex AI\nAgent Builder")
+    data_lake = BigQuery("Sustainability\nData Warehouse")
+
+    optimization = Run("Carbon-Aware\nOptimizer Agent")
+
+    # Horizontal Orchestration
+    billing >> Edge(color="darkblue") >> data_lake
+    carbon >> Edge(color="darkgreen") >> data_lake
     
-    data_warehouse >> agent_builder
-    agent_builder >> Edge(label="Orchestration", color="darkgreen", style="bold") >> optimization_agent
+    data_lake >> Edge(label="Training/Context") >> agent_builder
+    agent_builder >> Edge(label="Orchestrate", style="bold", color="darkgreen") >> optimization

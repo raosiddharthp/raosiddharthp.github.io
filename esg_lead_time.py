@@ -3,7 +3,7 @@ from diagrams.gcp.analytics import Pubsub
 from diagrams.gcp.ml import NaturalLanguageAPI, VertexAI
 from diagrams.gcp.compute import Run
 
-graph_attr = {"pad": "0.2", "nodesep": "2.0", "ranksep": "2.0", "bgcolor": "transparent"}
+graph_attr = {"pad": "0.2", "nodesep": "2.0", "ranksep": "3.0", "bgcolor": "transparent"}
 
 with Diagram("ESG Lead Time Reduction", show=False, filename="esg_lead_time", direction="LR", graph_attr=graph_attr):
     ingest = Pubsub("Data Collection")
