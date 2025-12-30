@@ -631,20 +631,30 @@
                     </tbody>
                 </table>
             
-                <details style="margin: 30px 0; padding: 20px; background: #eef4ff; border-radius: 12px; border: 1px solid #cce0ff;">
-                    <summary style="font-size: 1.1em; font-weight: bold; cursor: pointer; color: #0052cc;">View Model Lineage & Precision-Recall Metrics</summary>
-                    <div style="margin-top: 20px;">
-                        <p style="font-size: 0.95rem; color: #444;">These artifacts prove the "Genealogy" and business trade-offs of the AI:</p>
-                        
-                        <h4 style="color: #1a237e;">A. Model Lineage Diagram</h4>
-                        <p style="font-size: 0.9rem;">Visualizes the connection from <strong>BigQuery</strong> source to the live <strong>Vertex AI Endpoint</strong>, essential for audit-heavy environments.</p>
-                        
-            
-                        <h4 style="color: #1a237e; margin-top: 25px;">B. Precision-Recall Curve</h4>
-                        <p style="font-size: 0.9rem;">Demonstrates how the model prioritizes catching <strong>High Risk</strong> initiatives, even at the cost of slight over-reporting (False Positives).</p>
-                        
+                <div style="display: flex; flex-direction: column; gap: 15px; margin-top: 35px;">
+
+                    <details style="background: white; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+                        <summary style="padding: 15px; font-weight: bold; cursor: pointer; background: #f8fafc; display: flex; align-items: center;">
+                            <i class="fas fa-history" style="margin-right: 12px; color: #1a237e; width: 20px;"></i> 
+                            <span>TOGAF Phase G: Model Lineage & Audit Trail</span>
+                        </summary>
+                        <div style="padding: 30px; text-align: center; border-top: 1px solid #e2e8f0; background: #ffffff;">
+                            <h4 style="color: #1a237e; margin-bottom: 25px; font-size: 1.1rem; text-transform: uppercase; letter-spacing: 1px;">Genealogy View: BigQuery Source to Vertex AI Endpoint</h4>
+                            
+                            <img src="strat_model_lineage.png" alt="Model Lineage Diagram" style="width: 100%; max-width: 1100px; height: auto; margin-bottom: 20px;">
+                            
+                            <p style="margin-top: 20px; font-size: 0.95rem; color: #444; font-style: italic; max-width: 850px; margin-left: auto; margin-right: auto;">
+                                <strong>Governance View:</strong> Visualizing the end-to-end audit trail required for highly regulated environments, connecting raw BigQuery data sources to live production endpoints.
+                            </p>
+                        </div>
+                    </details>
+                
+                    <div style="padding: 20px; background: white; border: 1px solid #e2e8f0; border-radius: 8px; text-align: center;">
+                        <h5 style="color: #1a237e; margin-top: 0;">Statistical View: Precision-Recall Trade-offs</h5>
+                        <img src="strat_precision_recall_curve.png" alt="Precision-Recall Curve Chart" style="width: 100%; max-width: 600px; height: auto; margin-bottom: 10px;">
+                        <p style="font-size: 0.85rem; color: #666;"><strong>Optimization:</strong> Demonstrating how the model prioritizes identifying <strong>High Risk</strong> initiatives by optimizing for Recall.</p>
                     </div>
-                </details>
+                </div>
             
                 <div style="background-color: #263238; color: #81d4fa; padding: 20px; border-radius: 8px; margin-top: 30px;">
                     <h4 style="margin-top: 0; color: #fff;">Continuous Monitoring & Drift Defense</h4>
