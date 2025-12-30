@@ -900,20 +900,37 @@
                     </ul>
                 </div>
             
-                <details style="margin: 30px 0; padding: 20px; background: #eef4ff; border-radius: 12px; border: 1px solid #cce0ff;">
-                    <summary style="font-size: 1.1em; font-weight: bold; cursor: pointer; color: #0052cc;">View Model Governance & Safety Guardrail Architecture</summary>
-                    <div style="margin-top: 20px;">
-                        <p style="font-size: 0.95rem; color: #444;">These artifacts prove the "Strategic Assurance" of the asset platform:</p>
-                        
-                        <h4 style="color: #1a237e;">A. The Model Governance Framework (TOGAF Phase H)</h4>
-                        <p style="font-size: 0.9rem;">Visualizes the path from <strong>Drift Detected</strong> to <strong>HITL Review</strong> and automated deployment, meeting strict regulatory audits.</p>
-                        
-            
-                        <h4 style="color: #1a237e; margin-top: 25px;">B. Multi-Agent Safety "Guardrail" Architecture</h4>
-                        <p style="font-size: 0.9rem;">Shows a secondary <strong>"Passive Observer"</strong> agent that intercepts recommendations violating hard safety constraints (e.g., servicing running equipment).</p>
-                        
-                    </div>
-                </details>
+                <div style="display: flex; flex-direction: column; gap: 15px; margin-top: 35px;">
+
+                    <details style="background: white; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+                        <summary style="padding: 15px; font-weight: bold; cursor: pointer; background: #f8fafc; display: flex; align-items: center;">
+                            <i class="fas fa-gavel" style="margin-right: 12px; color: #0052cc; width: 20px;"></i> 
+                            <span>TOGAF Phase H: Model Governance Framework</span>
+                        </summary>
+                        <div style="padding: 30px; text-align: center; border-top: 1px solid #e2e8f0; background: #ffffff;">
+                            <h4 style="color: #1a237e; margin-bottom: 25px; font-size: 1.1rem; text-transform: uppercase; letter-spacing: 1px;">Strategic Assurance: Drift to Deployment Flow</h4>
+                            <img src="asset_model_governance.png" alt="Model Governance Framework Diagram" style="width: 100%; max-width: 1100px; height: auto;">
+                            <p style="margin-top: 20px; font-size: 0.95rem; color: #444; font-style: italic; max-width: 850px; margin-left: auto; margin-right: auto;">
+                                <strong>Governance View:</strong> Visualizing the change management path from drift detection to Human-in-the-Loop (HITL) review and automated deployment, ensuring compliance with strict industrial regulatory audits.
+                            </p>
+                        </div>
+                    </details>
+                
+                    <details style="background: white; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+                        <summary style="padding: 15px; font-weight: bold; cursor: pointer; background: #f8fafc; display: flex; align-items: center;">
+                            <i class="fas fa-user-shield" style="margin-right: 12px; color: #0052cc; width: 20px;"></i> 
+                            <span>EA View: Multi-Agent Safety Guardrail Architecture</span>
+                        </summary>
+                        <div style="padding: 30px; text-align: center; border-top: 1px solid #e2e8f0; background: #ffffff;">
+                            <h4 style="color: #1a237e; margin-bottom: 25px; font-size: 1.1rem; text-transform: uppercase; letter-spacing: 1px;">Safety Logic: The Passive Observer Agent</h4>
+                            <img src="asset_safety_guardrail.png" alt="Multi-Agent Safety Guardrail Architecture Diagram" style="width: 100%; max-width: 1100px; height: auto;">
+                            <p style="margin-top: 20px; font-size: 0.95rem; color: #444; font-style: italic; max-width: 850px; margin-left: auto; margin-right: auto;">
+                                <strong>Technical View:</strong> Illustrating the secondary "Passive Observer" agent that intercepts AI recommendations violating hard safety constraints, such as prohibiting maintenance on active, running equipment.
+                            </p>
+                        </div>
+                    </details>
+                
+                </div>
             
                 <div style="background-color: #263238; color: #81d4fa; padding: 25px; border-radius: 8px; margin-top: 40px;">
                     <h4 style="margin-top: 0; color: #fff;">SAFe Solution Train Governance</h4>
