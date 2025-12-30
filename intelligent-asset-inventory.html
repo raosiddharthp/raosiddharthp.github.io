@@ -813,20 +813,37 @@
                     </ul>
                 </div>
             
-                <details style="margin: 30px 0; padding: 20px; background: #eceff1; border-radius: 12px; border: 1px solid #cfd8dc;">
-                    <summary style="font-size: 1.1em; font-weight: bold; cursor: pointer; color: #263238;">View SRE Control Plane & Disaster Recovery Blueprints</summary>
-                    <div style="margin-top: 20px;">
-                        <p style="font-size: 0.95rem; color: #444;">These blueprints satisfy the <strong>CISO</strong> and <strong>IT Operations Manager</strong> requirements:</p>
-                        
-                        <h4 style="color: #1a237e;">A. Global Event-Driven Pipeline</h4>
-                        <p style="font-size: 0.9rem;">Illustrates the flow from <strong>IoT Gateways → Pub/Sub → Dataflow → BigQuery</strong>.</p>
-                        
-            
-                        <h4 style="color: #1a237e; margin-top: 25px;">B. Multi-Region Disaster Recovery (DR) Plan</h4>
-                        <p style="font-size: 0.9rem;">Shows the <strong>Active-Active</strong> setup (us-central1 / us-east4) ensuring zero data loss during regional outages.</p>
-                        
-                    </div>
-                </details>
+                <div style="display: flex; flex-direction: column; gap: 15px; margin-top: 35px;">
+
+                    <details style="background: white; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+                        <summary style="padding: 15px; font-weight: bold; cursor: pointer; background: #f8fafc; display: flex; align-items: center;">
+                            <i class="fas fa-stream" style="margin-right: 12px; color: #263238; width: 20px;"></i> 
+                            <span>TOGAF Phase D: Global Event-Driven Pipeline</span>
+                        </summary>
+                        <div style="padding: 30px; text-align: center; border-top: 1px solid #e2e8f0; background: #ffffff;">
+                            <h4 style="color: #1a237e; margin-bottom: 25px; font-size: 1.1rem; text-transform: uppercase; letter-spacing: 1px;">Infrastructure View: IoT to BigQuery Flow</h4>
+                            <img src="asset_event_pipeline.png" alt="Global Event-Driven Pipeline Diagram" style="width: 100%; max-width: 1100px; height: auto;">
+                            <p style="margin-top: 20px; font-size: 0.95rem; color: #444; font-style: italic; max-width: 850px; margin-left: auto; margin-right: auto;">
+                                <strong>Architectural View:</strong> Illustrating the industrial-scale telemetry flow from field IoT Gateways through Pub/Sub and Dataflow into BigQuery for real-time reliability analysis.
+                            </p>
+                        </div>
+                    </details>
+                
+                    <details style="background: white; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+                        <summary style="padding: 15px; font-weight: bold; cursor: pointer; background: #f8fafc; display: flex; align-items: center;">
+                            <i class="fas fa-shield-alt" style="margin-right: 12px; color: #263238; width: 20px;"></i> 
+                            <span>SRE View: Multi-Region Disaster Recovery (DR) Plan</span>
+                        </summary>
+                        <div style="padding: 30px; text-align: center; border-top: 1px solid #e2e8f0; background: #ffffff;">
+                            <h4 style="color: #1a237e; margin-bottom: 25px; font-size: 1.1rem; text-transform: uppercase; letter-spacing: 1px;">Resilience View: Active-Active Regional Architecture</h4>
+                            <img src="asset_dr_plan.png" alt="Multi-Region Disaster Recovery Diagram" style="width: 100%; max-width: 1100px; height: auto;">
+                            <p style="margin-top: 20px; font-size: 0.95rem; color: #444; font-style: italic; max-width: 850px; margin-left: auto; margin-right: auto;">
+                                <strong>Operational View:</strong> Demonstrating the Active-Active configuration across us-central1 and us-east4 to ensure zero data loss (RPO=0) and near-zero recovery time (RTO) during regional failures.
+                            </p>
+                        </div>
+                    </details>
+                
+                </div>
             
                 <div style="background-color: #263238; color: #81d4fa; padding: 20px; border-radius: 8px; margin-top: 30px;">
                     <h4 style="margin-top: 0; color: #fff;">SRE Observability Control Plane</h4>
