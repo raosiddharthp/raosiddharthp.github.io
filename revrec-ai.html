@@ -155,32 +155,79 @@
                 </div>
             </div>
         
-            <details style="margin: 40px 0; padding: 20px; background: #f8f9fa; border-radius: 12px; border: 1px solid #ddd;">
-                <summary style="font-size: 1.3em; font-weight: bold; cursor: pointer; color: #00008b;">Strategic Architecture: Governing the Financial Core (EA + SAFe)</summary>
-                <div style="margin-top: 20px;">
-                    <p style="line-height: 1.6; color: #444;">
-                        This project represents a complete <strong>TOGAF ADM</strong> cycle—from Business Architecture (Value Stream Mapping) to Technology Architecture (Multi-Region Cloud).
-                    </p>
-        
-                    <ul style="font-size: 1.05em; line-height: 1.7; color: #555;">
-                        <li><strong>Phase A/B: Vision & Business</strong> — Established "Contract-to-Revenue" capability maps to eliminate leakage.</li>
-                        <li><strong>Phase C: Information Systems</strong> — Integrated a FAISS-backed RAG of IFRS 15 rules for multi-agent validation.</li>
-                        <li><strong>Phase D: Technology</strong> — Immutable, multi-region infrastructure via Terraform ensuring SOX-compliant audit trails.</li>
-                        <li><strong>SAFe Delivery:</strong> Executed via an Agile Release Train (ART) to prove deep domain expertise at scale.</li>
-                    </ul>
-        
-                    <div style="text-align: center; margin: 40px 0; border: 2px dashed #ccc; padding: 40px; color: #999;">
-                        <p><strong>[Placeholder: IFRS 15 Revenue Recognition Value Stream Map]</strong></p>
-                        <p><em>Visualizing the regulatory 5-step model transition to AI-Native workflows.</em></p>
+            <div style="display: flex; flex-direction: column; gap: 15px; margin-top: 35px;">
+
+                <details style="background: white; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+                    <summary style="padding: 15px; font-weight: bold; cursor: pointer; background: #f8fafc; display: flex; align-items: center;">
+                        <i class="fas fa-eye" style="margin-right: 12px; color: #00008b; width: 20px;"></i> 
+                        <span>Phase A/B: Vision & Business (Contract-to-Revenue Capability)</span>
+                    </summary>
+                    <div style="padding: 30px; text-align: center; border-top: 1px solid #e2e8f0; background: #ffffff;">
+                        <h4 style="color: #00008b; margin-bottom: 25px; font-size: 1.1rem; text-transform: uppercase; letter-spacing: 1px;">Capability Map: Eliminating Revenue Leakage</h4>
+                        <img src="revrec_vision_biz.png" alt="Vision & Business Architecture" style="width: 100%; max-width: 1100px; height: auto;">
+                        <p style="margin-top: 20px; font-size: 0.95rem; color: #444; font-style: italic; max-width: 850px; margin-left: auto; margin-right: auto;">
+                            Mapping core business capabilities to AI-native touchpoints to ensure IFRS 15 compliance and eliminate revenue leakage.
+                        </p>
                     </div>
-                    
-                    
-        
-                    <p style="font-style: italic; color: #666; border-top: 1px solid #eee; padding-top: 15px;">
-                        RevRec-AI leverages domain-specific fine-tuning (LoRA) to distinguish between complex legal nuances like "Right to Access" vs. "Right to Use," ensuring architectural precision at the financial core.
-                    </p>
-                </div>
-            </details>
+                </details>
+            
+                <details style="background: white; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+                    <summary style="padding: 15px; font-weight: bold; cursor: pointer; background: #f8fafc; display: flex; align-items: center;">
+                        <i class="fas fa-brain" style="margin-right: 12px; color: #00008b; width: 20px;"></i> 
+                        <span>Phase C: Information Systems (FAISS RAG & Multi-Agent)</span>
+                    </summary>
+                    <div style="padding: 30px; text-align: center; border-top: 1px solid #e2e8f0; background: #ffffff;">
+                        <h4 style="color: #00008b; margin-bottom: 25px; font-size: 1.1rem; text-transform: uppercase; letter-spacing: 1px;">IS Architecture: IFRS 15 Knowledge Retrieval</h4>
+                        <img src="revrec_info_systems.png" alt="Information Systems Architecture" style="width: 100%; max-width: 1100px; height: auto;">
+                        <p style="margin-top: 20px; font-size: 0.95rem; color: #444; font-style: italic; max-width: 850px; margin-left: auto; margin-right: auto;">
+                            Logical flow of the FAISS-backed RAG layer providing regulatory context to the agentic validation swarm.
+                        </p>
+                    </div>
+                </details>
+            
+                <details style="background: white; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+                    <summary style="padding: 15px; font-weight: bold; cursor: pointer; background: #f8fafc; display: flex; align-items: center;">
+                        <i class="fas fa-cloud" style="margin-right: 12px; color: #00008b; width: 20px;"></i> 
+                        <span>Phase D: Technology (Terraform & Multi-Region Cloud)</span>
+                    </summary>
+                    <div style="padding: 30px; text-align: center; border-top: 1px solid #e2e8f0; background: #ffffff;">
+                        <h4 style="color: #00008b; margin-bottom: 25px; font-size: 1.1rem; text-transform: uppercase; letter-spacing: 1px;">Technology View: SOX-Compliant Infrastructure</h4>
+                        <img src="revrec_technology.png" alt="Technology Architecture" style="width: 100%; max-width: 1100px; height: auto;">
+                        <p style="margin-top: 20px; font-size: 0.95rem; color: #444; font-style: italic; max-width: 850px; margin-left: auto; margin-right: auto;">
+                            Immutable multi-region GCP topology ensuring data sovereignty and high-availability audit trails for financial reporting.
+                        </p>
+                    </div>
+                </details>
+            
+                <details style="background: white; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+                    <summary style="padding: 15px; font-weight: bold; cursor: pointer; background: #f8fafc; display: flex; align-items: center;">
+                        <i class="fas fa-train" style="margin-right: 12px; color: #00008b; width: 20px;"></i> 
+                        <span>SAFe Delivery (Agile Release Train)</span>
+                    </summary>
+                    <div style="padding: 30px; text-align: center; border-top: 1px solid #e2e8f0; background: #ffffff;">
+                        <h4 style="color: #00008b; margin-bottom: 25px; font-size: 1.1rem; text-transform: uppercase; letter-spacing: 1px;">Delivery Framework: Program Increment Flow</h4>
+                        <img src="revrec_safe_delivery.png" alt="SAFe Delivery Architecture" style="width: 100%; max-width: 1100px; height: auto;">
+                        <p style="margin-top: 20px; font-size: 0.95rem; color: #444; font-style: italic; max-width: 850px; margin-left: auto; margin-right: auto;">
+                            Visualizing the Agile Release Train (ART) execution for large-scale enterprise AI delivery.
+                        </p>
+                    </div>
+                </details>
+            
+                <details style="background: white; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+                    <summary style="padding: 15px; font-weight: bold; cursor: pointer; background: #f8fafc; display: flex; align-items: center;">
+                        <i class="fas fa-file-invoice" style="margin-right: 12px; color: #00008b; width: 20px;"></i> 
+                        <span>IFRS 15 Revenue Recognition Value Stream Map</span>
+                    </summary>
+                    <div style="padding: 30px; text-align: center; border-top: 1px solid #e2e8f0; background: #ffffff;">
+                        <h4 style="color: #00008b; margin-bottom: 25px; font-size: 1.1rem; text-transform: uppercase; letter-spacing: 1px;">Regulatory Flow: 5-Step Model to AI-Native</h4>
+                        <img src="revrec_value_stream.png" alt="IFRS 15 Value Stream Map" style="width: 100%; max-width: 1100px; height: auto;">
+                        <p style="margin-top: 20px; font-size: 0.95rem; color: #444; font-style: italic; max-width: 850px; margin-left: auto; margin-right: auto;">
+                            Transitioning the 5-step regulatory model into an automated AI workflow for precise recognition.
+                        </p>
+                    </div>
+                </details>
+            
+            </div>
         </section>
 
         <section id="business-strategy" style="max-width: 1000px; margin: 40px auto; padding: 0 20px;">
@@ -229,21 +276,65 @@
                 </ul>
             </div>
         
-            <details style="margin: 30px 0; padding: 20px; background: #fffaf0; border-radius: 12px; border: 1px solid #ffe4b5;">
-                <summary style="font-size: 1.1em; font-weight: bold; cursor: pointer; color: #8b4513;">View Revenue Value Stream & Capability Map (TOGAF)</summary>
-                <div style="margin-top: 20px;">
-                    <p style="font-size: 0.95rem; color: #444;">Mapping the transition from reactive spreadsheets to an integrated, predictive financial ecosystem:</p>
-                    <ul style="font-size: 0.9rem; line-height: 1.7; color: #555;">
-                        <li><strong>Current State:</strong> Manual data transfers from CRM to ERP with significant "judgment bottlenecks."</li>
-                        <li><strong>Future State:</strong> Event-driven Pub/Sub triggers RevRec-AI to post directly to the General Ledger.</li>
-                        <li><strong>Change Management (SAFe):</strong> Developed as an <strong>Agile Release Train (ART)</strong> to ensure continuous CFO alignment.</li>
-                    </ul>
-                    <div style="text-align: center; margin: 20px 0; border: 1px dashed #ccc; padding: 20px; color: #999;">
-                        [Placeholder: Future State RevRec-AI Enabled Value Stream Diagram]
+            <div style="display: flex; flex-direction: column; gap: 15px; margin-top: 35px;">
+
+                <details style="background: white; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+                    <summary style="padding: 15px; font-weight: bold; cursor: pointer; background: #f8fafc; display: flex; align-items: center;">
+                        <i class="fas fa-exclamation-triangle" style="margin-right: 12px; color: #8b4513; width: 20px;"></i> 
+                        <span>A. Current State: Manual "Judgment Bottlenecks"</span>
+                    </summary>
+                    <div style="padding: 30px; text-align: center; border-top: 1px solid #e2e8f0; background: #ffffff;">
+                        <h4 style="color: #5d4037; margin-bottom: 25px; font-size: 1.1rem; text-transform: uppercase; letter-spacing: 1px;">Baseline: Reactive Spreadsheets & ERP Friction</h4>
+                        <img src="revrec_current_state.png" alt="Current State Manual Flow" style="width: 100%; max-width: 1100px; height: auto;">
+                        <p style="margin-top: 20px; font-size: 0.95rem; color: #444; font-style: italic; max-width: 850px; margin-left: auto; margin-right: auto;">
+                            Visualizing the current manual data transfers from CRM to ERP, highlighting high-latency judgment bottlenecks and revenue leakage risks.
+                        </p>
                     </div>
-                    
-                </div>
-            </details>
+                </details>
+            
+                <details style="background: white; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+                    <summary style="padding: 15px; font-weight: bold; cursor: pointer; background: #f8fafc; display: flex; align-items: center;">
+                        <i class="fas fa-magic" style="margin-right: 12px; color: #8b4513; width: 20px;"></i> 
+                        <span>B. Future State: Event-Driven Post-to-GL</span>
+                    </summary>
+                    <div style="padding: 30px; text-align: center; border-top: 1px solid #e2e8f0; background: #ffffff;">
+                        <h4 style="color: #5d4037; margin-bottom: 25px; font-size: 1.1rem; text-transform: uppercase; letter-spacing: 1px;">Target: Integrated Predictive Ecosystem</h4>
+                        <img src="revrec_future_state.png" alt="Future State AI Flow" style="width: 100%; max-width: 1100px; height: auto;">
+                        <p style="margin-top: 20px; font-size: 0.95rem; color: #444; font-style: italic; max-width: 850px; margin-left: auto; margin-right: auto;">
+                            The event-driven architecture where Pub/Sub triggers RevRec-AI to validate and post directly to the General Ledger (GL) in real-time.
+                        </p>
+                    </div>
+                </details>
+            
+                <details style="background: white; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+                    <summary style="padding: 15px; font-weight: bold; cursor: pointer; background: #f8fafc; display: flex; align-items: center;">
+                        <i class="fas fa-users-cog" style="margin-right: 12px; color: #8b4513; width: 20px;"></i> 
+                        <span>C. Change Management (SAFe ART Flow)</span>
+                    </summary>
+                    <div style="padding: 30px; text-align: center; border-top: 1px solid #e2e8f0; background: #ffffff;">
+                        <h4 style="color: #5d4037; margin-bottom: 25px; font-size: 1.1rem; text-transform: uppercase; letter-spacing: 1px;">Execution: Agile Release Train & CFO Alignment</h4>
+                        <img src="revrec_safe_art.png" alt="SAFe ART Change Management" style="width: 100%; max-width: 1100px; height: auto;">
+                        <p style="margin-top: 20px; font-size: 0.95rem; color: #444; font-style: italic; max-width: 850px; margin-left: auto; margin-right: auto;">
+                            Visualizing the SAFe Agile Release Train (ART) structure ensuring continuous feedback loops with the CFO office during deployment.
+                        </p>
+                    </div>
+                </details>
+            
+                <details style="background: white; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+                    <summary style="padding: 15px; font-weight: bold; cursor: pointer; background: #f8fafc; display: flex; align-items: center;">
+                        <i class="fas fa-chart-line" style="margin-right: 12px; color: #8b4513; width: 20px;"></i> 
+                        <span>D. Target Value Stream: RevRec-AI Enabled</span>
+                    </summary>
+                    <div style="padding: 30px; text-align: center; border-top: 1px solid #e2e8f0; background: #ffffff;">
+                        <h4 style="color: #5d4037; margin-bottom: 25px; font-size: 1.1rem; text-transform: uppercase; letter-spacing: 1px;">Strategic View: AI-Native Revenue Recognition</h4>
+                        <img src="revrec_enabled_stream.png" alt="RevRec-AI Enabled Value Stream" style="width: 100%; max-width: 1100px; height: auto;">
+                        <p style="margin-top: 20px; font-size: 0.95rem; color: #444; font-style: italic; max-width: 850px; margin-left: auto; margin-right: auto;">
+                            Mapping the high-speed transition of the regulatory 5-step model into an AI-orchestrated financial pipeline.
+                        </p>
+                    </div>
+                </details>
+            
+            </div>
         </section>
         <section id="revrec-personas" style="max-width: 1000px; margin: 40px auto 40px 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; clear: both; display: block;">
             <h3 style="color: #1a237e; margin-bottom: 20px; border-left: 5px solid #0d47a1; padding-left: 15px; font-size: 1.5rem;">Target User Personas: Solving for Audit & Compliance</h3>
@@ -645,22 +736,51 @@
                 </ul>
             </div>
         
-            <details style="margin: 30px 0; padding: 20px; background: #eceff1; border-radius: 12px; border: 1px solid #cfd8dc;">
-                <summary style="font-size: 1.1em; font-weight: bold; cursor: pointer; color: #263238;">View Enterprise-Grade Security & Auditability Viewpoints</summary>
-                <div style="margin-top: 20px;">
-                    <p style="font-size: 0.95rem; color: #444;">Architected for the most regulated environments using Google Cloud’s security best practices:</p>
-                    <ul style="font-size: 0.9rem; line-height: 1.7; color: #555;">
-                        <li><strong>VPC Service Controls (VPC-SC):</strong> Prevents data exfiltration by admins to external buckets.</li>
-                        <li><strong>Field-Level Encryption:</strong> PII encrypted at rest using Cloud KMS, decrypted only in-memory for authorized agents.</li>
-                        <li><strong>Data Lineage:</strong> Visual map in BigQuery showing PDF-to-Journal Entry transformation for auditors.</li>
-                    </ul>
-                    
-                    <div style="text-align: center; margin: 20px 0; border: 1px dashed #263238; padding: 20px; color: #263238; background: white;">
-                        [Placeholder: Contract-to-GL Lineage Map]
+            <div style="display: flex; flex-direction: column; gap: 15px; margin-top: 35px;">
+
+                <details style="background: white; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+                    <summary style="padding: 15px; font-weight: bold; cursor: pointer; background: #f8fafc; display: flex; align-items: center;">
+                        <i class="fas fa-border-all" style="margin-right: 12px; color: #263238; width: 20px;"></i> 
+                        <span>A. VPC Service Controls (VPC-SC Perimeter)</span>
+                    </summary>
+                    <div style="padding: 30px; text-align: center; border-top: 1px solid #e2e8f0; background: #ffffff;">
+                        <h4 style="color: #263238; margin-bottom: 25px; font-size: 1.1rem; text-transform: uppercase; letter-spacing: 1px;">Data Exfiltration Prevention: Secure Financial Perimeter</h4>
+                        <img src="revrec_vpc_sc.png" alt="VPC Service Controls Map" style="width: 100%; max-width: 1100px; height: auto;">
+                        <p style="margin-top: 20px; font-size: 0.95rem; color: #444; font-style: italic; max-width: 850px; margin-left: auto; margin-right: auto;">
+                            Visualizing the VPC-SC perimeter that isolates sensitive RevRec data, preventing unauthorized movement of financial records to external storage.
+                        </p>
                     </div>
-                    
-                </div>
-            </details>
+                </details>
+            
+                <details style="background: white; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+                    <summary style="padding: 15px; font-weight: bold; cursor: pointer; background: #f8fafc; display: flex; align-items: center;">
+                        <i class="fas fa-lock" style="margin-right: 12px; color: #263238; width: 20px;"></i> 
+                        <span>B. Field-Level Encryption (Cloud KMS)</span>
+                    </summary>
+                    <div style="padding: 30px; text-align: center; border-top: 1px solid #e2e8f0; background: #ffffff;">
+                        <h4 style="color: #263238; margin-bottom: 25px; font-size: 1.1rem; text-transform: uppercase; letter-spacing: 1px;">KMS Architecture: Enveloped PII Encryption</h4>
+                        <img src="revrec_encryption.png" alt="Field-Level Encryption Map" style="width: 100%; max-width: 1100px; height: auto;">
+                        <p style="margin-top: 20px; font-size: 0.95rem; color: #444; font-style: italic; max-width: 850px; margin-left: auto; margin-right: auto;">
+                            Tracing how PII is encrypted at rest using Cloud KMS, with in-memory decryption restricted to authorized agent runtimes.
+                        </p>
+                    </div>
+                </details>
+            
+                <details style="background: white; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+                    <summary style="padding: 15px; font-weight: bold; cursor: pointer; background: #f8fafc; display: flex; align-items: center;">
+                        <i class="fas fa-history" style="margin-right: 12px; color: #263238; width: 20px;"></i> 
+                        <span>C. Data Lineage: PDF to Journal Entry Trace</span>
+                    </summary>
+                    <div style="padding: 30px; text-align: center; border-top: 1px solid #e2e8f0; background: #ffffff;">
+                        <h4 style="color: #263238; margin-bottom: 25px; font-size: 1.1rem; text-transform: uppercase; letter-spacing: 1px;">Auditor View: Immutable Financial Provenance</h4>
+                        <img src="revrec_lineage.png" alt="Contract-to-GL Lineage Map" style="width: 100%; max-width: 1100px; height: auto;">
+                        <p style="margin-top: 20px; font-size: 0.95rem; color: #444; font-style: italic; max-width: 850px; margin-left: auto; margin-right: auto;">
+                            An end-to-end provenance map visualizing the transformation logic from raw contract PDF ingestion to final General Ledger (GL) journal entries.
+                        </p>
+                    </div>
+                </details>
+            
+            </div>
         
             <div style="background-color: #e8f5e9; border: 1px solid #2e7d32; padding: 20px; border-radius: 8px; margin-top: 30px;">
                 <h4 style="margin-top: 0; color: #2e7d32;">Intelligence Dividend</h4>
@@ -715,44 +835,78 @@
                 </ul>
             </div>
         
-            <details style="margin: 30px 0; padding: 20px; background: #fff3e0; border-radius: 12px; border: 1px solid #ffe0b2;">
-                <summary style="font-size: 1.1em; font-weight: bold; cursor: pointer; color: #e65100;">View Drift Defense & "The Audit Trail of Why"</summary>
-                <div style="margin-top: 20px;">
-                    <p style="font-size: 0.95rem; color: #444;">In finance, "Model Decay" equals "Financial Risk." We implement a redundant monitoring stack:</p>
+            <div style="display: flex; flex-direction: column; gap: 15px; margin-top: 35px;">
+
+                <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 25px; margin-bottom: 20px;">
+                    <h4 style="color: #e65100; margin-top: 0; margin-bottom: 15px; font-size: 1.1rem; text-transform: uppercase;">Strategic Monitoring Stack</h4>
+                    <p style="font-size: 0.95rem; color: #444; margin-bottom: 20px;">In finance, "Model Decay" equals "Financial Risk." We implement a redundant monitoring stack:</p>
                     
-                    <table style="width: 100%; border-collapse: collapse; margin-bottom: 20px; font-size: 0.85rem; border: 1px solid #ddd; background: white;">
+                    <table style="width: 100%; border-collapse: collapse; font-size: 0.9rem; border: 1px solid #ddd; background: white;">
                         <thead>
-                            <tr style="background-color: #fff8e1;">
-                                <th style="padding: 8px; border: 1px solid #ddd;">Monitor</th>
-                                <th style="padding: 8px; border: 1px solid #ddd;">Detection Logic</th>
-                                <th style="padding: 8px; border: 1px solid #ddd;">Strategic Action</th>
+                            <tr style="background-color: #fff8e1; color: #e65100;">
+                                <th style="padding: 12px; border: 1px solid #ddd; text-align: left;">Monitor</th>
+                                <th style="padding: 12px; border: 1px solid #ddd; text-align: left;">Detection Logic</th>
+                                <th style="padding: 12px; border: 1px solid #ddd; text-align: left;">Strategic Action</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td style="padding: 8px; border: 1px solid #ddd;">Data Drift</td>
-                                <td style="padding: 8px; border: 1px solid #ddd;">K-S Test on Values</td>
-                                <td style="padding: 8px; border: 1px solid #ddd;">Trigger Automated Retraining with new market data.</td>
+                                <td style="padding: 12px; border: 1px solid #ddd; font-weight: bold;">Data Drift</td>
+                                <td style="padding: 12px; border: 1px solid #ddd;">K-S Test on Values</td>
+                                <td style="padding: 12px; border: 1px solid #ddd;">Trigger Automated Retraining with new market data.</td>
                             </tr>
                             <tr>
-                                <td style="padding: 8px; border: 1px solid #ddd;">Concept Drift</td>
-                                <td style="padding: 8px; border: 1px solid #ddd;">Accuracy vs. Actual</td>
-                                <td style="padding: 8px; border: 1px solid #ddd;">Emergency Halt: Revert to manual Controller review for that SKU.</td>
+                                <td style="padding: 12px; border: 1px solid #ddd; font-weight: bold;">Concept Drift</td>
+                                <td style="padding: 12px; border: 1px solid #ddd;">Accuracy vs. Actual</td>
+                                <td style="padding: 12px; border: 1px solid #ddd;">Emergency Halt: Revert to manual Controller review for that SKU.</td>
                             </tr>
                         </tbody>
                     </table>
-        
-                    <ul style="font-size: 0.9rem; line-height: 1.7; color: #555;">
-                        <li><strong>Explainability (XAI):</strong> <em>Integrated Gradients</em> via Vertex XAI provide drivers (e.g., "60% term length, 30% user count").</li>
-                        <li><strong>Lineage:</strong> Every revenue entry traces back to the specific Dataset Version and Code Commit.</li>
-                    </ul>
-                    
-                    <div style="text-align: center; margin: 20px 0; border: 1px dashed #e65100; padding: 20px; color: #e65100; background: white;">
-                        [Placeholder: Vertex Pipeline Graph showing BQ-to-Deployment flow]
-                    </div>
-                    
                 </div>
-            </details>
+            
+                <details style="background: white; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+                    <summary style="padding: 15px; font-weight: bold; cursor: pointer; background: #f8fafc; display: flex; align-items: center;">
+                        <i class="fas fa-search-plus" style="margin-right: 12px; color: #e65100; width: 20px;"></i> 
+                        <span>A. Explainability (XAI) Feature Attribution</span>
+                    </summary>
+                    <div style="padding: 30px; text-align: center; border-top: 1px solid #e2e8f0; background: #ffffff;">
+                        <h4 style="color: #1a237e; margin-bottom: 25px; font-size: 1.1rem; text-transform: uppercase; letter-spacing: 1px;">Integrated Gradients: Driver Attribution View</h4>
+                        <img src="revrec_xai_drivers.png" alt="XAI Drivers Map" style="width: 100%; max-width: 1100px; height: auto;">
+                        <p style="margin-top: 20px; font-size: 0.95rem; color: #444; font-style: italic; max-width: 850px; margin-left: auto; margin-right: auto;">
+                            Visualizing how Vertex XAI provides feature attribution (e.g., 60% term length, 30% user count) to justify automated revenue recognition decisions to auditors.
+                        </p>
+                    </div>
+                </details>
+            
+                <details style="background: white; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+                    <summary style="padding: 15px; font-weight: bold; cursor: pointer; background: #f8fafc; display: flex; align-items: center;">
+                        <i class="fas fa-code-branch" style="margin-right: 12px; color: #e65100; width: 20px;"></i> 
+                        <span>B. Lineage: Dataset Version & Code Commit Trace</span>
+                    </summary>
+                    <div style="padding: 30px; text-align: center; border-top: 1px solid #e2e8f0; background: #ffffff;">
+                        <h4 style="color: #1a237e; margin-bottom: 25px; font-size: 1.1rem; text-transform: uppercase; letter-spacing: 1px;">Audit Trace: Revenue Entry to Source Code</h4>
+                        <img src="revrec_technical_lineage.png" alt="Technical Lineage Map" style="width: 100%; max-width: 1100px; height: auto;">
+                        <p style="margin-top: 20px; font-size: 0.95rem; color: #444; font-style: italic; max-width: 850px; margin-left: auto; margin-right: auto;">
+                            Tracing every financial journal entry back to the specific BQ dataset version and GitHub code commit that generated the recognition logic.
+                        </p>
+                    </div>
+                </details>
+            
+                <details style="background: white; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+                    <summary style="padding: 15px; font-weight: bold; cursor: pointer; background: #f8fafc; display: flex; align-items: center;">
+                        <i class="fas fa-project-diagram" style="margin-right: 12px; color: #e65100; width: 20px;"></i> 
+                        <span>C. Vertex AI Pipeline (BQ-to-Deployment)</span>
+                    </summary>
+                    <div style="padding: 30px; text-align: center; border-top: 1px solid #e2e8f0; background: #ffffff;">
+                        <h4 style="color: #1a237e; margin-bottom: 25px; font-size: 1.1rem; text-transform: uppercase; letter-spacing: 1px;">Orchestration View: Automated ML Lifecycle</h4>
+                        <img src="revrec_vertex_pipeline.png" alt="Vertex Pipeline Graph" style="width: 100%; max-width: 1100px; height: auto;">
+                        <p style="margin-top: 20px; font-size: 0.95rem; color: #444; font-style: italic; max-width: 850px; margin-left: auto; margin-right: auto;">
+                            The end-to-end Vertex AI pipeline orchestrating data extraction from BigQuery through training and validation to production deployment.
+                        </p>
+                    </div>
+                </details>
+            
+            </div>
         
             <div style="background-color: #f8f9fa; border-left: 5px solid #0052cc; padding: 20px; margin-top: 30px;">
                 <h4 style="margin-top: 0;">Business Impact: The Money Talk</h4>
@@ -809,22 +963,51 @@
                 </ul>
             </div>
         
-            <details style="margin: 30px 0; padding: 20px; background: #e3f2fd; border-radius: 12px; border: 1px solid #bbdefb;">
-                <summary style="font-size: 1.1em; font-weight: bold; cursor: pointer; color: #0d47a1;">View SRE "Month-End" Survival Plan & SLOs</summary>
-                <div style="margin-top: 20px;">
-                    <p style="font-size: 0.95rem; color: #444;">We manage "Financial Hardness" through strict Google SRE principles:</p>
-                    <ul style="font-size: 0.9rem; line-height: 1.7; color: #555;">
-                        <li><strong>Latency SLO:</strong> 95% of contracts unbundled in &lt; 30 seconds.</li>
-                        <li><strong>Error Budget:</strong> 0% downtime allowed during the 4-day fiscal "Freeze Period."</li>
-                        <li><strong>The Circuit Breaker:</strong> Automated rerouting of low-confidence AI extractions to manual review if drift is detected.</li>
-                    </ul>
-                    
-                    <div style="text-align: center; margin: 20px 0; border: 1px dashed #0d47a1; padding: 20px; color: #0d47a1; background: white;">
-                        [Placeholder: SRE Golden Signals Dashboard for RevRec-AI]
+            <div style="display: flex; flex-direction: column; gap: 15px; margin-top: 35px;">
+
+                <details style="background: white; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+                    <summary style="padding: 15px; font-weight: bold; cursor: pointer; background: #f8fafc; display: flex; align-items: center;">
+                        <i class="fas fa-stopwatch" style="margin-right: 12px; color: #0d47a1; width: 20px;"></i> 
+                        <span>A. Latency SLO (Contract Unbundling Performance)</span>
+                    </summary>
+                    <div style="padding: 30px; text-align: center; border-top: 1px solid #e2e8f0; background: #ffffff;">
+                        <h4 style="color: #0d47a1; margin-bottom: 25px; font-size: 1.1rem; text-transform: uppercase; letter-spacing: 1px;">SLO View: 95th Percentile Processing Targets</h4>
+                        <img src="revrec_latency_slo.png" alt="Latency SLO Diagram" style="width: 100%; max-width: 1100px; height: auto;">
+                        <p style="margin-top: 20px; font-size: 0.95rem; color: #444; font-style: italic; max-width: 850px; margin-left: auto; margin-right: auto;">
+                            Visualizing the p95 latency targets for AI-native contract unbundling, ensuring sub-30 second processing during high-volume month-end peaks.
+                        </p>
                     </div>
-                    
-                </div>
-            </details>
+                </details>
+            
+                <details style="background: white; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+                    <summary style="padding: 15px; font-weight: bold; cursor: pointer; background: #f8fafc; display: flex; align-items: center;">
+                        <i class="fas fa-snowflake" style="margin-right: 12px; color: #0d47a1; width: 20px;"></i> 
+                        <span>B. Error Budget: Fiscal "Freeze Period" Hardening</span>
+                    </summary>
+                    <div style="padding: 30px; text-align: center; border-top: 1px solid #e2e8f0; background: #ffffff;">
+                        <h4 style="color: #0d47a1; margin-bottom: 25px; font-size: 1.1rem; text-transform: uppercase; letter-spacing: 1px;">Reliability View: Zero-Downtime Fiscal Window</h4>
+                        <img src="revrec_error_budget.png" alt="Error Budget Diagram" style="width: 100%; max-width: 1100px; height: auto;">
+                        <p style="margin-top: 20px; font-size: 0.95rem; color: #444; font-style: italic; max-width: 850px; margin-left: auto; margin-right: auto;">
+                            Mapping the Error Budget consumption against the critical 4-day fiscal "Freeze Period" where 100% availability is architecturally enforced.
+                        </p>
+                    </div>
+                </details>
+            
+                <details style="background: white; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+                    <summary style="padding: 15px; font-weight: bold; cursor: pointer; background: #f8fafc; display: flex; align-items: center;">
+                        <i class="fas fa-broadcast-tower" style="margin-right: 12px; color: #0d47a1; width: 20px;"></i> 
+                        <span>C. SRE Golden Signals Dashboard (Monitoring)</span>
+                    </summary>
+                    <div style="padding: 30px; text-align: center; border-top: 1px solid #e2e8f0; background: #ffffff;">
+                        <h4 style="color: #0d47a1; margin-bottom: 25px; font-size: 1.1rem; text-transform: uppercase; letter-spacing: 1px;">Observability: RevRec-AI Platform Health</h4>
+                        <img src="revrec_sre_dashboard.png" alt="SRE Dashboard Diagram" style="width: 100%; max-width: 1100px; height: auto;">
+                        <p style="margin-top: 20px; font-size: 0.95rem; color: #444; font-style: italic; max-width: 850px; margin-left: auto; margin-right: auto;">
+                            The central monitoring suite integrating Latency, Traffic, Errors, and Saturation (Golden Signals) specifically for the AI revenue recognition pipeline.
+                        </p>
+                    </div>
+                </details>
+            
+            </div>
         
             <div style="background-color: #263238; color: #fff; padding: 25px; border-radius: 8px; margin-top: 40px;">
                 <h3 style="margin-top: 0; color: #81d4fa;">Why This Infrastructure works</h3>
@@ -887,26 +1070,51 @@
                 </div>
             </div>
         
-            <details style="margin: 30px 0; padding: 20px; background: #fafafa; border-radius: 12px; border: 1px solid #ddd;">
-                <summary style="font-size: 1.1em; font-weight: bold; cursor: pointer; color: #424242;">View Incident Response & Disaster Recovery Strategy</summary>
-                <div style="margin-top: 20px;">
-                    <p style="font-size: 0.95rem; color: #444;">We implement a <strong>Financial Circuit Breaker</strong> to protect the ledger during regional outages or model drift:</p>
-                    <ul style="font-size: 0.9rem; line-height: 1.7; color: #555;">
-                        <li><strong>Disaster Recovery:</strong> Active-Active Multi-Region (RTO &lt; 15 Mins; RPO = 0).</li>
-                        <li><strong>Circuit Breaker:</strong> If prediction confidence drops by 5%, traffic reroutes to manual queues instantly.</li>
-                        <li><strong>Cloud FinOps:</strong> Scale-to-Zero during non-close weeks; BigQuery Reservations during the 10-day Close Period.</li>
-                    </ul>
-                    
-                    <div style="text-align: center; margin: 20px 0; border: 1px dashed #424242; padding: 20px; color: #424242; background: white;">
-                        [Placeholder: Automated Incident Response - The Financial Circuit Breaker]
+            <div style="display: flex; flex-direction: column; gap: 15px; margin-top: 35px;">
+
+                <details style="background: white; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+                    <summary style="padding: 15px; font-weight: bold; cursor: pointer; background: #f8fafc; display: flex; align-items: center;">
+                        <i class="fas fa-globe" style="margin-right: 12px; color: #424242; width: 20px;"></i> 
+                        <span>A. Disaster Recovery (Active-Active Multi-Region)</span>
+                    </summary>
+                    <div style="padding: 30px; text-align: center; border-top: 1px solid #e2e8f0; background: #ffffff;">
+                        <h4 style="color: #424242; margin-bottom: 25px; font-size: 1.1rem; text-transform: uppercase; letter-spacing: 1px;">High Availability: RTO < 15m | RPO = 0</h4>
+                        <img src="revrec_dr_strategy.png" alt="Disaster Recovery Strategy" style="width: 100%; max-width: 1100px; height: auto;">
+                        <p style="margin-top: 20px; font-size: 0.95rem; color: #444; font-style: italic; max-width: 850px; margin-left: auto; margin-right: auto;">
+                            Visualizing the Active-Active multi-region topology using Global Load Balancing and cross-region database replication to guarantee zero data loss.
+                        </p>
                     </div>
-                    
-        
-                    <p style="font-style: italic; color: #666; border-top: 1px solid #eee; padding-top: 15px;">
-                        By utilizing <strong>Customer-Managed Encryption Keys (CMEK)</strong> and <strong>VPC Service Controls</strong>, we satisfy the most paranoid security requirements while guaranteeing availability during high-stakes reporting cycles.
-                    </p>
-                </div>
-            </details>
+                </details>
+            
+                <details style="background: white; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+                    <summary style="padding: 15px; font-weight: bold; cursor: pointer; background: #f8fafc; display: flex; align-items: center;">
+                        <i class="fas fa-bolt" style="margin-right: 12px; color: #424242; width: 20px;"></i> 
+                        <span>B. Financial Circuit Breaker (Safety Logic)</span>
+                    </summary>
+                    <div style="padding: 30px; text-align: center; border-top: 1px solid #e2e8f0; background: #ffffff;">
+                        <h4 style="color: #424242; margin-bottom: 25px; font-size: 1.1rem; text-transform: uppercase; letter-spacing: 1px;">Automated Safety: Rerouting Low-Confidence AI</h4>
+                        <img src="revrec_circuit_breaker.png" alt="Financial Circuit Breaker" style="width: 100%; max-width: 1100px; height: auto;">
+                        <p style="margin-top: 20px; font-size: 0.95rem; color: #444; font-style: italic; max-width: 850px; margin-left: auto; margin-right: auto;">
+                            If AI prediction confidence drops by >5%, the system triggers an automated halt, rerouting the contract to a manual "Controller Review" queue.
+                        </p>
+                    </div>
+                </details>
+            
+                <details style="background: white; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+                    <summary style="padding: 15px; font-weight: bold; cursor: pointer; background: #f8fafc; display: flex; align-items: center;">
+                        <i class="fas fa-coins" style="margin-right: 12px; color: #424242; width: 20px;"></i> 
+                        <span>C. Cloud FinOps (Fiscal Scaling Strategy)</span>
+                    </summary>
+                    <div style="padding: 30px; text-align: center; border-top: 1px solid #e2e8f0; background: #ffffff;">
+                        <h4 style="color: #424242; margin-bottom: 25px; font-size: 1.1rem; text-transform: uppercase; letter-spacing: 1px;">Cost Optimization: Scale-to-Zero vs. Close Reservations</h4>
+                        <img src="revrec_finops_scaling.png" alt="Cloud FinOps Strategy" style="width: 100%; max-width: 1100px; height: auto;">
+                        <p style="margin-top: 20px; font-size: 0.95rem; color: #444; font-style: italic; max-width: 850px; margin-left: auto; margin-right: auto;">
+                            Managing cloud spend via Serverless Scale-to-Zero during off-weeks and BigQuery Slots Reservations during the intensive 10-day Close Period.
+                        </p>
+                    </div>
+                </details>
+            
+            </div>
         
             <div style="background-color: #f8f9fa; border: 1px solid #0052cc; padding: 25px; border-radius: 8px; margin-top: 40px;">
                 <h3 style="margin-top: 0; color: #0052cc;">The Intelligence Dividend</h3>
