@@ -547,20 +547,37 @@
                     </ul>
                 </div>
             
-                <details style="margin: 30px 0; padding: 20px; background: #eceff1; border-radius: 12px; border: 1px solid #cfd8dc;">
-                    <summary style="font-size: 1.1em; font-weight: bold; cursor: pointer; color: #263238;">View Multi-Agent Architecture & Sequence Diagrams</summary>
-                    <div style="margin-top: 20px;">
-                        <p style="font-size: 0.95rem; color: #444;">These artifacts demonstrate how the system maintains context and avoids "agentic loops":</p>
-                        
-                        <h4 style="color: #1a237e;">A. The Agent State Machine (LangGraph Flow)</h4>
-                        <p style="font-size: 0.9rem;">Visualizes the deterministic path from a <strong>Pub/Sub</strong> trigger to a coordinated maintenance handoff.</p>
-                        
-            
-                        <h4 style="color: #1a237e; margin-top: 25px;">B. Root Cause Analysis (RCA) Sequence</h4>
-                        <p style="font-size: 0.9rem;">Shows the Log Analyst retrieving contextual insights via <strong>Vertex AI Search</strong> to reduce document sifting from hours to seconds.</p>
-                        
-                    </div>
-                </details>
+                <div style="display: flex; flex-direction: column; gap: 15px; margin-top: 35px;">
+
+                    <details style="background: white; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+                        <summary style="padding: 15px; font-weight: bold; cursor: pointer; background: #f8fafc; display: flex; align-items: center;">
+                            <i class="fas fa-project-diagram" style="margin-right: 12px; color: #263238; width: 20px;"></i> 
+                            <span>TOGAF Phase D: Multi-Agent State Machine (LangGraph Flow)</span>
+                        </summary>
+                        <div style="padding: 30px; text-align: center; border-top: 1px solid #e2e8f0; background: #ffffff;">
+                            <h4 style="color: #1a237e; margin-bottom: 25px; font-size: 1.1rem; text-transform: uppercase; letter-spacing: 1px;">Agentic State Machine: Pub/Sub to Handoff</h4>
+                            <img src="asset_agent_state_machine.png" alt="LangGraph Agent State Machine Diagram" style="width: 100%; max-width: 1100px; height: auto;">
+                            <p style="margin-top: 20px; font-size: 0.95rem; color: #444; font-style: italic; max-width: 850px; margin-left: auto; margin-right: auto;">
+                                <strong>Technical View:</strong> Visualizing the deterministic LangGraph state machine that governs the transition from a real-time Pub/Sub sensor trigger to a coordinated human maintenance handoff, preventing circular logic loops.
+                            </p>
+                        </div>
+                    </details>
+                
+                    <details style="background: white; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+                        <summary style="padding: 15px; font-weight: bold; cursor: pointer; background: #f8fafc; display: flex; align-items: center;">
+                            <i class="fas fa-search-nodes" style="margin-right: 12px; color: #263238; width: 20px;"></i> 
+                            <span>Value Stream: Root Cause Analysis (RCA) Sequence</span>
+                        </summary>
+                        <div style="padding: 30px; text-align: center; border-top: 1px solid #e2e8f0; background: #ffffff;">
+                            <h4 style="color: #1a237e; margin-bottom: 25px; font-size: 1.1rem; text-transform: uppercase; letter-spacing: 1px;">RCA Intelligence: Reducing Sifting from Hours to Seconds</h4>
+                            <img src="asset_rca_sequence.png" alt="Root Cause Analysis Sequence Diagram" style="width: 100%; max-width: 1100px; height: auto;">
+                            <p style="margin-top: 20px; font-size: 0.95rem; color: #444; font-style: italic; max-width: 850px; margin-left: auto; margin-right: auto;">
+                                <strong>Operational View:</strong> Demonstrating the Log Analyst agent's sequence of retrieving contextual technical manuals via Vertex AI Search to accelerate incident resolution and MTTR.
+                            </p>
+                        </div>
+                    </details>
+                
+                </div>
             
                 <div style="background-color: #263238; color: #81d4fa; padding: 20px; border-radius: 8px; margin-top: 30px;">
                     <h4 style="margin-top: 0; color: #fff;">Operational Guardrails: SRE for Agents</h4>
