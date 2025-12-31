@@ -833,20 +833,41 @@
                     </tbody>
                 </table>
             
-                <details style="margin: 30px 0; padding: 20px; background: #eceff1; border-radius: 12px; border: 1px solid #cfd8dc;">
-                    <summary style="font-size: 1.1em; font-weight: bold; cursor: pointer; color: #263238;">View Infrastructure Artifacts (VPC-SC & Multi-Region Hub)</summary>
-                    <div style="margin-top: 20px;">
-                        
-                        <h4 style="color: #1a237e;">A. Security Architecture View: VPC-SC Perimeter (TOGAF Phase D)</h4>
-                        <p style="font-size: 0.9rem;">Visualizes the "Fortress" around <strong>BigQuery ML</strong> and the <em>Agent Swarm</em>. Achieves a <strong>0% data exfiltration rate</strong> in simulations.</p>
-                        
-            
-                        <h4 style="color: #1a237e; margin-top: 25px;">B. Physical Technology View: Multi-Region Event-Driven Hub</h4>
-                        <p style="font-size: 0.9rem;">Illustrates the <strong>Global Load Balancer</strong> failover flow. Ensures <strong>MTTR &lt; 5 minutes</strong> regardless of regional health.</p>
-                        
-            
-                    </div>
-                </details>
+                <div style="display: flex; flex-direction: column; gap: 15px; margin-top: 35px;">
+
+                    <details style="background: white; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+                        <summary style="padding: 15px; font-weight: bold; cursor: pointer; background: #f8fafc; display: flex; align-items: center;">
+                            <i class="fas fa-shield-virus" style="margin-right: 12px; color: #1a237e; width: 20px;"></i> 
+                            <span>TOGAF Phase D: Security Architecture (VPC-SC Perimeter)</span>
+                        </summary>
+                        <div style="padding: 30px; text-align: center; border-top: 1px solid #e2e8f0; background: #ffffff;">
+                            <h4 style="color: #1a237e; margin-bottom: 25px; font-size: 1.1rem; text-transform: uppercase; letter-spacing: 1px;">The "Fortress" Model: 0% Data Exfiltration Rate</h4>
+                            
+                            <img src="risk_vpcsc_fortress.png" alt="Security Architecture View showing the VPC-SC Perimeter around BigQuery and Agent Swarms" style="width: 100%; max-width: 1100px; height: auto; margin-bottom: 20px;">
+                            
+                            <p style="margin-top: 20px; font-size: 0.95rem; color: #444; font-style: italic; max-width: 850px; margin-left: auto; margin-right: auto;">
+                                <strong>Security View:</strong> Visualizing the strict service perimeter around BigQuery ML and the Agent Swarm. This configuration enforces a zero-trust boundary, achieving a 0% data exfiltration rate in security simulations.
+                            </p>
+                        </div>
+                    </details>
+                
+                    <details style="background: white; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+                        <summary style="padding: 15px; font-weight: bold; cursor: pointer; background: #f8fafc; display: flex; align-items: center;">
+                            <i class="fas fa-globe" style="margin-right: 12px; color: #1a237e; width: 20px;"></i> 
+                            <span>Physical Technology View: Multi-Region Event-Driven Hub</span>
+                        </summary>
+                        <div style="padding: 30px; text-align: center; border-top: 1px solid #e2e8f0; background: #ffffff;">
+                            <h4 style="color: #1a237e; margin-bottom: 25px; font-size: 1.1rem; text-transform: uppercase; letter-spacing: 1px;">Operational View: Global Failover & MTTR < 5m</h4>
+                            
+                            <img src="risk_multi_region_hub.png" alt="Physical Technology View showing Global Load Balancer and regional failover flow" style="width: 100%; max-width: 1100px; height: auto; margin-bottom: 20px;">
+                            
+                            <p style="margin-top: 20px; font-size: 0.95rem; color: #444; font-style: italic; max-width: 850px; margin-left: auto; margin-right: auto;">
+                                <strong>Resilience View:</strong> Illustrating the Global Load Balancer and regional event-hub distribution. This architecture ensures an MTTR (Mean Time to Recovery) of less than 5 minutes, maintaining platform health during regional outages.
+                            </p>
+                        </div>
+                    </details>
+                
+                </div>
             
                 <div style="background-color: #f8f9fa; border-left: 5px solid #2e7d32; padding: 20px; margin-top: 30px;">
                     <h4 style="margin-top: 0;">Infrastructure as Code (IaC) & FinOps</h4>
