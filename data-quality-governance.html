@@ -771,20 +771,41 @@
                     </div>
                 </div>
             
-                <details style="margin: 30px 0; padding: 20px; background: #eceff1; border-radius: 12px; border: 1px solid #cfd8dc;">
-                    <summary style="font-size: 1.1em; font-weight: bold; cursor: pointer; color: #263238;">View Drift Retraining & Artifact Lineage Blueprints</summary>
-                    <div style="margin-top: 20px;">
-                        <p style="font-size: 0.95rem; color: #444;">These blueprints satisfy strict <strong>Regulatory Audit</strong> and <strong>TOGAF Phase H</strong> requirements:</p>
-                        
-                        <h4 style="color: #1a237e;">A. The Model Drift & Retraining Loop</h4>
-                        <p style="font-size: 0.9rem;">Visualizes how <strong>Vertex AI</strong> triggers an automated retraining job when distance scores exceed thresholds.</p>
-                        
-            
-                        <h4 style="color: #1a237e; margin-top: 25px;">B. The Artifact Lineage Graph</h4>
-                        <p style="font-size: 0.9rem;">The "genealogy" of a model—connecting training datasets to hyperparameters and evaluations for a complete "Audit Receipt."</p>
-                        
-                    </div>
-                </details>
+                <div style="display: flex; flex-direction: column; gap: 15px; margin-top: 35px;">
+
+                    <details style="background: white; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+                        <summary style="padding: 15px; font-weight: bold; cursor: pointer; background: #f8fafc; display: flex; align-items: center;">
+                            <i class="fas fa-sync" style="margin-right: 12px; color: #263238; width: 20px;"></i> 
+                            <span>TOGAF Phase H: Model Drift & Automated Retraining Loop</span>
+                        </summary>
+                        <div style="padding: 30px; text-align: center; border-top: 1px solid #e2e8f0; background: #ffffff;">
+                            <h4 style="color: #1a237e; margin-bottom: 25px; font-size: 1.1rem; text-transform: uppercase; letter-spacing: 1px;">Dynamic Compliance: Vertex AI Automated Feedback Loops</h4>
+                            
+                            <img src="gov_drift_retraining_loop.png" alt="Model Drift and Retraining Loop Architecture" style="width: 100%; max-width: 1100px; height: auto; margin-bottom: 20px;">
+                            
+                            <p style="margin-top: 20px; font-size: 0.95rem; color: #444; font-style: italic; max-width: 850px; margin-left: auto; margin-right: auto;">
+                                <strong>Audit View:</strong> Visualizing how Vertex AI triggers automated retraining jobs when distance scores exceed defined thresholds. This ensures the governance logic evolves alongside the data, satisfying Phase H change management requirements.
+                            </p>
+                        </div>
+                    </details>
+                
+                    <details style="background: white; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+                        <summary style="padding: 15px; font-weight: bold; cursor: pointer; background: #f8fafc; display: flex; align-items: center;">
+                            <i class="fas fa-history" style="margin-right: 12px; color: #263238; width: 20px;"></i> 
+                            <span>MLOps Governance: The Artifact Lineage Graph (Audit Receipt)</span>
+                        </summary>
+                        <div style="padding: 30px; text-align: center; border-top: 1px solid #e2e8f0; background: #ffffff;">
+                            <h4 style="color: #1a237e; margin-bottom: 25px; font-size: 1.1rem; text-transform: uppercase; letter-spacing: 1px;">Genealogy View: Dataset-to-Model Traceability</h4>
+                            
+                            <img src="gov_artifact_lineage_receipt.png" alt="MLOps Artifact Lineage Graph showing dataset to model connection" style="width: 100%; max-width: 1100px; height: auto; margin-bottom: 20px;">
+                            
+                            <p style="margin-top: 20px; font-size: 0.95rem; color: #444; font-style: italic; max-width: 850px; margin-left: auto; margin-right: auto;">
+                                <strong>Regulatory View:</strong> Providing a complete "Audit Receipt" by connecting training datasets to hyperparameters, evaluations, and final deployments. This level of traceability is essential for high-stakes regulatory reporting.
+                            </p>
+                        </div>
+                    </details>
+                
+                </div>
             
                 <div style="background-color: #f8f9fa; border-left: 5px solid #0052cc; padding: 20px; margin-top: 30px;">
                     <h4 style="margin-top: 0; color: #0052cc;">Explainability & HITL Governance</h4>
