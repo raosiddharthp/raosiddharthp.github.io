@@ -562,21 +562,41 @@
                     <p style="margin: 5px 0 0 0;">[NARRATIVE]: Compiling SAR "Who, What, Where, Why" template. Time to Draft: 4.2s.</p>
                 </div>
             
-                <details style="margin: 30px 0; padding: 20px; background: #fafafa; border-radius: 12px; border: 1px solid #ddd;">
-                    <summary style="font-size: 1.1em; font-weight: bold; cursor: pointer; color: #424242;">View Technical Architecture Artifacts (LangGraph & Cloud Ingestion)</summary>
-                    <div style="margin-top: 20px;">
-                        
-                        <h4 style="color: #1a237e;">A. LangGraph State Diagram (EA Artifact)</h4>
-                        <p style="font-size: 0.9rem;">Visualizes the <strong>Conditional Edges</strong> where the swarm decides to "Close Case" or "Escalate to Human," ensuring deterministic AI workflows.</p>
-                        
-            
-                        <h4 style="color: #1a237e; margin-top: 25px;">B. High-Throughput Ingestion Blueprint (Cloud Arch)</h4>
-                        <p style="font-size: 0.9rem;">Details the <strong>Pub/Sub to Dataflow</strong> path, handling millions of events with 99.9% availability before reaching the Agent Swarm.</p>
-                        
-            
-                    </div>
-                </details>
-            
+                <div style="display: flex; flex-direction: column; gap: 15px; margin-top: 35px;">
+
+                    <details style="background: white; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+                        <summary style="padding: 15px; font-weight: bold; cursor: pointer; background: #f8fafc; display: flex; align-items: center;">
+                            <i class="fas fa-project-diagram" style="margin-right: 12px; color: #424242; width: 20px;"></i> 
+                            <span>TOGAF Phase D: LangGraph State Diagram (Agentic Logic)</span>
+                        </summary>
+                        <div style="padding: 30px; text-align: center; border-top: 1px solid #e2e8f0; background: #ffffff;">
+                            <h4 style="color: #1a237e; margin-bottom: 25px; font-size: 1.1rem; text-transform: uppercase; letter-spacing: 1px;">Deterministic AI: Conditional Reasoning & Escallation</h4>
+                            
+                            <img src="risk_langgraph_state.png" alt="LangGraph State Diagram showing conditional edges for Case Closure and Human Escalation" style="width: 100%; max-width: 1100px; height: auto; margin-bottom: 20px;">
+                            
+                            <p style="margin-top: 20px; font-size: 0.95rem; color: #444; font-style: italic; max-width: 850px; margin-left: auto; margin-right: auto;">
+                                <strong>EA Viewpoint:</strong> Visualizing the LangGraph state machine where conditional edges dictate swarm behavior. This ensures deterministic workflows for mission-critical risk cases, allowing the system to autonomously "Close Case" or "Escalate to Human" based on confidence scoring.
+                            </p>
+                        </div>
+                    </details>
+                
+                    <details style="background: white; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+                        <summary style="padding: 15px; font-weight: bold; cursor: pointer; background: #f8fafc; display: flex; align-items: center;">
+                            <i class="fas fa-cloud-upload-alt" style="margin-right: 12px; color: #424242; width: 20px;"></i> 
+                            <span>Cloud Architecture: High-Throughput Ingestion Blueprint</span>
+                        </summary>
+                        <div style="padding: 30px; text-align: center; border-top: 1px solid #e2e8f0; background: #ffffff;">
+                            <h4 style="color: #1a237e; margin-bottom: 25px; font-size: 1.1rem; text-transform: uppercase; letter-spacing: 1px;">Scalability View: Pub/Sub to Dataflow Ingestion Path</h4>
+                            
+                            <img src="risk_ingestion_blueprint.png" alt="Cloud Architecture Blueprint showing Pub/Sub to Dataflow event ingestion path" style="width: 100%; max-width: 1100px; height: auto; margin-bottom: 20px;">
+                            
+                            <p style="margin-top: 20px; font-size: 0.95rem; color: #444; font-style: italic; max-width: 850px; margin-left: auto; margin-right: auto;">
+                                <strong>Technical View:</strong> Detailing the ingestion backbone that handles millions of events with 99.9% availability. This blueprint illustrates the real-time pipeline that pre-processes data before it reaches the Agent Swarm for final analysis.
+                            </p>
+                        </div>
+                    </details>
+                
+                </div>            
                 <div style="background-color: #e8f5e9; border: 1px solid #2e7d32; padding: 20px; border-radius: 8px; margin-top: 30px;">
                     <h4 style="margin-top: 0; color: #2e7d32;">Why this "Agentic Swarm" Wins</h4>
                     <p style="font-size: 0.95rem; line-height: 1.6; margin-bottom: 0;">
