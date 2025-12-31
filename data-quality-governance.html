@@ -583,20 +583,41 @@
                     </div>
                 </div>
             
-                <details style="margin: 30px 0; padding: 20px; background: #eceff1; border-radius: 12px; border: 1px solid #cfd8dc;">
-                    <summary style="font-size: 1.1em; font-weight: bold; cursor: pointer; color: #263238;">View Multi-Agent State Machine & HITL Gateway</summary>
-                    <div style="margin-top: 20px;">
-                        <p style="font-size: 0.95rem; color: #444;">These blueprints demonstrate how the AI serves as a "Co-pilot" for the Data Governance Council:</p>
-                        
-                        <h4 style="color: #1a237e;">A. The Multi-Agent State Machine (LangGraph Flow)</h4>
-                        <p style="font-size: 0.9rem;">Illustrates the deterministic path of a data packet. Every agent transition is captured as a <strong>100% transparent "Chain of Thought"</strong> in Cloud Logging.</p>
-                        
-            
-                        <h4 style="color: #1a237e; margin-top: 25px;">B. The Human-in-the-Loop (HITL) Gateway</h4>
-                        <p style="font-size: 0.9rem;">Visualizes high-risk thresholds where the Supervisor pauses for a human signature, specifically for critical financial validation rules.</p>
-                        
-                    </div>
-                </details>
+                <div style="display: flex; flex-direction: column; gap: 15px; margin-top: 35px;">
+
+                    <details style="background: white; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+                        <summary style="padding: 15px; font-weight: bold; cursor: pointer; background: #f8fafc; display: flex; align-items: center;">
+                            <i class="fas fa-project-diagram" style="margin-right: 12px; color: #263238; width: 20px;"></i> 
+                            <span>TOGAF Phase D: Multi-Agent State Machine (LangGraph)</span>
+                        </summary>
+                        <div style="padding: 30px; text-align: center; border-top: 1px solid #e2e8f0; background: #ffffff;">
+                            <h4 style="color: #1a237e; margin-bottom: 25px; font-size: 1.1rem; text-transform: uppercase; letter-spacing: 1px;">Deterministic Governance: 100% Transparent Chain of Thought</h4>
+                            
+                            <img src="gov_agent_state_machine.png" alt="Multi-Agent State Machine Diagram showing LangGraph agent transitions and logic flow" style="width: 100%; max-width: 1100px; height: auto; margin-bottom: 20px;">
+                            
+                            <p style="margin-top: 20px; font-size: 0.95rem; color: #444; font-style: italic; max-width: 850px; margin-left: auto; margin-right: auto;">
+                                <strong>Architectural View:</strong> Illustrating the deterministic path of a data validation packet. Every agent transition is captured in Cloud Logging, providing a 100% transparent "Chain of Thought" for auditability.
+                            </p>
+                        </div>
+                    </details>
+                
+                    <details style="background: white; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+                        <summary style="padding: 15px; font-weight: bold; cursor: pointer; background: #f8fafc; display: flex; align-items: center;">
+                            <i class="fas fa-user-shield" style="margin-right: 12px; color: #263238; width: 20px;"></i> 
+                            <span>Governance View: Human-in-the-Loop (HITL) Gateway</span>
+                        </summary>
+                        <div style="padding: 30px; text-align: center; border-top: 1px solid #e2e8f0; background: #ffffff;">
+                            <h4 style="color: #1a237e; margin-bottom: 25px; font-size: 1.1rem; text-transform: uppercase; letter-spacing: 1px;">Strategic Oversight: Critical Financial Validation Rules</h4>
+                            
+                            <img src="gov_hitl_gateway.png" alt="Human-in-the-Loop Gateway Diagram showing supervisor pause for human signature" style="width: 100%; max-width: 1100px; height: auto; margin-bottom: 20px;">
+                            
+                            <p style="margin-top: 20px; font-size: 0.95rem; color: #444; font-style: italic; max-width: 850px; margin-left: auto; margin-right: auto;">
+                                <strong>Compliance View:</strong> High-risk thresholds trigger the Supervisor agent to pause for a human signature. This ensures that critical financial data validation remains under direct human control.
+                            </p>
+                        </div>
+                    </details>
+                
+                </div>
             
                 <div style="background-color: #263238; color: #81d4fa; padding: 25px; border-radius: 8px; margin-top: 30px;">
                     <h4 style="margin-top: 0; color: #fff;">Operational Guardrails: Managed Autonomy</h4>
