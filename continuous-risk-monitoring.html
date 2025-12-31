@@ -253,20 +253,41 @@
                     </ul>
                 </div>
             
-                <details style="margin: 30px 0; padding: 20px; background: #fafafa; border-radius: 12px; border: 1px solid #ddd;">
-                    <summary style="font-size: 1.1em; font-weight: bold; cursor: pointer; color: #424242;">View Comprehensive Strategy & Governance Diagrams</summary>
-                    <div style="margin-top: 20px;">
-                        
-                        <h4 style="color: #1a237e;">A. The Risk Heat Map (TOGAF Artifact)</h4>
-                        <p style="font-size: 0.9rem;">Visualizes initial vs. residual risk after the application of GCP Cloud Armor and VPC-SC. Reduces regulatory non-compliance exposure by 50%.</p>
-                        
-            
-                        <h4 style="color: #1a237e; margin-top: 25px;">B. Value Stream Coordination View (SAFe Artifact)</h4>
-                        <p style="font-size: 0.9rem;">Shows how the Risk Monitoring System acts as an Enabling Value Stream for <strong>RevRec-AI</strong> and <strong>ContractGuard</strong>. Increases Strategic Alignment by 35%.</p>
-                        
-            
-                    </div>
-                </details>
+                <div style="display: flex; flex-direction: column; gap: 15px; margin-top: 35px;">
+
+                    <details style="background: white; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+                        <summary style="padding: 15px; font-weight: bold; cursor: pointer; background: #f8fafc; display: flex; align-items: center;">
+                            <i class="fas fa-exclamation-triangle" style="margin-right: 12px; color: #1a237e; width: 20px;"></i> 
+                            <span>TOGAF Artifact: Risk Heat Map (Initial vs. Residual)</span>
+                        </summary>
+                        <div style="padding: 30px; text-align: center; border-top: 1px solid #e2e8f0; background: #ffffff;">
+                            <h4 style="color: #1a237e; margin-bottom: 25px; font-size: 1.1rem; text-transform: uppercase; letter-spacing: 1px;">Strategic View: 50% Reduction in Non-Compliance Exposure</h4>
+                            
+                            <img src="risk_governance_heatmap.png" alt="TOGAF Risk Heat Map: Initial vs Residual Risk" style="width: 100%; max-width: 1100px; height: auto; margin-bottom: 20px;">
+                            
+                            <p style="margin-top: 20px; font-size: 0.95rem; color: #444; font-style: italic; max-width: 850px; margin-left: auto; margin-right: auto;">
+                                <strong>Governance View:</strong> Visualizing the impact of GCP Cloud Armor and VPC-SC. This TOGAF-compliant artifact maps the shift from high initial risk to mitigated residual risk, satisfying regulatory audit requirements.
+                            </p>
+                        </div>
+                    </details>
+                
+                    <details style="background: white; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+                        <summary style="padding: 15px; font-weight: bold; cursor: pointer; background: #f8fafc; display: flex; align-items: center;">
+                            <i class="fas fa-project-diagram" style="margin-right: 12px; color: #1a237e; width: 20px;"></i> 
+                            <span>SAFe Artifact: Value Stream Coordination View</span>
+                        </summary>
+                        <div style="padding: 30px; text-align: center; border-top: 1px solid #e2e8f0; background: #ffffff;">
+                            <h4 style="color: #1a237e; margin-bottom: 25px; font-size: 1.1rem; text-transform: uppercase; letter-spacing: 1px;">Strategic Alignment: Enabling Value Stream Integration</h4>
+                            
+                            <img src="risk_value_stream_sync.png" alt="SAFe Value Stream Coordination View" style="width: 100%; max-width: 1100px; height: auto; margin-bottom: 20px;">
+                            
+                            <p style="margin-top: 20px; font-size: 0.95rem; color: #444; font-style: italic; max-width: 850px; margin-left: auto; margin-right: auto;">
+                                <strong>Architectural View:</strong> Demonstrating how the Risk Monitoring System acts as an Enabling Value Stream for RevRec-AI and ContractGuard. This integration increases enterprise Strategic Alignment by 35%.
+                            </p>
+                        </div>
+                    </details>
+                
+                </div>
             </section>
             <section id="risk-monitoring-personas" style="max-width: 1000px; margin: 40px auto 40px 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; clear: both; display: block;">
                 <h3 style="color: #ff8f00; margin-bottom: 20px; border-left: 5px solid #37474f; padding-left: 15px; font-size: 1.5rem;">01a. Stakeholder Personas: Eliminating the Latency Gap</h3>
