@@ -742,20 +742,41 @@
                     </tbody>
                 </table>
             
-                <details style="margin: 30px 0; padding: 20px; background: #fafafa; border-radius: 12px; border: 1px solid #ddd;">
-                    <summary style="font-size: 1.1em; font-weight: bold; cursor: pointer; color: #424242;">View MLOps Lineage & Explainability Artifacts</summary>
-                    <div style="margin-top: 20px;">
-                        
-                        <h4 style="color: #1a237e;">A. Hybrid MLE Deployment (BERT vs. BQML)</h4>
-                        <p style="font-size: 0.9rem;">Architectural decision to bifurcate "Text Triage" and "Numeric Anomalies," reducing environment setup time by 95% via Terraform.</p>
-                        
-            
-                        <h4 style="color: #1a237e; margin-top: 25px;">B. Feature Attribution (XAI) Dashboard</h4>
-                        <p style="font-size: 0.9rem;">Displays the "Weights" leading to an alert (e.g., 70% weight on frequency). Essential for regulatory support and Internal Audit.</p>
-                        
-            
-                    </div>
-                </details>
+                <div style="display: flex; flex-direction: column; gap: 15px; margin-top: 35px;">
+
+                    <details style="background: white; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+                        <summary style="padding: 15px; font-weight: bold; cursor: pointer; background: #f8fafc; display: flex; align-items: center;">
+                            <i class="fas fa-layer-group" style="margin-right: 12px; color: #1a237e; width: 20px;"></i> 
+                            <span>TOGAF Phase G: Hybrid MLE Deployment (BERT vs. BQML)</span>
+                        </summary>
+                        <div style="padding: 30px; text-align: center; border-top: 1px solid #e2e8f0; background: #ffffff;">
+                            <h4 style="color: #1a237e; margin-bottom: 25px; font-size: 1.1rem; text-transform: uppercase; letter-spacing: 1px;">Architectural View: Bifurcated Triage & Anomaly Detection</h4>
+                            
+                            <img src="risk_hybrid_deployment.png" alt="Hybrid MLE Architecture: BERT for Text Triage and BQML for Numeric Anomalies" style="width: 100%; max-width: 1100px; height: auto; margin-bottom: 20px;">
+                            
+                            <p style="margin-top: 20px; font-size: 0.95rem; color: #444; font-style: italic; max-width: 850px; margin-left: auto; margin-right: auto;">
+                                <strong>Decision Record:</strong> Bifurcating "Text Triage" (BERT) and "Numeric Anomalies" (BQML) reduced environment setup time by 95% via Terraform, enabling high-velocity deployment of specialized risk filters.
+                            </p>
+                        </div>
+                    </details>
+                
+                    <details style="background: white; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+                        <summary style="padding: 15px; font-weight: bold; cursor: pointer; background: #f8fafc; display: flex; align-items: center;">
+                            <i class="fas fa-search-plus" style="margin-right: 12px; color: #1a237e; width: 20px;"></i> 
+                            <span>EA View: Feature Attribution & Explainability (XAI)</span>
+                        </summary>
+                        <div style="padding: 30px; text-align: center; border-top: 1px solid #e2e8f0; background: #ffffff;">
+                            <h4 style="color: #1a237e; margin-bottom: 25px; font-size: 1.1rem; text-transform: uppercase; letter-spacing: 1px;">Regulatory Support: Explainable Risk Scoring</h4>
+                            
+                            <img src="risk_xai_dashboard.png" alt="Feature Attribution Dashboard showing SHAP/IG weights for risk alerts" style="width: 100%; max-width: 1100px; height: auto; margin-bottom: 20px;">
+                            
+                            <p style="margin-top: 20px; font-size: 0.95rem; color: #444; font-style: italic; max-width: 850px; margin-left: auto; margin-right: auto;">
+                                <strong>Audit View:</strong> Essential for Internal Audit and regulatory support. This dashboard visualizes the feature weights (e.g., transaction frequency vs. amount) leading to specific alerts, ensuring AI-driven decisions are defensible.
+                            </p>
+                        </div>
+                    </details>
+                
+                </div>
             
                 <div style="background-color: #f8f9fa; border-left: 5px solid #0052cc; padding: 20px; margin-top: 30px;">
                     <h4 style="margin-top: 0;">Institutional Memory & Compliance</h4>
