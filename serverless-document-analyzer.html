@@ -857,22 +857,37 @@
                 </tbody>
             </table>
         
-            <details style="margin: 30px 0; padding: 20px; background: #eceff1; border-radius: 12px; border: 1px solid #cfd8dc;">
-                <summary style="font-size: 1.1em; font-weight: bold; cursor: pointer; color: #263238;">View Infrastructure Governance & Terraform Blueprints</summary>
-                <div style="margin-top: 20px;">
-                    <p style="font-size: 0.95rem; color: #444;">High-fidelity views designed to satisfy the Chief Architect and Cloud Engineering Manager:</p>
-                    
-                    <ul style="font-size: 0.9rem; line-height: 1.7; color: #555;">
-                        <li><strong>Physical Architecture (EA):</strong> <em>Event-Driven Security Perimeter</em> - Flow from GCS to Vertex AI contained within VPC-SC.</li>
-                        <li><strong>CI/CD Pipeline:</strong> <em>Terraform-Led Governance</em> - GitOps pipeline provisioning the stack, IAM policies, and resource quotas for the Free Tier.</li>
-                    </ul>
-                    
-                    <div style="text-align: center; margin: 20px 0; border: 1px dashed #263238; padding: 20px; color: #263238; background: white;">
-                        [Placeholder: Zero-Trust Serverless Deployment Blueprint]
+            <div style="display: flex; flex-direction: column; gap: 15px; margin-top: 35px;">
+
+                <details style="background: white; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+                    <summary style="padding: 15px; font-weight: bold; cursor: pointer; background: #f8fafc; display: flex; align-items: center;">
+                        <i class="fas fa-shield-virus" style="margin-right: 12px; color: #263238; width: 20px;"></i> 
+                        <span>TOGAF Phase D/G: Infrastructure Governance & GitOps Blueprints</span>
+                    </summary>
+                    <div style="padding: 30px; border-top: 1px solid #e2e8f0; background: #ffffff;">
+                        <p style="font-size: 0.95rem; color: #444; margin-bottom: 25px;">
+                            High-fidelity architectural views designed to satisfy the <strong>Chief Architect</strong> and <strong>Cloud Engineering Manager</strong> by proving sovereign security and automated lifecycle management:
+                        </p>
+            
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                            <div style="padding: 20px; background: #f8fafc; border-radius: 8px; border: 1px solid #cbd5e1; text-align: center;">
+                                <h5 style="color: #1a237e; margin-top: 0;">Physical Architecture: VPC-SC Perimeter</h5>
+                                <img src="doc_vpcsc_perimeter.png" alt="Event-Driven Security Perimeter showing GCS to Vertex AI flow inside VPC-SC" style="width: 100%; border-radius: 4px; margin-bottom: 10px;">
+                                <p style="font-size: 0.8rem; color: #666;"><strong>Zero-Trust:</strong> Containing the serverless event flow within a strict Service Perimeter to prevent data exfiltration.</p>
+                            </div>
+                            <div style="padding: 20px; background: #f8fafc; border-radius: 8px; border: 1px solid #cbd5e1; text-align: center;">
+                                <h5 style="color: #1a237e; margin-top: 0;">GitOps: Terraform-Led Governance</h5>
+                                <img src="doc_terraform_pipeline.png" alt="Terraform GitOps pipeline for serverless infrastructure provisioning" style="width: 100%; border-radius: 4px; margin-bottom: 10px;">
+                                <p style="font-size: 0.8rem; color: #666;"><strong>Automation:</strong> provisioning the stack, IAM policies, and resource quotas automatically via Terraform Cloud.</p>
+                            </div>
+                        </div>
+            
+                        <p style="font-style: italic; color: #666; font-size: 0.85rem; margin-top: 25px; border-top: 1px solid #eee; padding-top: 15px;">
+                            <strong>Sovereign Reliability:</strong> By codifying the security perimeter in Terraform, we ensure that every document ingestion event is protected by enterprise-grade encryption and isolation by default.
+                        </p>
                     </div>
-                    
-                </div>
-            </details>
+                </details>
+            </div>
         </section>
 
         <section id="governance-sre" style="max-width: 1000px; margin: 40px auto; padding: 0 20px;">
