@@ -862,20 +862,41 @@
                     </ul>
                 </div>
             
-                <details style="margin: 30px 0; padding: 20px; background: #eceff1; border-radius: 12px; border: 1px solid #cfd8dc;">
-                    <summary style="font-size: 1.1em; font-weight: bold; cursor: pointer; color: #263238;">View Network Topology & Event-Driven Workflows</summary>
-                    <div style="margin-top: 20px;">
-                        <p style="font-size: 0.95rem; color: #444;">These blueprints demonstrate the <strong>Operational Readiness</strong> of the governance pipeline:</p>
-                        
-                        <h4 style="color: #1a237e;">A. The Real-Time Event-Driven Workflow</h4>
-                        <p style="font-size: 0.9rem;">Illustrates the handoff between <strong>Dataflow</strong>, the <strong>Agent Swarm</strong> on Cloud Run, and the metadata update in <strong>Dataplex</strong>.</p>
-                        
-            
-                        <h4 style="color: #1a237e; margin-top: 25px;">B. The Secure Hub-and-Spoke Topology</h4>
-                        <p style="font-size: 0.9rem;">Visualizes the Shared VPC Hub and Spoke VPCs for Ingestion and AI/ML, enclosed by <strong>VPC-SC</strong> perimeters.</p>
-                        
-                    </div>
-                </details>
+                <div style="display: flex; flex-direction: column; gap: 15px; margin-top: 35px;">
+
+                    <details style="background: white; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+                        <summary style="padding: 15px; font-weight: bold; cursor: pointer; background: #f8fafc; display: flex; align-items: center;">
+                            <i class="fas fa-network-wired" style="margin-right: 12px; color: #263238; width: 20px;"></i> 
+                            <span>TOGAF Phase D: Secure Hub-and-Spoke Topology (VPC-SC)</span>
+                        </summary>
+                        <div style="padding: 30px; text-align: center; border-top: 1px solid #e2e8f0; background: #ffffff;">
+                            <h4 style="color: #1a237e; margin-bottom: 25px; font-size: 1.1rem; text-transform: uppercase; letter-spacing: 1px;">Enterprise Isolation: Shared VPC Hub & Spoke Architecture</h4>
+                            
+                            <img src="gov_network_topology_hub.png" alt="Secure Hub-and-Spoke VPC Topology with VPC-SC Service Perimeters" style="width: 100%; max-width: 1100px; height: auto; margin-bottom: 20px;">
+                            
+                            <p style="margin-top: 20px; font-size: 0.95rem; color: #444; font-style: italic; max-width: 850px; margin-left: auto; margin-right: auto;">
+                                <strong>Infrastructure View:</strong> Visualizing the Shared VPC Hub connected to Ingestion and AI/ML Spokes. The entire environment is enclosed by VPC Service Controls (VPC-SC) perimeters to prevent lateral movement and data exfiltration.
+                            </p>
+                        </div>
+                    </details>
+                
+                    <details style="background: white; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+                        <summary style="padding: 15px; font-weight: bold; cursor: pointer; background: #f8fafc; display: flex; align-items: center;">
+                            <i class="fas fa-bolt" style="margin-right: 12px; color: #263238; width: 20px;"></i> 
+                            <span>Operational View: Real-Time Event-Driven Workflow</span>
+                        </summary>
+                        <div style="padding: 30px; text-align: center; border-top: 1px solid #e2e8f0; background: #ffffff;">
+                            <h4 style="color: #1a237e; margin-bottom: 25px; font-size: 1.1rem; text-transform: uppercase; letter-spacing: 1px;">Governance In-Flight: Dataflow-to-Agent Handoff</h4>
+                            
+                            <img src="gov_event_driven_workflow.png" alt="Real-time event-driven governance workflow featuring Cloud Pub/Sub, Dataflow, and Cloud Run Agent Swarm" style="width: 100%; max-width: 1100px; height: auto; margin-bottom: 20px;">
+                            
+                            <p style="margin-top: 20px; font-size: 0.95rem; color: #444; font-style: italic; max-width: 850px; margin-left: auto; margin-right: auto;">
+                                <strong>Orchestration View:</strong> Illustrating the seamless handoff between real-time processing (Dataflow), the autonomous Agent Swarm (Cloud Run), and automated metadata cataloging in Dataplex.
+                            </p>
+                        </div>
+                    </details>
+                
+                </div>
             
                 <div style="background-color: #263238; color: #81d4fa; padding: 20px; border-radius: 8px; margin-top: 30px;">
                     <h4 style="margin-top: 0; color: #fff;">SRE & Observability Foundation</h4>
