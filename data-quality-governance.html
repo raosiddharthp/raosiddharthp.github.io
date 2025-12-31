@@ -957,20 +957,41 @@
                     </ul>
                 </div>
             
-                <details style="margin: 30px 0; padding: 20px; background: #eceff1; border-radius: 12px; border: 1px solid #cfd8dc;">
-                    <summary style="font-size: 1.1em; font-weight: bold; cursor: pointer; color: #263238;">View Global Failover & Data Persistence Blueprints</summary>
-                    <div style="margin-top: 20px;">
-                        <p style="font-size: 0.95rem; color: #444;">These artifacts prove the <strong>Sovereign Reliability</strong> of the governance fabric:</p>
-                        
-                        <h4 style="color: #1a237e;">A. The Global Traffic & Failover Flow</h4>
-                        <p style="font-size: 0.9rem;">Visualizes <strong>Cloud Monitoring</strong> health checks triggering the GLB to redirect Agent API traffic.</p>
-                        
-            
-                        <h4 style="color: #1a237e; margin-top: 25px;">B. The Data Sync & Persistence Map</h4>
-                        <p style="font-size: 0.9rem;">Shows synchronous and asynchronous replication paths for <strong>BigQuery</strong> metadata and <strong>Cloud Storage</strong> raw tiers.</p>
-                        
-                    </div>
-                </details>
+                <div style="display: flex; flex-direction: column; gap: 15px; margin-top: 35px;">
+
+                    <details style="background: white; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+                        <summary style="padding: 15px; font-weight: bold; cursor: pointer; background: #f8fafc; display: flex; align-items: center;">
+                            <i class="fas fa-network-wired" style="margin-right: 12px; color: #263238; width: 20px;"></i> 
+                            <span>TOGAF Phase D: Global Traffic & Failover Flow</span>
+                        </summary>
+                        <div style="padding: 30px; text-align: center; border-top: 1px solid #e2e8f0; background: #ffffff;">
+                            <h4 style="color: #1a237e; margin-bottom: 25px; font-size: 1.1rem; text-transform: uppercase; letter-spacing: 1px;">Sovereign Reliability: Health-Check Triggered Redirection</h4>
+                            
+                            <img src="gov_global_failover_flow.png" alt="Global Traffic and Failover architecture diagram for GCP" style="width: 100%; max-width: 1100px; height: auto; margin-bottom: 20px;">
+                            
+                            <p style="margin-top: 20px; font-size: 0.95rem; color: #444; font-style: italic; max-width: 850px; margin-left: auto; margin-right: auto;">
+                                <strong>Resilience View:</strong> Visualizing how Cloud Monitoring health checks trigger the Global Load Balancer (GLB) to redirect Agent API traffic between regions. This ensures the governance service remains available even during localized infrastructure failure.
+                            </p>
+                        </div>
+                    </details>
+                
+                    <details style="background: white; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+                        <summary style="padding: 15px; font-weight: bold; cursor: pointer; background: #f8fafc; display: flex; align-items: center;">
+                            <i class="fas fa-database" style="margin-right: 12px; color: #263238; width: 20px;"></i> 
+                            <span>Operational View: Data Sync & Persistence Map</span>
+                        </summary>
+                        <div style="padding: 30px; text-align: center; border-top: 1px solid #e2e8f0; background: #ffffff;">
+                            <h4 style="color: #1a237e; margin-bottom: 25px; font-size: 1.1rem; text-transform: uppercase; letter-spacing: 1px;">Data Sovereignty: Multi-Region Replication Strategy</h4>
+                            
+                            <img src="gov_persistence_replication_map.png" alt="Multi-region data replication and persistence map for BigQuery and GCS" style="width: 100%; max-width: 1100px; height: auto; margin-bottom: 20px;">
+                            
+                            <p style="margin-top: 20px; font-size: 0.95rem; color: #444; font-style: italic; max-width: 850px; margin-left: auto; margin-right: auto;">
+                                <strong>Sovereignty View:</strong> Detailing the synchronous and asynchronous replication paths for BigQuery metadata and Cloud Storage raw tiers. This persistence map ensures 99.99% data durability and regulatory compliance for long-term audit storage.
+                            </p>
+                        </div>
+                    </details>
+                
+                </div>
             
                 <div style="background-color: #263238; color: #81d4fa; padding: 20px; border-radius: 8px; margin-top: 30px;">
                     <h4 style="margin-top: 0; color: #fff;">Operational Chaos Engineering</h4>
