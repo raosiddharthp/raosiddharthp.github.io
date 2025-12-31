@@ -668,22 +668,41 @@
                 </tbody>
             </table>
         
-            <details style="margin: 30px 0; padding: 20px; background: #f1f8e9; border-radius: 12px; border: 1px solid #dcedc8;">
-                <summary style="font-size: 1.1em; font-weight: bold; cursor: pointer; color: #33691e;">View MLOps & Data Architecture (EA & MLE Viewpoints)</summary>
-                <div style="margin-top: 20px;">
-                    <p style="font-size: 0.95rem; color: #444;">To satisfy the Chief Architect and Head of Automation, the platform is visualized through these critical views:</p>
-                    
-                    <ul style="font-size: 0.9rem; line-height: 1.7; color: #555;">
-                        <li><strong>Data Architecture (EA):</strong> <em>Data Lineage & Lifecycle Diagram</em> - Journey from GCS upload to R Shiny Visualization.</li>
-                        <li><strong>MLOps View:</strong> <em>Vertex AI CI/CD/CT Pipeline</em> - Automated Model Card updates and retraining loops for serverless agents.</li>
-                    </ul>
-                    
-                    <div style="text-align: center; margin: 20px 0; border: 1px dashed #33691e; padding: 20px; color: #33691e; background: white;">
-                        [Placeholder: Vertex AI CI/CD/CT Pipeline for Serverless Agents]
+            <div style="display: flex; flex-direction: column; gap: 15px; margin-top: 35px;">
+
+                <details style="background: white; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+                    <summary style="padding: 15px; font-weight: bold; cursor: pointer; background: #f1f8e9; display: flex; align-items: center;">
+                        <i class="fas fa-database" style="margin-right: 12px; color: #33691e; width: 20px;"></i> 
+                        <span>TOGAF Phase C: Data Architecture (Lineage & Lifecycle)</span>
+                    </summary>
+                    <div style="padding: 30px; text-align: center; border-top: 1px solid #e2e8f0; background: #ffffff;">
+                        <h4 style="color: #33691e; margin-bottom: 25px; font-size: 1.1rem; text-transform: uppercase; letter-spacing: 1px;">Data Journey: Raw GCS Ingestion to R Shiny Insights</h4>
+                        
+                        <img src="doc_data_lifecycle.png" alt="Data Lineage and Lifecycle Diagram showing document journey" style="width: 100%; max-width: 1100px; height: auto; margin-bottom: 20px;">
+                        
+                        <p style="margin-top: 20px; font-size: 0.95rem; color: #444; font-style: italic; max-width: 850px; margin-left: auto; margin-right: auto;">
+                            <strong>EA Viewpoint:</strong> Visualizing the end-to-end data lifecycle. This ensures auditability by tracing every business insight back to the original document upload in Cloud Storage.
+                        </p>
                     </div>
-                    
-                </div>
-            </details>
+                </details>
+            
+                <details style="background: white; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+                    <summary style="padding: 15px; font-weight: bold; cursor: pointer; background: #f1f8e9; display: flex; align-items: center;">
+                        <i class="fas fa-infinity" style="margin-right: 12px; color: #33691e; width: 20px;"></i> 
+                        <span>MLE View: Vertex AI CI/CD/CT Pipeline (Retraining Loops)</span>
+                    </summary>
+                    <div style="padding: 30px; text-align: center; border-top: 1px solid #e2e8f0; background: #ffffff;">
+                        <h4 style="color: #33691e; margin-bottom: 25px; font-size: 1.1rem; text-transform: uppercase; letter-spacing: 1px;">Continuous Training: Automated Model Card & Agent Updates</h4>
+                        
+                        <img src="doc_mlops_pipeline.png" alt="Vertex AI CI/CD/CT Pipeline for Serverless Agents" style="width: 100%; max-width: 1100px; height: auto; margin-bottom: 20px;">
+                        
+                        <p style="margin-top: 20px; font-size: 0.95rem; color: #444; font-style: italic; max-width: 850px; margin-left: auto; margin-right: auto;">
+                            <strong>MLE Viewpoint:</strong> Highlighting the automated retraining loop. When model drift is detected, Vertex AI Pipelines trigger retraining, update Model Cards, and hot-swap serverless agents without downtime.
+                        </p>
+                    </div>
+                </details>
+            
+            </div>
         </section>
 
         <section id="model-lifecycle" style="max-width: 1000px; margin: 40px auto; padding: 0 20px;">
