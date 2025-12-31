@@ -941,22 +941,44 @@
                 </tbody>
             </table>
         
-            <details style="margin: 30px 0; padding: 20px; background: #fafafa; border-radius: 12px; border: 1px solid #ddd;">
-                <summary style="font-size: 1.1em; font-weight: bold; cursor: pointer; color: #424242;">View Enterprise Compliance & Security Governance</summary>
-                <div style="margin-top: 20px;">
-                    <p style="font-size: 0.95rem; color: #444;">We implement <strong>Least-Privilege Security</strong> as a foundational enabler for the portfolio:</p>
-                    <ul style="font-size: 0.9rem; line-height: 1.7; color: #555;">
-                        <li><strong>Secret Manager:</strong> API keys for Hugging Face and Document AI rotated automatically.</li>
-                        <li><strong>Binary Authorization:</strong> Only approved Cloud Run containers that pass security scans are allowed to execute.</li>
-                        <li><strong>Audit Lineage:</strong> Every document's journey is tracked via <strong>Cloud Trace</strong> with unique request IDs.</li>
-                    </ul>
-                    
-                    <div style="text-align: center; margin: 20px 0; border: 1px dashed #424242; padding: 20px; color: #424242; background: white;">
-                        [Placeholder: SRE Performance & Insights Dashboard (R Shiny)]
+            <div style="display: flex; flex-direction: column; gap: 15px; margin-top: 35px;">
+
+                <details style="background: white; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+                    <summary style="padding: 15px; font-weight: bold; cursor: pointer; background: #fafafa; display: flex; align-items: center;">
+                        <i class="fas fa-user-lock" style="margin-right: 12px; color: #424242; width: 20px;"></i> 
+                        <span>TOGAF Phase G: Enterprise Compliance & Security Governance</span>
+                    </summary>
+                    <div style="padding: 30px; border-top: 1px solid #e2e8f0; background: #ffffff;">
+                        <p style="font-size: 0.95rem; color: #444; margin-bottom: 25px;">
+                            We implement <strong>Least-Privilege Security</strong> and <strong>SRE Observability</strong> as foundational enablers for the enterprise portfolio:
+                        </p>
+            
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                            <div style="padding: 20px; background: #fcfcfc; border-radius: 8px; border: 1px solid #ddd; text-align: center;">
+                                <h5 style="color: #424242; margin-top: 0;">Identity & Secret Governance</h5>
+                                <img src="doc_secret_governance.png" alt="Secret Manager and IAM Rotation Architecture" style="width: 100%; border-radius: 4px; margin-bottom: 10px;">
+                                <p style="font-size: 0.8rem; color: #666;"><strong>Key Management:</strong> Automated rotation of Hugging Face & Document AI keys via Cloud Secret Manager.</p>
+                            </div>
+                            <div style="padding: 20px; background: #fcfcfc; border-radius: 8px; border: 1px solid #ddd; text-align: center;">
+                                <h5 style="color: #424242; margin-top: 0;">Binary Authorization & Scanning</h5>
+                                <img src="doc_binary_auth.png" alt="Binary Authorization flow for Cloud Run containers" style="width: 100%; border-radius: 4px; margin-bottom: 10px;">
+                                <p style="font-size: 0.8rem; color: #666;"><strong>Supply Chain:</strong> Ensuring only vulnerability-scanned containers execute on Cloud Run.</p>
+                            </div>
+                        </div>
+            
+                        <div style="margin-top: 30px; padding: 25px; background: #ffffff; border: 1px solid #424242; border-radius: 8px; text-align: center;">
+                            <h4 style="color: #424242; margin-top: 0; text-transform: uppercase; letter-spacing: 1px;">SRE Performance & Insights Dashboard (R Shiny)</h4>
+                            <img src="doc_sre_dashboard.png" alt="SRE Performance and Insights Dashboard for Serverless Analyzer" style="width: 100%; max-width: 900px; height: auto; margin: 20px 0;">
+                            <p style="font-size: 0.95rem; color: #64748b; font-style: italic;">Real-time observability into document latency, request tracing, and success rates.</p>
+                        </div>
+            
+                        <div style="margin-top: 20px; text-align: center;">
+                            <h5 style="color: #424242;">Traceability: End-to-End Audit Lineage</h5>
+                            <img src="doc_audit_lineage.png" alt="End-to-end audit lineage tracking via Cloud Trace" style="width: 100%; max-width: 800px; height: auto; margin: 15px 0;">
+                        </div>
                     </div>
-                    
-                </div>
-            </details>
+                </details>
+            </div>
         </section>
 
         <section id="impact-outcomes" style="max-width: 1000px; margin: 40px auto; padding: 0 20px; padding-bottom: 60px;">
