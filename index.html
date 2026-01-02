@@ -7,202 +7,125 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         :root {
-            --primary: #0f172a;
-            --accent: #3b82f6;
-            --bg: #f8fafc;
-            --card-bg: #ffffff;
-            --text: #1e293b;
-            --border: #e2e8f0;
-            --google-blue: #4285F4;
-            --google-red: #EA4335;
-            --google-yellow: #FBBC05;
-            --google-green: #34A853;
+            --primary: #0f172a; --accent: #3b82f6; --bg: #f8fafc;
+            --card-bg: #ffffff; --text: #1e293b; --border: #e2e8f0;
+            --google-blue: #4285F4; --google-red: #EA4335;
         }
-
-        body {
-            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-            background-color: var(--bg);
-            color: var(--text);
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-        }
-
+        body { font-family: 'Segoe UI', sans-serif; background: var(--bg); color: var(--text); margin: 0; }
         .container { max-width: 1200px; margin: 0 auto; padding: 40px 20px; }
+        
+        /* Typography */
+        h1 { font-size: 3.5rem; letter-spacing: -2px; margin: 0; }
+        h2 { font-size: 2rem; border-left: 6px solid var(--accent); padding-left: 20px; margin-top: 60px; color: var(--primary); }
+        h3 { color: var(--accent); text-transform: uppercase; font-size: 0.9rem; letter-spacing: 1px; }
 
-        /* Hero Section */
-        header {
-            border-bottom: 4px solid var(--primary);
-            padding-bottom: 40px;
-            margin-bottom: 50px;
-            background: linear-gradient(to right, #0f172a, #1e293b);
-            color: white;
-            padding: 60px 40px;
-            border-radius: 0 0 20px 20px;
-        }
-
-        h1 { font-size: 3.5rem; margin: 0; color: white; letter-spacing: -1.5px; }
-        .subtitle { font-size: 1.25rem; color: #94a3b8; font-weight: 600; text-transform: uppercase; margin-top: 10px; }
-
-        /* Cards & Grids */
+        /* Component Styles */
+        .hero { background: var(--primary); color: white; padding: 80px 40px; border-radius: 0 0 30px 30px; }
+        .glass-card { background: white; padding: 35px; border-radius: 20px; border: 1px solid var(--border); box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1); margin-bottom: 30px; }
         .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 25px; }
-        .asset-card {
-            background: var(--card-bg);
-            padding: 25px;
-            border-radius: 12px;
-            border: 1px solid var(--border);
-            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
-            transition: all 0.3s ease;
-            position: relative;
-            overflow: hidden;
-        }
-        .asset-card:hover { transform: translateY(-5px); box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1); }
-        .asset-card h4 { margin-top: 15px; font-size: 1.25rem; }
-        .asset-tag { font-size: 0.7rem; font-weight: bold; padding: 4px 10px; border-radius: 20px; background: #f1f5f9; color: #475569; }
+        
+        /* Stats Dashboard */
+        .stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; margin-top: -50px; }
+        .stat-card { background: white; padding: 25px; border-radius: 15px; border: 1px solid var(--border); text-align: center; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
+        .stat-num { font-size: 2.2rem; font-weight: 800; color: var(--google-blue); display: block; }
 
-        /* Dashboard Stats */
-        .stats-bar { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; margin: -40px 20px 40px 20px; }
-        .stat-item { background: white; padding: 20px; border-radius: 12px; border: 1px solid var(--border); text-align: center; box-shadow: 0 10px 15px rgba(0,0,0,0.05); }
-        .stat-value { font-size: 2rem; font-weight: 800; color: var(--accent); display: block; }
-        .stat-label { font-size: 0.75rem; text-transform: uppercase; color: #64748b; font-weight: 700; }
-
-        /* Blueprint Section */
-        .blueprint-container { background: white; padding: 40px; border-radius: 20px; border: 1px solid var(--border); margin-bottom: 50px; }
-
-        /* Subsection Headers */
-        h2 { border-left: 6px solid var(--accent); padding-left: 20px; margin-top: 60px; color: var(--primary); font-size: 2rem; }
-
-        /* Day 2 Governance Tables */
-        .gov-table { width: 100%; border-collapse: collapse; margin-top: 20px; }
-        .gov-table th { background: #f8fafc; color: #475569; padding: 15px; text-align: left; border-bottom: 2px solid var(--border); }
-        .gov-table td { padding: 15px; border-bottom: 1px solid var(--border); vertical-align: top; }
-
-        .btn-link { display: inline-block; margin-top: 15px; color: var(--accent); font-weight: 700; text-decoration: none; }
-        .btn-link:hover { text-decoration: underline; }
+        /* Tables */
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; background: white; }
+        th { background: #f1f5f9; padding: 15px; text-align: left; border-bottom: 2px solid var(--border); }
+        td { padding: 15px; border-bottom: 1px solid var(--border); font-size: 0.9rem; }
     </style>
 </head>
 <body>
 
-<header>
-    <div class="container" style="padding:0;">
+<section class="hero">
+    <div class="container">
+        <h3>Section 1: The Manifesto</h3>
         <h1>Autonomous Enterprise</h1>
-        <div class="subtitle">The Sovereign AI Operating System for Global Business</div>
-        <p style="max-width: 800px; margin-top: 20px; opacity: 0.9;">
-            A multi-agent "System of Systems" engineered on Google Cloud. We transform legacy silos into a self-governing intelligence fabric using Gemini, Vertex AI, and a Zero-Trust sovereign landing zone.
+        <p style="font-size: 1.4rem; opacity: 0.9; max-width: 800px;">
+            A Sovereign "System of Systems" designed to eliminate cognitive waste. By leveraging agentic AI and serverless orchestration, we transform legacy cost-centers into autonomous value streams.
         </p>
     </div>
-</header>
+</section>
 
 <div class="container">
-    <div class="stats-bar">
-        <div class="stat-item"><span class="stat-value">$15M+</span><span class="stat-label">Projected OpEx Savings</span></div>
-        <div class="stat-item"><span class="stat-value">85%</span><span class="stat-label">Manual Task Deflection</span></div>
-        <div class="stat-item"><span class="stat-value">Scale-to-0</span><span class="stat-label">FinOps Cost Model</span></div>
-        <div class="stat-item"><span class="stat-value">Zero-Trust</span><span class="stat-label">Compliance Perimeter</span></div>
+    <div class="stats-grid">
+        <div class="stat-card"><span class="stat-num">$15M</span><small>Projected Annual Savings</small></div>
+        <div class="stat-card"><span class="stat-num">85%</span><small>Tier-1 Task Deflection</small></div>
+        <div class="stat-card"><span class="stat-num">Scale-0</span><small>FinOps Efficiency</small></div>
+        <div class="stat-card"><span class="stat-num">95%</span><small>Model Grounding Accuracy</small></div>
     </div>
 
-    <section class="overview-box" style="margin-bottom: 60px; background: white; padding: 40px; border-radius: 20px; border: 1px solid #e2e8f0;">
-        <h2>The North Star: A Sovereign Intelligence Fabric</h2>
-        <p style="font-size: 1.1rem; color: #475569;">
-            Google Cloud isn't just a host for this system; it is the <strong>Reasoning Substrate</strong>. By leveraging Gemini 1.5 Pro's long-context window (2M tokens) and Vertex AI's agentic orchestration, the Autonomous Enterprise achieves <strong>Operational Autonomy</strong>. This architecture proves that AI can safely handle complex financial, legal, and operational workflows when wrapped in bank-grade security perimeters.
-        </p>
+    <section>
+        <h2>2. The Google-Native Narrative</h2>
+        <div class="glass-card">
+            <p>The Autonomous Enterprise is built exclusively on <strong>Google Cloud</strong> because only GCP provides the unified "Reasoning Substrate" required for multi-modal autonomy. From Gemini 1.5 Pro's 2M context window to Vertex AI's managed grounding, the stack is engineered for <strong>Enterprise Sovereignty</strong>—ensuring AI stays within corporate perimeters while accessing global-scale intelligence.</p>
+        </div>
     </section>
 
-    <h2>III. The AE Suite: Integrated Asset Catalog</h2>
-    <div class="grid-3">
-        <div class="asset-card">
-            <span class="asset-tag">CX ART</span>
-            <h4 style="color:var(--google-blue);"><i class="fas fa-brain"></i> OmniMind CCAI</h4>
-            <p style="font-size: 0.9rem; color: #64748b;">The Interaction Layer. Multi-modal agentic orchestrator resolving Tier-1 inquiries with Gemini Flash.</p>
-            <a href="omnimind.html" class="btn-link">Technical Deep-Dive →</a>
-        </div>
-        <div class="asset-card">
-            <span class="asset-tag">INGESTION ART</span>
-            <h4 style="color:var(--google-red);"><i class="fas fa-eye"></i> Doc Analyzer</h4>
-            <p style="font-size: 0.9rem; color: #64748b;">The Optical Nerve. Serverless vision pipeline transforming unstructured blobs into structured financial data.</p>
-            <a href="serverless-document-analyzer.html" class="btn-link">Technical Deep-Dive →</a>
-        </div>
-        <div class="asset-card">
-            <span class="asset-tag">FINANCE ART</span>
-            <h4 style="color:var(--google-green);"><i class="fas fa-file-invoice-dollar"></i> RevRec AI</h4>
-            <p style="font-size: 0.9rem; color: #64748b;">The Logic Engine. RAG-powered reconciliation ensuring 100% revenue integrity across global contracts.</p>
-            <a href="revrec-ai.html" class="btn-link">Technical Deep-Dive →</a>
-        </div>
-    </div>
+    <section>
+        <h2>3. Portfolio Blueprint: The 12 Nodes</h2>
+        <div class="grid-3">
+            <div class="glass-card">
+                <h4 style="color: var(--google-blue);">OmniMind CCAI</h4>
+                <p>The Cognitive Edge. Handles multi-modal engagement and real-time resolution.</p>
+                <a href="omnimind.html" style="color:var(--accent); text-decoration:none; font-weight:bold;">Deep Dive →</a>
+            </div>
+            <div class="glass-card">
+                <h4 style="color: var(--google-red);">RevRec-AI</h4>
+                <p>The Logic Center. Automated revenue integrity and contract-to-cash reconciliation.</p>
+                <a href="revrec-ai.html" style="color:var(--accent); text-decoration:none; font-weight:bold;">Deep Dive →</a>
+            </div>
+            </div>
+    </section>
 
-    <h2>IV. The Sovereign Fabric (Reference Architecture)</h2>
-    <div class="blueprint-container">
-        <p style="margin-bottom: 30px;">Every asset in the AE Suite inherits this <strong>Unified Security Perimeter</strong>. This "Golden Path" architecture answers the core Google interview question: <em>"How do you secure LLMs at scale?"</em></p>
-        
-        <img src="ae_master_blueprint.png" alt="AE Master Blueprint" style="width: 100%; border-radius: 12px; border: 1px solid #eee;">
-        <div class="grid-3" style="margin-top: 30px;">
-            <div><h5 style="margin:0;"><i class="fas fa-shield-virus"></i> VPC-SC</h5><small>Data Exfiltration Protection</small></div>
-            <div><h5 style="margin:0;"><i class="fas fa-key"></i> KMS & BYOK</h5><small>Sovereign Encryption Control</small></div>
-            <div><h5 style="margin:0;"><i class="fas fa-fingerprint"></i> IAP & IAM</h5><small>Context-Aware Zero-Trust Access</small></div>
+    <section>
+        <h2>4. SAFe 6.0 Integration: The ART of ARTs</h2>
+        <div class="glass-card">
+            <p>Structured as a <strong>Solution Train</strong>, the suite is divided into specialized Agile Release Trains (ARTs) that deliver incremental business value every PI (Program Increment).</p>
+            <table>
+                <tr><th>Competency Domain</th><th>Skillset (The AE Toolkit)</th></tr>
+                <tr><td><strong>Architecture</strong></td><td>TOGAF 10, SAFe 6.0, DDD, Micro-Agents</td></tr>
+                <tr><td><strong>AI/ML</strong></td><td>Gemini 1.5, RAG, Vertex AI, LangGraph, CrewAI</td></tr>
+                <tr><td><strong>Engineering</strong></td><td>Python, Terraform, Cloud Run, GKE, Pub/Sub</td></tr>
+            </table>
         </div>
-    </div>
+    </section>
 
-    <h2>V. Day 2 Operations & Sovereign Governance</h2>
-    <p>We move beyond Day 1 deployment to ensure long-term stability, cost-efficiency, and model safety.</p>
-    <div class="table-container" style="background: white; border-radius: 12px; border: 1px solid var(--border);">
-        <table class="gov-table">
-            <thead>
-                <tr>
-                    <th>Operational Pillar</th>
-                    <th>Governance Strategy (No Blind Spots)</th>
-                    <th>Google Tech Stack</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td><strong>FinOps Maturity</strong></td>
-                    <td>Scale-to-Zero architecture ensuring costs only incur during active reasoning events. Budget alerts linked to Cloud Functions for automated kill-switches.</td>
-                    <td>GCP Billing API, Cloud Run</td>
-                </tr>
-                <tr>
-                    <td><strong>MLOps & CE</strong></td>
-                    <td>Continuous Evaluation (CE) loops comparing agent responses against "Golden Ground Truth" sets to detect hallucinations in real-time.</td>
-                    <td>Vertex AI Evaluation</td>
-                </tr>
-                <tr>
-                    <td><strong>SRE Observability</strong></td>
-                    <td>Sub-second monitoring of agentic handoff latency and token consumption metrics.</td>
-                    <td>Cloud Monitoring / Looker</td>
-                </tr>
-                <tr>
-                    <td><strong>Compliance Audit</strong></td>
-                    <td>Immutable audit logs capturing the "Reasoning Trace" for every AI decision, meeting global regulatory transparency standards.</td>
-                    <td>Cloud Logging / BigQuery</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-
-    <div class="grid-2" style="margin-top: 60px;">
-        <div class="asset-card">
-            <h4><i class="fas fa-tools"></i> Portfolio Competencies</h4>
-            <ul style="font-size: 0.85rem; columns: 2;">
-                <li>TOGAF 10 ADM</li>
-                <li>SAFe 6.0 Architect</li>
-                <li>GCP Cloud Architect</li>
-                <li>Agentic RAG Design</li>
-                <li>LangGraph / CrewAI</li>
-                <li>Terraform IaC</li>
-                <li>VPC-SC / Security</li>
-                <li>FinOps Optimization</li>
-            </ul>
+    <section>
+        <h2>6. The Complete Vision: Inquiry-to-Resolution</h2>
+        <div class="glass-card" style="text-align: center;">
+            <p>Visualizing the end-to-end "Metabolic Loop" of the Autonomous Enterprise.</p>
+            
         </div>
-        <div class="asset-card">
-            <h4><i class="fas fa-id-badge"></i> Why This Suite?</h4>
-            <p style="font-size: 0.85rem; color: #475569;">
-                This isn't just code; it's a <strong>Strategic Business Asset</strong>. It demonstrates the ability to manage a $10M+ GCP landing zone while delivering immediate AI business value across disjointed business units.
-            </p>
-        </div>
-    </div>
+    </section>
 
-    <footer>
-        <p>Managed under SAFe 6.0 Portfolio Governance | Engineered with Google Cloud Vertex AI</p>
-    </footer>
+    <section>
+        <h2>7. AE Master Blueprint: The Sovereign Fabric</h2>
+        <div class="glass-card">
+            <img src="ae_master_blueprint.png" style="width: 100%; border-radius: 10px;">
+            <p style="margin-top: 20px;"><strong>Unified Standards:</strong> VPC-SC Isolation, Identity-Aware Proxy (IAP), and CMEK Encryption are applied globally across all 12 nodes.</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>8. Day 2 Operations & SRE Governance</h2>
+        <div class="glass-card">
+            <table>
+                <tr><th>Pillar</th><th>Strategy</th><th>Metric</th></tr>
+                <tr><td><strong>SRE</strong></td><td>Automated health checks & sub-second latency tracking.</td><td>SLI/SLO Adherence</td></tr>
+                <tr><td><strong>FinOps</strong></td><td>Scale-to-zero logic & Cloud Run concurrency tuning.</td><td>Cost-per-Reasoning-Event</td></tr>
+                <tr><td><strong>MLOps</strong></td><td>Continuous Evaluation (CE) against Ground Truth datasets.</td><td>Faithfulness Score</td></tr>
+            </table>
+        </div>
+    </section>
+
+    <section style="margin-bottom: 100px;">
+        <h2>9. Compliance & Sovereignty</h2>
+        <div class="glass-card" style="background: #f1f5f9;">
+            <p><strong>PII Redaction:</strong> Automated Cloud DLP scrubbing before data hits the reasoning layer. <br>
+            <strong>Audit Trace:</strong> Every agent decision is logged in an immutable BigQuery audit table for regulatory transparency.</p>
+        </div>
+    </section>
 </div>
 
 </body>

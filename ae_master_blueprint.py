@@ -35,15 +35,8 @@ with Diagram("The Autonomous Enterprise: Sovereign Fabric", show=False, filename
             audit = Logging("Centralized Audit")
             metrics = Monitoring("Real-time SRE")
 
-    # Ingress Flow
     user >> iap >> vpc_sc >> gemini
-    
-    # Logic Handoff
     gemini >> Edge(color="darkblue") >> [finance, legal, cx]
-    
-    # Observability Connections (Fixed List-to-List)
     for node in [finance, legal, cx, gemini]:
         node >> Edge(style="dashed") >> [audit, metrics]
-        
-    # Security/Encryption Connections
     kms >> Edge(style="dotted") >> [finance, legal, cx]
